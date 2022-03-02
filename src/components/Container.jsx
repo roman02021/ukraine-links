@@ -7,6 +7,6 @@ const StyledContainer = styled.section`
 
 export const Container = ({children}) => {
   return (
-    <div>{children}</div>
+    <StyledContainer>{children}</StyledContainer>
   )
 }
