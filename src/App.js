@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import LinkBtn from './components/LinkBtn.jsx';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faBed } from '@fortawesome/free-solid-svg-icons'
 import GlobalStyle from './theme/globalStyle';
 import styled from 'styled-components';
 import Container from './components/Container';
@@ -11,7 +11,7 @@ function App() {
     <Fragment>
       <GlobalStyle/>
       <Container>
-        <LinkBtn text="ahahxcada" link="https://fontawesome.com/v5/docs/web/use-with/react" icon={faCoffee}></LinkBtn>
+        <LinkBtn text="Проживання - Ubytovanie" link="https://fontawesome.com/icons/bed?s=light" icon={faBed}></LinkBtn>
       </Container>
     </Fragment>
   );
