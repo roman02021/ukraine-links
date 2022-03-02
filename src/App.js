@@ -13,8 +13,8 @@ function App() {
       <GlobalStyle/>
       <Menu/>
       <Container>
-        <Heading text="Urad" id="urad"/>
-        <LinkBtn text="Проживання - Ubytovanie" link="https://fontawesome.com/icons/bed?s=light" icon={faBed}></LinkBtn>
+        <Heading uaText="Проживання" skText="Urad" id="urad"/>
+        <LinkBtn uaText="Проживання" skText="Ubytovanie" link="https://fontawesome.com/icons/bed?s=light" icon={faBed}></LinkBtn>
       </Container>
     </Fragment>
   );
