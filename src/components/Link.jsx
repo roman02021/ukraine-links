@@ -1,8 +1,13 @@
 import React from 'react'
+import styled from 'styled-components'
 
-function Link() {
+const StyledBtnLink = styled.a`
+    color: 'black'
+`;
+
+function Link({link, text, icon}) {
   return (
-    <div>Link</div>
+    <StyledBtnLink>Link</StyledBtnLink>
   )
 }
 
