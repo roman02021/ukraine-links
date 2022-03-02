@@ -11,7 +11,7 @@ function App() {
     <Fragment>
       <GlobalStyle/>
       <Container>
-        <LinkBtn text="ahahahha" link="https://fontawesome.com/v5/docs/web/use-with/react" icon={faCoffee}></LinkBtn>
+        <LinkBtn text="ahahxcada" link="https://fontawesome.com/v5/docs/web/use-with/react" icon={faCoffee}></LinkBtn>
       </Container>
     </Fragment>
   );
