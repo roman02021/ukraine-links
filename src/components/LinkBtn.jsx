@@ -8,14 +8,13 @@ const StyledBtnLink = styled.a`
     color: black;
     background-color: ${theme.colors.secondary};
     padding: 1rem;
-    width: 100%;
     text-decoration: none;
     display: block;
     border-radius: ${theme.radius.normal};
     margin: 1rem 0;
     transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     &:hover {
-      transform: scale(1.05);
+      transform: scale(1.02);
     }
 `;
 const StyledIcon = styled(FontAwesomeIcon)`
@@ -23,8 +22,6 @@ const StyledIcon = styled(FontAwesomeIcon)`
 `;
 
 function LinkBtn({link, text, icon}) {
-
-  console.log(link, text, icon);
   return (
     <StyledBtnLink href={link}>
       <StyledIcon icon={icon} />

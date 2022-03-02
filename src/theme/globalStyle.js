@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     background: ${theme.colors.primary};
-    font-family: Open-Sans, Helvetica, Sans-Serif;
+    font-family: Inter, Helvetica, Sans-Serif;
   }
 `;
  
