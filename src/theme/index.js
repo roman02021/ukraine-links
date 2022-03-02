@@ -4,6 +4,9 @@ const theme = {
         secondary: '#FED600',
         text: '#FFF',
         black: '#000'
+    },
+    radius: {
+        normal: '5px',
     }
 }
 
