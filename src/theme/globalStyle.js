@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     background: ${theme.colors.primary};
     font-family: Inter, Helvetica, Sans-Serif;
+    scroll-behavior: smooth;
   }
 `;
  
