@@ -2,9 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import theme from '../theme';
 
 const StyledBtnLink = styled.a`
-    color: 'black'
+    color: 'black';
+
 `;
 
 function LinkBtn({link, text, icon}) {
