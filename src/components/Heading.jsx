@@ -7,9 +7,9 @@ const StyledHeading = styled.h2`
     font-weight: bold;
 `
 
-const Heading = ({text}) => {
+const Heading = ({text, id}) => {
   return (
-    <StyledHeading>{text}</StyledHeading>
+    <StyledHeading id={id}>{text}</StyledHeading>
   )
 }
 

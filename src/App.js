@@ -11,7 +11,7 @@ function App() {
     <Fragment>
       <GlobalStyle/>
       <Container>
-        <Heading text="Urad"/>
+        <Heading text="Urad" id="urad"/>
         <LinkBtn text="Проживання - Ubytovanie" link="https://fontawesome.com/icons/bed?s=light" icon={faBed}></LinkBtn>
       </Container>
     </Fragment>
