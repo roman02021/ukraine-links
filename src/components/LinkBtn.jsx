@@ -13,6 +13,7 @@ const StyledBtnLink = styled.a`
     border-radius: ${theme.radius.normal};
     margin: 1rem 0;
     transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: -1;
     &:hover {
       transform: scale(1.02);
     }
