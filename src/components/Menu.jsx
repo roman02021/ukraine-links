@@ -53,7 +53,7 @@ const selectOptions = [
     { value: 'en', label: 'English' }
 ]
 
-const Menu = () => {
+const Menu = ({setSearchTerm}) => {
     const { t, i18n } = useTranslation();
     const [sections, setSections] = useState(null);
 
@@ -63,7 +63,6 @@ const Menu = () => {
     }
 
     useEffect(()=>{
-        console.log(i18n.t('sections', {returnObjects: true}), 'AAAAAAAAAAAAAAAAAAAAAAA', i18n.language);
         if(i18n){
             setSections(i18n.t('sections', {returnObjects: true}))
         }
@@ -76,7 +75,7 @@ const Menu = () => {
                 <Group fullHeight align="center">
                     {sections && sections.map((section, index) => <StyledMenuItem href={`#${section.sectionTitle.toLowerCase()}`} key={index}>{section.sectionTitle}</StyledMenuItem>)}
                 </Group>
-                <SearchBar/>
+                <SearchBar setSearchTerm={setSearchTerm}/>
                 
                 <Select options={selectOptions} onChange={handleLanguageChange} defaultValue={i18n.language} isSearchable={false} placeholder={selectOptions.filter(option => option.value === i18n.language)[0].label} value={i18n.language}   />
             </StyledMenu>

@@ -19,17 +19,32 @@ const Loader = () => (
 function App() {
   const {t, i18n } = useTranslation();
   const [sections, setSections] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
+  
 
-
+  console.log(searchTerm, "halo");
   useEffect(()=>{
     setSections(i18n.t('sections', {returnObjects: true}))
   }, [i18n.language])
+
+  useEffect(()=>{
+    // if(searchTerm !== null || searchTerm !== ''){
+    //   setSections(sections.map(section => ({
+    //     ...section,
+    //     links: section.links.filter(link => link.title.includes(searchTerm)
+    //   })));
+    // }
+    // else {
+    //   setSections(i18n.t('sections', {returnObjects: true}))
+    // }
+
+  }, [searchTerm])
 
   return (
     <>
     
       <GlobalStyle/>
-      <Menu/>
+      <Menu setSearchTerm={setSearchTerm}/>
       <Container>
           {sections.map((section, index) => {
             return (
