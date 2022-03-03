@@ -1,0 +1,44 @@
+{
+    "sections": [
+        {
+            "sectionTitle": "робота",
+            "links": [
+                {
+                    "title": "робота 1",
+                    "url": "https://fontawesome.com/icons/bed?s=light",
+                    "icon": "bed"
+                },
+                {
+                    "title": "робота 2",
+                    "url": "https://fontawesome.com/icons/bed?s=light",
+                    "icon": "bed"
+                },
+                {
+                    "title": "робота 3",
+                    "url": "https://fontawesome.com/icons/bed?s=light",
+                    "icon": "bed"
+                }
+            ]
+        },
+        {
+            "sectionTitle": "Житло",
+            "links": [
+                {
+                    "title": "Житло 1",
+                    "url": "https://fontawesome.com/icons/bed?s=light",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Житло 2",
+                    "url": "https://fontawesome.com/icons/bed?s=light",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Житло 3",
+                    "url": "https://fontawesome.com/icons/bed?s=light",
+                    "icon": "bed"
+                }
+            ]
+        }
+    ]
+}

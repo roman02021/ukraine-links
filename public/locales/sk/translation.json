@@ -1,0 +1,44 @@
+{
+    "sections": [
+        {
+            "sectionTitle": "Praca",
+            "links": [
+                {
+                    "title": "Praca 1",
+                    "url": "https://fontawesome.com/icons/bed?s=light",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Praca 2",
+                    "url": "https://fontawesome.com/icons/bed?s=light",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Praca 3",
+                    "url": "https://fontawesome.com/icons/bed?s=light",
+                    "icon": "bed"
+                }
+            ]
+        },
+        {
+            "sectionTitle": "Ubytovanie",
+            "links": [
+                {
+                    "title": "Ubytovanie 1",
+                    "url": "https://fontawesome.com/icons/bed?s=light",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Ubytovanie 2",
+                    "url": "https://fontawesome.com/icons/bed?s=light",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Ubytovanie 3",
+                    "url": "https://fontawesome.com/icons/bed?s=light",
+                    "icon": "bed"
+                }
+            ]
+        }
+    ]
+}

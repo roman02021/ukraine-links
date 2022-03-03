@@ -1,7 +1,11 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import styled from 'styled-components'
 import Container from '../components/Container'
+import AsyncSelect from 'react-select/async';
 import theme from '../theme';
+import SearchBar from '../components/SearchBar';
+import { useTranslation } from 'react-i18next';
+import Select from 'react-select'
 
 const StyledMenu = styled.nav`
     display:flex;
@@ -17,31 +21,50 @@ const StyledMenu = styled.nav`
 const StyledMenuItem = styled.a`
     text-decoration: none;
     display: inline-block;
-    padding: 1rem;
     color: ${theme.colors.secondary};
-    /* transition: background .1s ease-in; */
+    transition: text-shadow .2s ease-in; 
+    &:not(:first-child){
+        padding: 1rem;
+    }
     &:not(:last-child){
         margin-right: 1rem;
     }
     &:hover {
-        background: rgba(255, 255, 255, 0.05);
+        text-shadow: 2px 2px 10px #00000040;
     }
 `
+const selectOptions = [
+    { value: 'ua', label: 'український' },
+    { value: 'sk', label: 'Slovenčina' },
+    { value: 'en', label: 'English' }
+  ]
 
 
 const Menu = () => {
-  return (
-    <StyledMenu>
-        <Container fullWidth horizontal align='center'>
-            <StyledMenuItem href="#urad">
-                Urady
-            </StyledMenuItem>
-            <StyledMenuItem href="#ubytovanie">
-                Ubytovanie
-            </StyledMenuItem>
-        </Container>
-    </StyledMenu>
-  )
+    const { t, i18n } = useTranslation();
+    const [sections, setSections] = useState([]);
+
+    
+    // i18n.store.data.translation.sections.map(section => console.log(section));
+    
+    const handleLanguageChange = (e) =>{
+        i18n.changeLanguage(e.value);
+    }
+
+    useEffect(()=>{
+        setSections(i18n.t('sections', {returnObjects: true}))
+    }, [i18n.language])
+    return (
+        <StyledMenu>
+            <Container fullWidth horizontal align='between'>
+                <div>
+                    {sections.map(section => <StyledMenuItem href="#urad">{section.sectionTitle}</StyledMenuItem>)}
+                </div>
+                <SearchBar/>
+                <Select options={selectOptions} onChange={handleLanguageChange} defaultValue={i18n.language} isSearchable={false} placeholder={selectOptions.filter(option => option.value === i18n.language)[0].label} value={i18n.language}   />
+            </Container>
+        </StyledMenu>
+    )
 }
 
 export default Menu;

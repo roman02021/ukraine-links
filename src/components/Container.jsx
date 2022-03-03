@@ -7,7 +7,7 @@ const StyledContainer = styled.section`
     display: flex;
     padding: 0 1.5rem;
     ${(props) => props.fullWidth ? 'width: 100%' : ''};
-    justify-content: ${((props) => props.align === 'center' ? 'center' : props.align === 'left' ? 'left' : 'right')};
+    justify-content: ${((props) => props.align === 'center' ? 'center' : props.align === 'left' ? 'left' : props.align === 'right' ? 'right' : 'space-between')};
     flex-direction: ${(props) => props.horizontal ? 'row' : 'column'};
 `
 
