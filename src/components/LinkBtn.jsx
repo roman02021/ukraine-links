@@ -24,7 +24,7 @@ const StyledIcon = styled(FontAwesomeIcon)`
 
 function LinkBtn({link, text, icon}) {
   return (
-    <StyledBtnLink href={link}>
+    <StyledBtnLink href={link} target="_blank" rel="noopener noreferrer">
       <StyledIcon icon={['fas', icon]} />
       {text}
       {/* &nbsp;

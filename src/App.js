@@ -19,6 +19,7 @@ const Loader = () => (
 function App() {
   const {t, i18n } = useTranslation();
   const [sections, setSections] = useState([]);
+  const [filteredSections, setFilteredSections] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   
 
@@ -26,31 +27,33 @@ function App() {
   useEffect(()=>{
     setSections(i18n.t('sections', {returnObjects: true}))
   }, [i18n.language])
-
   useEffect(()=>{
-    // if(searchTerm !== null || searchTerm !== ''){
-    //   setSections(sections.map(section => ({
-    //     ...section,
-    //     links: section.links.filter(link => link.title.includes(searchTerm)
-    //   })));
-    // }
-    // else {
-    //   setSections(i18n.t('sections', {returnObjects: true}))
-    // }
-
-  }, [searchTerm])
-
+    console.log('haloaaaaaaaaaaaaaa')
+    setSections(i18n.t('sections', {returnObjects: true}))
+    // setFilteredSections(sections);
+  }, [])
+  useEffect(() => {
+    setFilteredSections(sections);
+  }, [sections])
+  useEffect(()=>{
+    if(searchTerm !== null || searchTerm !== ''){
+      setFilteredSections(sections.map(section => {
+        const filteredLinks = section.links.filter(link => link.title.toLowerCase().includes(searchTerm.toLowerCase()));
+        return {sectionTitle: section.sectionTitle, icon: section.icon, links: filteredLinks};
+      }).filter(section => section.links.length > 0));
+    }
+  }, [searchTerm, sections])
   return (
     <>
     
       <GlobalStyle/>
       <Menu setSearchTerm={setSearchTerm}/>
       <Container>
-          {sections.map((section, index) => {
+          {filteredSections.map((section, index) => {
             return (
             <LinkSection>
               <Heading text={section.sectionTitle} id={section.sectionTitle} icon={section.icon} key={section.sectionTitle}/>
-              {section.links.map((link, index) => <LinkBtn text={link.title} link={link.url} icon={link.icon} key={link.url}></LinkBtn>)}
+              {section.links.map((link, index) => <LinkBtn text={link.title} link={link.url} icon={link.icon} key={link.title}></LinkBtn>)}
             </LinkSection>)
           })}
       </Container>

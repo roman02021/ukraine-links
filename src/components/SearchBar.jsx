@@ -8,6 +8,9 @@ const StyledSearchBar = styled.input`
     outline: none;
     border: none;
     height: 36px;
+    font-size: 1rem;
+    padding: 0 0.5rem;
+    font-family: Inter, Helvetica, Sans-Serif;
     &:focus {
         
     }
