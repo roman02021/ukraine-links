@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import Container from './components/Container';
 import Heading from './components/Heading';
 import { useTranslation } from 'react-i18next';
+import LinkSection from './components/LinkSection';
 import Menu from './components/Menu';
 
 const Loader = () => (
@@ -18,7 +19,6 @@ const Loader = () => (
 function App() {
   const {t, i18n } = useTranslation();
   const [sections, setSections] = useState([]);
-  console.log(sections);
 
 
   useEffect(()=>{
@@ -33,10 +33,10 @@ function App() {
       <Container>
           {sections.map((section, index) => {
             return (
-            <section>
+            <LinkSection>
               <Heading text={section.sectionTitle} id={section.sectionTitle} icon={section.icon} key={section.sectionTitle}/>
               {section.links.map((link, index) => <LinkBtn text={link.title} link={link.url} icon={link.icon} key={link.url}></LinkBtn>)}
-            </section>)
+            </LinkSection>)
           })}
       </Container>
     
