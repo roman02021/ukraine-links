@@ -31,9 +31,13 @@ function App() {
       <GlobalStyle/>
       <Menu/>
       <Container>
-          {sections.map((section, index) => <Heading text={section.sectionTitle} id={section.sectionTitle} icon={section.icon} key={index}/>)}
-
-          {sections.map((section, index) => section.links.map(link => <LinkBtn text={link.title} link={link.url} icon={link.icon} key={index}></LinkBtn>))}
+          {sections.map((section, index) => {
+            return (
+            <section>
+              <Heading text={section.sectionTitle} id={section.sectionTitle} icon={section.icon} key={section.sectionTitle}/>
+              {section.links.map((link, index) => <LinkBtn text={link.title} link={link.url} icon={link.icon} key={link.url}></LinkBtn>)}
+            </section>)
+          })}
       </Container>
     
     </>
