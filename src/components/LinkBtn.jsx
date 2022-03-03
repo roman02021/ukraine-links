@@ -22,15 +22,15 @@ const StyledIcon = styled(FontAwesomeIcon)`
   margin-right: 1rem;
 `;
 
-function LinkBtn({link, skText, uaText, icon}) {
+function LinkBtn({link, text, icon}) {
   return (
     <StyledBtnLink href={link}>
-      <StyledIcon icon={icon} />
-      {uaText}
-      &nbsp;
+      <StyledIcon icon={['fas', icon]} />
+      {text}
+      {/* &nbsp;
       -
       &nbsp;
-      {skText}
+      {skText} */}
     </StyledBtnLink>
   )
 }

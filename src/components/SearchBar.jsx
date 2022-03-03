@@ -6,7 +6,7 @@ const StyledSearchBar = styled.input`
     border-radius: ${theme.radius.normal};
     outline: none;
     border: none;
-    margin: 0.5rem 0;
+    height: 36px;
     &:focus {
         
     }
@@ -15,7 +15,7 @@ const StyledSearchBar = styled.input`
 const SearchBar = () => {
   return (
     <StyledSearchBar type="search" placeholder='пошук'>
-
+        
     </StyledSearchBar>
   )
 }

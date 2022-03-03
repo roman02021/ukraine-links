@@ -13,9 +13,9 @@ const StyledIcon = styled(FontAwesomeIcon)`
 `;
 
 
-const Heading = ({uaText, skText, id, icon}) => {
+const Heading = ({text, id, icon}) => {
   return (
-    <StyledHeading id={id}><StyledIcon icon={icon} />{uaText}</StyledHeading>
+    <StyledHeading id={id}><StyledIcon icon={['fas', icon]} />{text}</StyledHeading>
   )
 }
 
