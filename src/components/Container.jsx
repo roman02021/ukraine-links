@@ -4,13 +4,19 @@ import styled from 'styled-components'
 const StyledContainer = styled.section`
     max-width: 800px;
     margin: 0 auto;
+    display: flex;
     padding: 0 1.5rem;
+    ${(props) => props.fullWidth ? 'width: 100%' : ''};
+    justify-content: ${((props) => props.align === 'center' ? 'center' : props.align === 'left' ? 'left' : 'right')};
+    flex-direction: ${(props) => props.horizontal ? 'row' : 'column'};
 `
 
-const Container = ({children}) => {
+const Container = ({children, fullWidth, align, horizontal}) => {
+  console.log("AAAAAAA", align)
   return (
-    <StyledContainer>{children}</StyledContainer>
+    <StyledContainer fullWidth={fullWidth} align={align} horizontal={horizontal}>{children}</StyledContainer>
   )
 }
+
 
 export default Container;

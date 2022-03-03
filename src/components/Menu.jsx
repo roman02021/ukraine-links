@@ -32,7 +32,7 @@ const StyledMenuItem = styled.a`
 const Menu = () => {
   return (
     <StyledMenu>
-        <Container>
+        <Container fullWidth horizontal align='center'>
             <StyledMenuItem href="#urad">
                 Urady
             </StyledMenuItem>
