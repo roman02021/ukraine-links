@@ -10,6 +10,7 @@ const StyledSearchBar = styled.input`
     height: 36px;
     font-size: 1rem;
     padding: 0 0.5rem;
+    width: 200px;
     font-family: Inter, Helvetica, Sans-Serif;
     &:focus {
         
