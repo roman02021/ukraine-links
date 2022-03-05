@@ -1,11 +1,11 @@
 import React from 'react'
-import styled from 'styled-components';
+import styled, {useTheme} from 'styled-components';
 import theme from '../theme';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const StyledHeading = styled.h2`
-    color: ${theme.colors.secondary};
+    color: ${props => props.theme.secondary};
     font-weight: bold;
 `
 const StyledIcon = styled(FontAwesomeIcon)`
@@ -14,8 +14,11 @@ const StyledIcon = styled(FontAwesomeIcon)`
 
 
 const Heading = ({text, id, icon}) => {
+
+  const theme = useTheme();
+
   return (
-    <StyledHeading id={id}><StyledIcon icon={['fas', icon]} />{text}</StyledHeading>
+    <StyledHeading id={id}>{icon && <StyledIcon icon={['fas', icon]} />}{text}</StyledHeading>
   )
 }
 

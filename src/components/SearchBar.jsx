@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import theme from '../theme';
 import { useTranslation } from 'react-i18next';
+import {variables} from '../theme/index';
 
 const StyledSearchBar = styled.input`
-    border-radius: ${theme.radius.normal};
+    border-radius: ${variables.radius.normal};
     outline: none;
     border: none;
     height: 36px;

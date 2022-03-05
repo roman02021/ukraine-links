@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledContainer = styled.section`
-    max-width: 800px;
+    max-width: ${props => handleSize(props.size)};
     margin: 0 auto;
     display: flex;
     padding: 0 1.5rem;
@@ -13,11 +13,22 @@ const StyledContainer = styled.section`
     align-items: ${((props) => props.align === 'center' ? 'center' : props.align === 'left' ? 'left' : props.align === 'right' ? 'right' : 'space-between')};
 `
 
-const Container = ({children, fullWidth, align, horizontal, justify}) => {
+const Container = ({children, fullWidth, align, horizontal, justify, size}) => {
 
   return (
-    <StyledContainer fullWidth={fullWidth} align={align} horizontal={horizontal} justify={justify}>{children}</StyledContainer>
+    <StyledContainer fullWidth={fullWidth} align={align} horizontal={horizontal} justify={justify} size={size}>{children}</StyledContainer>
   )
+}
+
+const handleSize = widthOption => {
+  switch(widthOption) {
+      case 'sm':
+          return '400px';
+      case 'md': 
+          return '600px';
+      default:
+          return '800px';
+  }
 }
 
 

@@ -1,14 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
-import theme from './index';
+
 
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background: ${theme.colors.primary};
+    background: ${props => props.theme.primary};
     font-family: Inter, Helvetica, Sans-Serif;
     scroll-behavior: smooth;
+    box-sizing: border-box;
   }
 `;
- 
+
 export default GlobalStyle;

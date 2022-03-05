@@ -1,16 +1,16 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, {useTheme} from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import theme from '../theme';
+import {variables} from '../theme';
 
 const StyledBtnLink = styled.a`
-    color: black;
-    background-color: ${theme.colors.secondary};
+    color: ${props => props.theme.textSecondary};
+    background-color: ${props => props.theme.secondary};
     padding: 1rem;
     text-decoration: none;
     display: block;
-    border-radius: ${theme.radius.normal};
+    border-radius: ${variables.radius.normal};
     margin: 1rem 0;
     transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     z-index: 0;
@@ -23,6 +23,10 @@ const StyledIcon = styled(FontAwesomeIcon)`
 `;
 
 function LinkBtn({link, text, icon}) {
+
+
+  const theme = useTheme();
+
   return (
     <StyledBtnLink href={link} target="_blank" rel="noopener noreferrer">
       <StyledIcon icon={['fas', icon]} />
