@@ -1,6 +1,6 @@
-import React, { Suspense, useState, useEffect, useContext, createContext } from 'react';
+import React, { Suspense, useState, useEffect} from 'react';
 import LinkBtn from './components/LinkBtn.jsx';
-import { faBed } from '@fortawesome/free-solid-svg-icons'
+
 import GlobalStyle from './theme/globalStyle';
 import styled, {ThemeProvider} from 'styled-components';
 import Container from './components/Container';
@@ -10,6 +10,7 @@ import LinkSection from './components/LinkSection';
 import Menu from './components/Menu';
 import Form from './components/Form';
 import Group from './components/Group';
+import Accordion from './components/Accordion';
 import {colorTheme} from './theme/index';
 
 
@@ -53,7 +54,6 @@ function App() {
     }
   }, [searchTerm, sections])
 
-  console.log(filteredSections.length);
   return (
     <ThemeProvider theme={colorTheme[theme]}>
         <GlobalStyle/>
@@ -67,6 +67,7 @@ function App() {
               </LinkSection>)
             }) : <Heading text='No links found'></Heading>}
         </Container>
+        <Accordion items={[{title: "title 1", content: "content 1"}, {title: "title 2", content: "content 2 ifsiaifaif iasi fiasi asifia sif iasi isai aisi isai isaif sai"}]}/>
         <Form/>
     </ThemeProvider>
   );
