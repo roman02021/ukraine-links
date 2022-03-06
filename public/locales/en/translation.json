@@ -6,18 +6,28 @@
             "icon": "coffee",
             "links": [
                 {
-                    "title": "Job 1",
+                    "title": "Rabotaveu - facebook",
                     "url": "https://www.facebook.com/groups/rabotaveu",
                     "icon": "bed"
                 },
                 {
-                    "title": "Job 2",
-                    "url": "https://fontawesome.com/icons/bed?s=light",
+                    "title": "ISTP",
+                    "url": "https://www.istp.sk/volne-pracovne-miesta",
                     "icon": "bed"
                 },
                 {
-                    "title": "Job 3",
-                    "url": "https://fontawesome.com/icons/bed?s=light",
+                    "title": "Profesia",
+                    "url": "https://www.profesia.sk/",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Growni",
+                    "url": "https://growni.sk/jobs",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Ponukampracu",
+                    "url": "https://www.ponukampracu.sk/",
                     "icon": "bed"
                 }
             ]
@@ -27,21 +37,112 @@
             "icon": "coffee",
             "links": [
                 {
-                    "title": "Lodging 1",
-                    "url": "https://fontawesome.com/icons/bed?s=light",
+                    "title": "Looking for accommodation",
+                    "url": "https://forms.office.com/r/UDAvkvqMcv",
                     "icon": "bed"
                 },
                 {
-                    "title": "Lodging 2",
-                    "url": "https://fontawesome.com/icons/bed?s=light",
+                    "title": "I offer accommodation for refugees from Ukraine",
+                    "url": "https://forms.office.com/r/48SQSTx00S",
                     "icon": "bed"
                 },
                 {
-                    "title": "Lodging 3",
-                    "url": "https://fontawesome.com/icons/bed?s=light",
+                    "title": "Accommodation for refugees from Ukraine",
+                    "url": "https://www.facebook.com/groups/273172384894123/?multi_permalinks=275388361339192&notif_id=1645898976042375&notif_t=group_highlights&ref=notif",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Accommodation for refugees from Ukraine 2",
+                    "url": "https://ktopomozeukrajine.sk/?fbclid=IwAR2cTTHFiyqKL6kVpnUbjKriq7HwBbdoXWlLtQGqao9zIRYPYOEqdqER7XA",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Accommodation for refugees from Ukraine",
+                    "url": "https://pomocpreukrajinu.sk",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Camp Zilina",
+                    "url": "https://www.facebook.com/groups/campzilina",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Hybsky house",
+                    "url": "https://hybskydom.sk/?fbclid=IwAR20Vhm-IRPbfeLkOXnSwLA5k3a7I_VRw30q2ddIqN0E7_Lbd24NI7un7Ys",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Hlohovec hospital",
+                    "url": "https://www.facebook.com/NemocnicaHlohovec/posts/486270003036931",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Accommodation Piestany",
+                    "url": "https://www.pnky.sk/aktuality/rehabilitacne-stredisko-v-piestanoch-poskytne-ubytovanie-ukrajinskym-rodinam-s-detmi-s-postihnutim/?fbclid=IwAR13QENazbhH0thseMnDORCHaj3bspXS3eS-7Gb_WXwAITfHeni78sIWLZc",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Accommodation STU",
+                    "url": "https://www.facebook.com/univerzita/posts/10159769834519743",
                     "icon": "bed"
                 }
             ]
-        }
+        },
+        {
+            "sectionTitle": "Slovak language",
+            "icon": "coffee",
+            "links": [
+                {
+                    "title": "Slovak course volis",
+                    "url": "https://www.volis.sk/kurzy/slovencina/",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Slovak course ihbratislava",
+                    "url": "https://www.ihbratislava.sk/sk/ostatne-jazyky/slovencina-pre-cudzincov",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Slovak course mic.iom",
+                    "url": "https://www.mic.iom.sk/sk/sk-bubles/318-kurzy-a-vzdelavanie.html ",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Slovak course bcskola",
+                    "url": "https://www.bcskola.sk/Slovak-courses/ ",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Online Slovak course mic.iom",
+                    "url": "https://www.mic.iom.sk/ru/s-ci-lin/br-z-v-ni/499-2017-09-20-11-57-29.html ",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Online Slovak course mic.iom",
+                    "url": "https://slovake.eu/sk",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Online Slovak course Learn Slovak with Stories",
+                    "url": "https://www.youtube.com/channel/UCUPgmAhUy6NkMxzRTmks55w",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Online Slovak course Learn Slovak",
+                    "url": "https://www.youtube.com/watch?v=cFj8mqH07-Y",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Ukrainian fairy tales",
+                    "url": "https://drive.google.com/file/d/1_VMlASM9GciRe3bV-AcgfE6pwSvsP1dx/view?fbclid=IwAR20JOUkPo7x7ShRaD8E8md6iOs3I67aBDzrI-2sS_bMi-y9y_f1KYNx3Yo",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Dictionary",
+                    "url": "https://slovniky.lingea.sk/ukrajinsko-slovensky?fbclid=IwAR3l8UHAYroInZyy1bRNBTDX4c_IcaH0wm6qXquN_JVAGlgPXUh9-ILZXSQ",
+                    "icon": "bed"
+                }
+            ]
+        },
     ]
 }
