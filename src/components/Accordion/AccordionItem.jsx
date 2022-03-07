@@ -1,72 +1,72 @@
-import React, {useState, useRef, useEffect} from 'react'
+import React, {useState, useRef, useEffect, useLayoutEffect} from 'react'
 import styled from 'styled-components'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import {variables} from '../../theme';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { t } from 'i18next';
 
 
-const Heading = styled.h2`
-  border: 1px solid #ddd;
-  background: rebeccapurple;
-  color: white;
-  padding: 15px;
-  margin-bottom: 0;
-`;
-
-const Content = styled.div`
-  border: 1px solid gray;
-  border-top: none;
-  max-height: ${(props) => (props.open ? "100%" : "0")};
-  overflow: hidden;
-  padding: ${(props) => (props.open ? "15px" : "0 15px")};
-  transition: all 0.3s;
-  
-  p {
-    margin: 0;
-  }
-`;
-
 const StyledAccordionItem = styled.li`
-     transition: all 0.3s;
-    
+    margin: 1rem 0;
+    padding: 0;
+    list-style: none;
+
 `
 
 const StyledAccordionButton = styled.button`
-    
-`
-const StyledAccordionContent = styled.div`
-  border: 1px solid gray;
-  border-top: none;
-  max-height: ${(props) => (props.open ? "100%" : "0")};
-  overflow: hidden;
-  padding: ${(props) => (props.open ? "15px" : "0 15px")};
+  border: 1px solid #ddd;
+  background: ${props => props.theme.secondary};
+  color: ${props => props.theme.textSecondary};
+  width: 100%;
+  border-radius: ${variables.radius.normal};
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-family: ${variables.fontFamily};
   transition: all 0.3s;
-   
+  font-size: 1rem;
+  &:hover {
+      transform: scale(1.02);
+    }
+`
+
+const StyledAccordionContent = styled.div`
+  border-top: none;
+  max-height: ${(props) => (props.isOpen || !props.loaded ? `${props.contentHeight}px` : "0px")};
+  opacity: ${(props) => (props.isOpen ? "1" : "0")};
+  overflow: hidden;
+  padding: ${(props) => (props.isOpen ? "15px" : "0 15px")};
+  transition: all 0.3s;
+  color: ${props => props.theme.text};
 `
 
 const AccordionItem = ({title, content}) => {
 
     const contentRef = useRef(null);
-    const [isOpen, setIsOpen] = useState(false);
-    const [open, setOpen] = useState(false);
-    const [contentHeight, setContentHeight] = useState(0);
-
-
+    const [loaded, setLoaded] = useState(false);
 
     
+    const [height, setHeight] = useState(0);
+    const [isOpen, setIsOpen] = useState(false);
+    const [open, setOpen] = useState(false);
+
+
+    useEffect(()=>{
+      setHeight(contentRef.current.clientHeight);
+      setLoaded(true);
+    
+    },[])
 
   return (
-    <StyledAccordionItem >
-    <div>
-        <Heading onClick={() => setOpen(!open)}>Click me to open</Heading>
-        <Content open={open}>
-          <p>Consider me opened!</p>
-        </Content>
-      </div>
-        <StyledAccordionButton onClick={() => setIsOpen(!isOpen)}>{title}
-            <FontAwesomeIcon icon={faChevronDown}/>
+    <StyledAccordionItem>
+        <StyledAccordionButton onClick={(e) => setIsOpen(!isOpen)}>
+          {title}
+            <FontAwesomeIcon icon={!isOpen ? faChevronDown : faChevronUp}/>
         </StyledAccordionButton>
-        <StyledAccordionContent isOpen={isOpen} contentHeight={contentHeight}>{content}</StyledAccordionContent>
+        <StyledAccordionContent ref={contentRef} isOpen={isOpen} loaded={loaded} contentHeight={height}>
+            {content}
+        </StyledAccordionContent>
     </StyledAccordionItem>
   )
 }

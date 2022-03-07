@@ -5,13 +5,13 @@ import AccordionItem from './AccordionItem';
 
 
 const StyledAccordion = styled.ul`
-    
+    margin: 0;
+    padding: 0;
 `
 
 
 const Accordion = ({items}) => {
 
-    
 
 
     return (

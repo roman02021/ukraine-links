@@ -98,6 +98,9 @@ const Box = styled.div`
     display: flex;
     justify-content: flex-end;
 `
+const StyledLogo = styled.img`
+    height: 60px;
+`
 const StyledMobileMenu = styled.div`
 
     background-color: ${props => props.theme.primary}75;
@@ -170,6 +173,7 @@ const Menu = ({setSearchTerm, setTheme}) => {
             </StyledMobileMenu>}
             
             <StyledMenu>
+                <StyledLogo src="./icon.png" alt="logo"/>
                 <Group fullHeight align="center" horizontal>
                     {sections && sections.map((section, index) => <StyledMenuItem href={`#${section.sectionTitle.toLowerCase()}`} key={index}>{section.sectionTitle}</StyledMenuItem>)}
                 </Group>
