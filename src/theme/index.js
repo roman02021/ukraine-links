@@ -60,10 +60,6 @@ export const variables = {
         none: '0'
     },
     fontFamily: 'Inter, Helvetica, Sans-Serif',
-    spacing: {
-        sm: '1.5rem',
-        md: '2.5rem',
-        lg: '3rem',
-        none: '0'
-    }
+
 }
+
