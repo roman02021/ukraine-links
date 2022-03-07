@@ -20,16 +20,28 @@ export const colorTheme = {
     },
     light: {
         primary: '#ffffff',
-        secondary: '#015CBF',
+        secondary: '#FED600',
         text: '#000000',
-        textSecondary: '#FED600'
+        textSecondary: '#000'
+    },
+    lightInverted: {
+        primary: '#ffffff',
+        secondary: '#015CBF',
+        text: '#FED600',
+        textSecondary: '#fff'
     },
     dark: {
-        primary: '#000',
+        primary: '#202124',
         secondary: '#015CBF',
-        text: '#FFF',
+        text: '#000',
+        textSecondary: '#fff'
+    },
+    darkInverted: {
+        primary: '#202124',
+        secondary: '#FED600',
+        text: '#fff',
         textSecondary: '#000'
-    }
+    },
 }
 export const variables = {
     radius: {
@@ -48,4 +60,6 @@ export const variables = {
         none: '0'
     },
     fontFamily: 'Inter, Helvetica, Sans-Serif',
+
 }
+

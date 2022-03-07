@@ -6,7 +6,6 @@ import TextArea from './TextArea';
 import Grid from './Grid';
 import GridItem from './GridItem';
 import Container from './Container';
-import Row from './Row';
 import emailjs from '@emailjs/browser';
 
 const StyledForm = styled.form`
@@ -40,7 +39,7 @@ const Form = () => {
           <GridItem width={6}><Input label="Name"/></GridItem>
           <GridItem width={6}><Input label="Name"/></GridItem>
           <GridItem width={12}><TextArea label="Message" name="message"/></GridItem>
-          <GridItem width={12} justify="right"><Button text="Halo"/></GridItem>
+          <GridItem width={12} justify="right"><Button text="Send"/></GridItem>
         </Grid>
       </StyledForm>
     </Container>
