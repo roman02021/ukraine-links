@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const StyledHeading = styled.h2`
     color: ${props => props.theme.secondary};
     font-weight: bold;
+    padding-top: 86px;
+    margin-top: -70px;
 `
 const StyledIcon = styled(FontAwesomeIcon)`
   margin-right: 1rem;

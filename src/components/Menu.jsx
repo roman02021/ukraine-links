@@ -2,7 +2,7 @@ import React, {useState, useEffect, useContext} from 'react'
 import styled, {useTheme} from 'styled-components'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faXmark, faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { useMediaQuery } from 'react-responsive'
 import Group from './Group';
 import SearchBar from '../components/SearchBar';
@@ -19,11 +19,8 @@ const StyledMenu = styled.nav`
     max-width: 800px;
     margin: 0 auto;
     
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(16px);
     align-items: center;
     top: 0;
-    position: sticky;
     padding: 0 1.5rem;
     z-index: 10;
     height: 60px;
@@ -34,10 +31,11 @@ const StyledMenu = styled.nav`
 const StyledMenuItem = styled.a`
     text-decoration: none;
     display: block;
-    color: ${props => props.theme.secondary};
+    box-sizing: border-box;
+    /* color: ${props => props.theme.secondary}; */
     transition: text-shadow .2s ease-in; 
     margin: auto 0;
-
+    color: ${props => props.theme.textSecondary};
     &:not(:first-child){
         padding: 0 1rem;
     }
@@ -58,8 +56,10 @@ const StyledMenuItem = styled.a`
     }
 `
 const StyledMenuBackground = styled.div`
-    background-color: ${props => props.theme.primary}75;
+background-color: ${props => props.theme.secondary};
+    
     position: sticky;
+    background-color: ${props => props.theme.primary}75;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(16px);
     position: sticky;
@@ -82,8 +82,6 @@ const StyledMobileMenuContainer = styled.div`
     max-width: 800px;
     margin: 0 auto;
     background-color: ${props => props.theme.primary}75;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(16px);
     align-items: center;
     top: 0;
     position: sticky;
@@ -95,6 +93,59 @@ const StyledMobileMenuContainer = styled.div`
         display: flex;
     }
 `
+const StyledDropdownAnchor = styled.a`
+    color: ${props => props.theme.secondary};
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    height: 100%;
+    align-items:center;
+
+`
+const StyledDropdownOptions = styled.div`
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    left: 0;
+    top: 100%;
+    border-radius: ${variables.radius.normal};
+    background-color: ${props => props.theme.secondary};
+    position: absolute;
+    /* z-index: 10;
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px); */
+    
+`
+const StyledDropdown = styled.div`
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    max-width: 200px;
+    
+    width: fit-content;
+    &:hover {
+        ${StyledDropdownOptions} {
+            display: flex;
+            
+        }
+        ${StyledMenuItem}{
+            margin: 0;
+            padding: .75rem;
+            width: 100%;
+            
+        }
+    }
+`
+
+const StyledDropdownIcon = styled(FontAwesomeIcon)`
+    margin-left: 0.5rem;
+    
+    ${StyledMenuItem} {
+        display: none;
+    }
+`
 const Box = styled.div`
     width: 50px;
     display: flex;
@@ -104,10 +155,8 @@ const StyledLogo = styled(Logo)`
     height: 60px;
 `
 const StyledMobileMenu = styled.div`
-
+    display: none;
     background-color: ${props => props.theme.primary}75;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(16px);
     width: 100%;
     box-sizing: border-box;
     position: sticky;
@@ -130,8 +179,9 @@ const selectOptions = [
 
 const Menu = ({setSearchTerm, setTheme}) => {
     const { t, i18n } = useTranslation();
-    const [sections, setSections] = useState(null);
+    const [sections, setSections] = useState([]);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isHovering, setIsHovering] = useState(false)
     const [mobileMenuHeight, setMoibleMenuHeight] = useState(false);
 
 
@@ -142,7 +192,7 @@ const Menu = ({setSearchTerm, setTheme}) => {
     const handleLanguageChange = (e) =>{
         i18n.changeLanguage(e.value);
     }
-
+    console.log(sections);
     const handleThemeChange = (e) =>{
         setTheme(e.value);
     }
@@ -189,7 +239,13 @@ const Menu = ({setSearchTerm, setTheme}) => {
             <StyledMenu>
                 {/* <StyledLogo/> */}
                 <Group fullHeight align="center" horizontal>
-                    {sections && sections.map((section, index) => <StyledMenuItem href={`#${section.sectionTitle.toLowerCase()}`} key={index}>{section.sectionTitle}</StyledMenuItem>)}
+                {sections && sections.length < 4 ? sections.map((section, index) => <StyledMenuItem href={`#${section.sectionTitle.toLowerCase()}`} onClick={()=>setIsMenuOpen(false)} key={index}>{section.sectionTitle}</StyledMenuItem>) : <StyledDropdown>
+                    <StyledDropdownAnchor>Section<StyledDropdownIcon icon={faChevronDown}></StyledDropdownIcon>
+                    </StyledDropdownAnchor>
+                    <StyledDropdownOptions>
+                        {sections.map((section, index) => <StyledMenuItem href={`#${section.sectionTitle.toLowerCase()}`} onClick={()=>setIsMenuOpen(false)} key={index}>{section.sectionTitle}</StyledMenuItem>)}
+                    </StyledDropdownOptions>
+                </StyledDropdown>}
                 </Group>
                 <SearchBar setSearchTerm={setSearchTerm} />
                 
