@@ -7,26 +7,26 @@ export const deviceSizes = {
 
 export const colorTheme = {
     saturated: {
-        primary: '#015CBF',
-        secondary: '#FED600',
+        primary: '#669DD8',
+        secondary: '#FEEA7F',
         text: '#FFFFFF',
         textSecondary: '#000000'
     },
     inverted: {
-        primary: '#FED600',
-        secondary: '#015CBF',
+        primary: '#FEEA7F',
+        secondary: '#669DD8',
         text: '#000000',
         textSecondary: '#FFFFFF'
     },
     light: {
         primary: '#ffffff',
-        secondary: '#015CBF',
+        secondary: '#669DD8',
         text: '#000000',
-        textSecondary: '#FED600'
+        textSecondary: '#FEEA7F'
     },
     dark: {
         primary: '#000',
-        secondary: '#015CBF',
+        secondary: '#4D8CD2',
         text: '#FFF',
         textSecondary: '#000'
     }
