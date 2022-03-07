@@ -154,6 +154,11 @@
                     "icon": "bed"
                 },
                 {
+                    "title": "Contacts and questions",
+                    "url": "https://ua.gov.sk",
+                    "icon": "bed"
+                },
+                {
                     "title": "Ministry of the Interior - callcenter",
                     "url": "https://www.minv.sk/?tlacove-spravy-6&sprava=ministerstvo-vnutra-zriadilo-infolinky-pre-ukrajinsky-hovoriace-osoby&fbclid=IwAR30ZVrFA5vs8o8sXuLkFsNIxfch4Ow2phQt4vAA0BUzjlY_zBawjJmiXpE",
                     "icon": "bed"
@@ -176,6 +181,11 @@
                 {
                     "title": "SITUATION IN UKRAINE - INFORMATION AND ASSISTANCE",
                     "url": "https://www.minv.sk/?ukraine-information-assistance&fbclid=IwAR2djt7EojgdTsXrO-qKWoSk8yAt75lAWYIDt7tNp3h_32oh8yJO0dKuedM",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Relocation Options for Ukrainians",
+                    "url": "https://docs.google.com/document/d/1ebXPKnF_krrfkpjF4dHKhJ3YYzYVpg8w-JAG91yLxdc/edit?fbclid=IwAR1BBDr-bOOtxzidYFSfGujCfTsxEV79xjCst27gd_wCUmciUTkBFtofvDw#",
                     "icon": "bed"
                 }
             ]
@@ -237,6 +247,239 @@
                 {
                     "title": "Public transport  Banska Bystrica",
                     "url": "https://imhd.sk/bb/cestovne-poriadky ",
+                    "icon": "bed"
+                }
+            ]
+        },
+        {
+            "sectionTitle": "School",
+            "icon": "coffee",
+            "links": [
+                {
+                    "title": "Organization - Who will help Ukraine",
+                    "url": "https://ktopomozeukrajine.sk/ ",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Organization - Scouts",
+                    "url": "https://sluzba.skauting.sk/ ",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Organization - Psychologists",
+                    "url": "https://ipcko.sk ",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Organization - Slovak Academy of Sciences",
+                    "url": "https://www.sav.sk/?lang=sk&doc=services-news&source_no=20&news_no=10197&fbclid=IwAR37ucykGAVsnyYFebOnVkwXlCWHhMuX1prbuqOkwu97W54nL2J--rRmPfA ",
+                    "icon": "bed"
+                },
+                {
+                    "title": "About Education in Slovakia",
+                    "url": "https://slovenske-skolstvo.estranky.sk/clanky/rozdelenie-skol-na-slovensku.html ",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Study in Slovakia. Student residence permit. Universities, schools in Slovakia",
+                    "url": "https://www.facebook.com/groups/593554104318745",
+                    "icon": "bed"
+                },
+                {
+                    "title": "TRAINING FOR SLOVAK",
+                    "url": "https://www.instagram.com/bodka_sk/",
+                    "icon": "bed"
+                },
+                {
+                    "title": "FREE SLOVAK LANGUAGE COURSES",
+                    "url": "https://www.instagram.com/p/CakF5JSgCQ8/",
+                    "icon": "bed"
+                }
+            ]
+        },
+        {
+            "sectionTitle": "Psychologists and doctors",
+            "icon": "coffee",
+            "links": [
+                {
+                    "title": "Dentists in Slovakia",
+                    "url": "https://stomatolog.help/?fbclid=IwAR0eBQiPKVS_WICBGbBBacacU7RJvnmwcy3a1aQwLZAnikocVmeiqyRB9p8",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Psychologists",
+                    "url": "http://volunteer.terapiya.space/?fbclid=IwAR1zTr5sqIlsMk1wGr3vpwSPLOJwvgChMvUDT61_cDEzRzX2qSju6ob15Xo",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Opened humanitarian corners",
+                    "url": "https://www.instagram.com/p/CawNOOSAPbA/?utm_medium=copy_link&fbclid=IwAR25S2PM6fr2V3n6_paZuNc3pWJ1wfIvyTFWRj-pJxHYCHK6G-i06ZgUgCg",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Slovak Red Cross",
+                    "url": "https://redcross.sk/ukrajina/",
+                    "icon": "bed"
+                }
+            ]
+        },
+        {
+            "sectionTitle": "About the war",
+            "icon": "coffee",
+            "links": [
+                {
+                    "title": "RUSSIAN INVASION OF UKRAINE INTERACTIVE MAP",
+                    "url": "https://newsmap.pl/2022-russian-invasion-of-ukraine-interactive-map/",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Application - threat warning",
+                    "url": "https://apps.apple.com/ua/app/%D1%94%D1%82%D1%80%D0%B8%D0%B2%D0%BE%D0%B3%D0%B0/id1611921749?l=ru",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Name list of Russian soldiers",
+                    "url": "https://invaders-rf.com/",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Where people saw the Russian army, videos and photos",
+                    "url": "https://t.me/stop_russian_war_bot?fbclid=IwAR0_-vuOS3Xl4kKMEXVded_Ffiz2U_HVFx7yJ5NZh0FfSeQJohC9igeWvpI",
+                    "icon": "bed"
+                },
+                {
+                    "title": "General info among the people of Ukraine",
+                    "url": "https://t.me/nashiludisk?fbclid=IwAR0E2StVhSCfQWJl2l9e-Jxi1S65u4ZQLvApHh6FtdO5iEm8RSLSx1NHXWo",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Lost people",
+                    "url": "https://t.me/poshuk_znyklyh?fbclid=IwAR2HY5iF2apUwVe42EkIPUMZDl-_bCw3G8qqVY1blLvu6YDx88Yzr780PfU",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Evacuation",
+                    "url": "https://helppeople.taplink.ws/",
+                    "icon": "bed"
+                }
+            ]
+        },
+        {
+            "sectionTitle": "Interpersonal communication in the EU",
+            "icon": "coffee",
+            "links": [
+                {
+                    "title": "How to behave in the EU, human rights",
+                    "url": "https://www.facebook.com/watch/?v=732566261058805",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Scammers warning",
+                    "url": "https://www.facebook.com/ministerstvovnutraSR/posts/328132822676790",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Code of conduct",
+                    "url": "https://docs.google.com/document/d/1fDWrJw2P9GWVKK0dD5W9cvcQD7Fd7gmlft5oHukFpY0/edit",
+                    "icon": "bed"
+                }
+            ]
+        },
+        {
+            "sectionTitle": "Food delivery - bolt, wolt, bistro",
+            "icon": "coffee",
+            "links": [
+                {
+                    "title": "Bistro.sk",
+                    "url": "https://www.bistro.sk/?gclid=CjwKCAiApfeQBhAUEiwA7K_UH8DopfgJy2hVOMzZVBDPmIvNkJgIBbWRfNUMAeEKD_VtS6f6LsDstxoCEPIQAvD_BwE ",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Wolt",
+                    "url": "https://wolt.com/sk/svk/bratislava?utm_source=google&utm_medium=cpc&utm_term=wolt&utm_campaign=SVK_Web_FTU_Search_Brand_Bratislava_SK&gclid=CjwKCAiApfeQBhAUEiwA7K_UH9gJ6OmObwcTmrRW8znH601Q2yrfleGcNYugflzLO0mxGyAiMyI63hoCVAUQAvD_BwE ",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Food Panda",
+                    "url": "https://www.foodpanda.sk/?gclid=CjwKCAiApfeQBhAUEiwA7K_UH5vboZcSJldEs7QrHodCkjrsRVdOou-EJwDrYiiRvGsT6Gx_cZoW0hoC7ukQAvD_BwE ",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Bolt Food",
+                    "url": "https://food.bolt.eu/sk-sk ",
+                    "icon": "bed"
+                }
+            ]
+        },
+        {
+            "sectionTitle": "Volunteering",
+            "icon": "coffee",
+            "links": [
+                {
+                    "title": "Volunteering for Slovaks",
+                    "url": "https://growni.sk/dobrovolnictvo/dobrovolnicke-projekty/0Ej4wlZXQrZfYnuBJ6tm?fbclid=IwAR1LZnCUvF0Ku5_zPqkY5dXcvRSZJXdw6qIowdcB_VwM-CI559spBgfCggIhttps://www.facebook.com/groups/2900734023550379/permalink/2904739483149833/",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Volunteering for Ukrainians in Ukraine",
+                    "url": "https://t.me/VolunteerTalks?fbclid=IwAR0KxZvwAaXZ3qvS8C9Bs3HtoKfCE5g4SHM1CvCbUDFDdz2a3VG2806aB20",
+                    "icon": "bed"
+                },
+                {
+                    "title": "AID FOR UKRAINIAN FAMILIES WITH CHILDREN AND THEIR ANIMALS",
+                    "url": "https://www.facebook.com/groups/2900734023550379/",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Slovakia for all",
+                    "url": "https://www.facebook.com/groups/735592026478288/?hoisted_section_header_type=recently_seen&multi_permalinks=5114722771898503",
+                    "icon": "bed"
+                }
+            ]
+        },
+        {
+            "sectionTitle": "Call centers",
+            "icon": "coffee",
+            "links": [
+                {
+                    "title": "Poland",
+                    "url": "https://dopomoga-in.pl/pl/",
+                    "icon": "bed"
+                },
+                {
+                    "title": "International",
+                    "url": "https://www.facebook.com/groups/511575240308436/",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Czechia",
+                    "url": "https://www.nasiukrajinci.cz/?fbclid=IwAR02BM8jJeCQk4ku-__wia-Yo1Mu6WgC_jP0UCALfFUqxmgR100FYXf4EaQ",
+                    "icon": "bed"
+                },
+                {
+                    "title": "International - Help for refugees from Ukraine",
+                    "url": "https://www.facebook.com/groups/485314373128655/?hoisted_section_header_type=recently_seen&multi_permalinks=491449605848465",
+                    "icon": "bed"
+                }
+            ]
+        },
+        {
+            "sectionTitle": "How to help?",
+            "icon": "coffee",
+            "links": [
+                {
+                    "title": "ČESMAD Slovakia",
+                    "url": "https://www.mindop.sk/schema-pomoci/schema-statnej-pomoci-pre-autosektor/otazky-a-odpovede/skvza ",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Humanitarian aid branch",
+                    "url": "https://novaposhta.ua/",
+                    "icon": "bed"
+                },
+                {
+                    "title": "Special account of the NBU to raise funds",
+                    "url": "https://www.epravda.com.ua/rus/news/2022/02/25/682769/",
                     "icon": "bed"
                 }
             ]
