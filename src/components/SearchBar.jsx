@@ -10,19 +10,20 @@ const StyledSearchBar = styled.input`
     height: 36px;
     font-size: 1rem;
     padding: 0 0.5rem;
-    width: 200px;
+    margin: 0.5rem 0;
+    width: ${props => props.fullWidth ? "100%" : "200px"};
     font-family: Inter, Helvetica, Sans-Serif;
     &:focus {
         
     }
 `
 
-const SearchBar = ({setSearchTerm}) => {
+const SearchBar = ({setSearchTerm, fullWidth}) => {
 
   const { t, i18n } = useTranslation();
 
   return (
-    <StyledSearchBar type="search" placeholder={t('searchPlaceholder')} onChange={(e)=>setSearchTerm(e.currentTarget.value)}>
+    <StyledSearchBar type="search" fullWidth={fullWidth} placeholder={t('searchPlaceholder')} onChange={(e)=>setSearchTerm(e.currentTarget.value)}>
         
     </StyledSearchBar>
   )

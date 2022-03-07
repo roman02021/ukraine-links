@@ -3,12 +3,13 @@ import styled, {useTheme} from 'styled-components'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
-
+import { useMediaQuery } from 'react-responsive'
 import Group from './Group';
 import SearchBar from '../components/SearchBar';
 import { useTranslation } from 'react-i18next';
 import Select from 'react-select'
 import {variables} from '../theme/index';
+import {ReactComponent as Logo} from '../logo.svg';
 
 import {ThemeContext} from '../contexts/themeStore';
 
@@ -58,10 +59,11 @@ const StyledMenuItem = styled.a`
 `
 const StyledMenuBackground = styled.div`
     background-color: ${props => props.theme.primary}75;
-    
+    position: sticky;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(16px);
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 10;
 `
 
@@ -98,7 +100,7 @@ const Box = styled.div`
     display: flex;
     justify-content: flex-end;
 `
-const StyledLogo = styled.img`
+const StyledLogo = styled(Logo)`
     height: 60px;
 `
 const StyledMobileMenu = styled.div`
@@ -107,13 +109,9 @@ const StyledMobileMenu = styled.div`
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(16px);
     width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
     box-sizing: border-box;
-    position: absolute;
+    position: sticky;
     padding: 1rem 1.5rem;
-
 `
 const themeOptions = [
     { value: 'saturated', label: 'Saturated' },
@@ -134,6 +132,12 @@ const Menu = ({setSearchTerm, setTheme}) => {
     const { t, i18n } = useTranslation();
     const [sections, setSections] = useState(null);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [mobileMenuHeight, setMoibleMenuHeight] = useState(false);
+
+
+    const isMobile = useMediaQuery({
+        query: variables.breakpoints.tablet
+    })
 
     const handleLanguageChange = (e) =>{
         i18n.changeLanguage(e.value);
@@ -143,18 +147,26 @@ const Menu = ({setSearchTerm, setTheme}) => {
         setTheme(e.value);
     }
 
-    // useEffect(()=>{
-    // }, [currentTheme])
-
+    useEffect(()=>{
+        if(!isMobile){
+            setIsMenuOpen(false);   
+        }
+    }, [isMobile])
     useEffect(()=>{
         if(i18n){
             setSections(i18n.t('sections', {returnObjects: true}))
         }
         
     }, [i18n.language])
+
+    useEffect(()=>{
+
+    }, [])
+
     return (
         
         <StyledMenuBackground>
+
             <StyledMobileMenuContainer>
                 <Group align="center" fullWidth fullHeight horizontal>
                     <div>logo</div>
@@ -167,19 +179,19 @@ const Menu = ({setSearchTerm, setTheme}) => {
             </StyledMobileMenuContainer>
             {isMenuOpen && 
             <StyledMobileMenu >
-                <Select options={selectOptions} onChange={handleLanguageChange} defaultValue={i18n.language} isSearchable={false} placeholder={selectOptions.filter(option => option.value === i18n.language)[0].label} value={i18n.language}   />
                 <Group>
-                {sections && sections.map((section, index) => <StyledMenuItem href={`#${section.sectionTitle.toLowerCase()}`} key={index}>{section.sectionTitle}</StyledMenuItem>)}
+                {sections && sections.map((section, index) => <StyledMenuItem href={`#${section.sectionTitle.toLowerCase()}`} onClick={()=>setIsMenuOpen(false)} key={index}>{section.sectionTitle}</StyledMenuItem>)}
                 </Group>
-                <SearchBar setSearchTerm={setSearchTerm}/>
+                <Select options={selectOptions} onChange={handleLanguageChange} defaultValue={i18n.language} isSearchable={false} placeholder={selectOptions.filter(option => option.value === i18n.language)[0].label} value={i18n.language}   />
+                <SearchBar setSearchTerm={setSearchTerm} fullWidth/>
             </StyledMobileMenu>}
             
             <StyledMenu>
-                <StyledLogo src="./icon.png" alt="logo"/>
+                {/* <StyledLogo/> */}
                 <Group fullHeight align="center" horizontal>
                     {sections && sections.map((section, index) => <StyledMenuItem href={`#${section.sectionTitle.toLowerCase()}`} key={index}>{section.sectionTitle}</StyledMenuItem>)}
                 </Group>
-                <SearchBar setSearchTerm={setSearchTerm}/>
+                <SearchBar setSearchTerm={setSearchTerm} />
                 
                 <Select options={selectOptions} onChange={handleLanguageChange} defaultValue={i18n.language} isSearchable={false} placeholder={selectOptions.filter(option => option.value === i18n.language)[0].label} value={i18n.language}   />
                 <Select options={themeOptions} onChange={handleThemeChange} defaultValue={i18n.language} placeholder="Theme" isSearchable={false}/>

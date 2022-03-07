@@ -70,14 +70,21 @@ function App() {
             }) : <Heading text='No links found'></Heading>}
         </Container>
         <Container>
+          <Heading text="FAQ"/>
             <Accordion items={[{title: "title 1", content: "content 1"}, {title: "title 2", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eleifend rhoncus odio in lobortis. Duis laoreet posuere dolor sed mattis. Aenean lectus elit, scelerisque a pulvinar in, tincidunt ac tortor. Nunc nec pellentesque nisi. Mauris at metus ac risus porta vulputate. Aliquam eu purus nec diam egestas finibus quis commodo felis. Morbi auctor rhoncus lorem, a consectetur magna viverra ut. Vivamus rutrum nulla sed augue interdum sodales. Ut magna magna, hendrerit at egestas vel, dignissim vel ex. Nunc nibh urna, sagittis ac aliquet non, feugiat non dolor. Aliquam cursus eros ullamcorper risus accumsan venenatis. Duis a dolor et nulla tempor fermentum. Vivamus aliquet nisi viverra mauris vehicula bibendum."}]}/>
         </Container>
-        <Container justify='center' horizontal>
+        <Container align='center'>
+          <Heading text="Posts"/>
           <MetaPost url="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Femefka.sk%2Fposts%2F1995912470620050&show_text=true&width=500"/>
+          
         </Container>
-        <Form/>
+        <Container align='center'>
+          <Heading text="Form"/>
+          <Form/>
+        </Container>
     </ThemeProvider>
   );
 }
 
 export default App;
+
