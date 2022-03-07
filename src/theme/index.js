@@ -8,7 +8,7 @@ export const deviceSizes = {
 export const colorTheme = {
     saturated: {
         primary: '#669DD8',
-        secondary: '#FEEA7F',
+        secondary: '#ffdf36',
         text: '#FFFFFF',
         textSecondary: '#000000'
     },
