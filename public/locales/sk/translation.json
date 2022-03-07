@@ -1,47 +1,488 @@
 {
     "searchPlaceholder": "Hľadať...",
     "sections": [
-        {
-            "sectionTitle": "Praca",
-            "icon": "coffee",
-            "links": [
-                {
-                    "title": "Praca 1",
-                    "url": "https://fontawesome.com/icons/bed?s=light",
-                    "icon": "bed"
-                },
-                {
-                    "title": "Praca 2",
-                    "url": "https://fontawesome.com/icons/bed?s=light",
-                    "icon": "bed"
-                },
-                {
-                    "title": "Praca 3",
-                    "url": "https://fontawesome.com/icons/bed?s=light",
-                    "icon": "bed"
-                }
-            ]
-        },
-        {
-            "sectionTitle": "Ubytovanie",
-            "icon": "coffee",
-            "links": [
-                {
-                    "title": "Ubytovanie 1",
-                    "url": "https://fontawesome.com/icons/bed?s=light",
-                    "icon": "bed"
-                },
-                {
-                    "title": "Ubytovanie 2",
-                    "url": "https://fontawesome.com/icons/bed?s=light",
-                    "icon": "bed"
-                },
-                {
-                    "title": "Ubytovanie 3",
-                    "url": "https://fontawesome.com/icons/bed?s=light",
-                    "icon": "bed"
-                }
-            ]
-        }
+      {
+          "sectionTitle": "Práca",
+          "icon": "coffee",
+          "links": [
+              {
+                  "title": "Rabotaveu - facebook",
+                  "url": "https://www.facebook.com/groups/rabotaveu",
+                  "icon": "bed"
+              },
+              {
+                  "title": "ISTP",
+                  "url": "https://www.istp.sk/volne-pracovne-miesta",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Profesia",
+                  "url": "https://www.profesia.sk/",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Growni",
+                  "url": "https://growni.sk/jobs",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Ponukampracu",
+                  "url": "https://www.ponukampracu.sk/",
+                  "icon": "bed"
+              }
+          ]
+      },
+      {
+          "sectionTitle": "Ubytovanie",
+          "icon": "coffee",
+          "links": [
+              {
+                  "title": "Hľadám ubytovanie",
+                  "url": "https://forms.office.com/r/UDAvkvqMcv",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Ponúkam ubytovanie",
+                  "url": "https://forms.office.com/r/48SQSTx00S",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Ubytovanie pre utečencov z Ukrajiny",
+                  "url": "https://www.facebook.com/groups/273172384894123/?multi_permalinks=275388361339192&notif_id=1645898976042375&notif_t=group_highlights&ref=notif",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Ubytovanie pre utečencov z Ukrajiny 2",
+                  "url": "https://ktopomozeukrajine.sk/?fbclid=IwAR2cTTHFiyqKL6kVpnUbjKriq7HwBbdoXWlLtQGqao9zIRYPYOEqdqER7XA",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Ubytovanie pre utečencov z Ukrajiny 3",
+                  "url": "https://pomocpreukrajinu.sk",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Camp Žilina",
+                  "url": "https://www.facebook.com/groups/campzilina",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Hybský dom",
+                  "url": "https://hybskydom.sk/?fbclid=IwAR20Vhm-IRPbfeLkOXnSwLA5k3a7I_VRw30q2ddIqN0E7_Lbd24NI7un7Ys",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Nemocnica Hlohovec",
+                  "url": "https://www.facebook.com/NemocnicaHlohovec/posts/486270003036931",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Ubytovanie Piešťany",
+                  "url": "https://www.pnky.sk/aktuality/rehabilitacne-stredisko-v-piestanoch-poskytne-ubytovanie-ukrajinskym-rodinam-s-detmi-s-postihnutim/?fbclid=IwAR13QENazbhH0thseMnDORCHaj3bspXS3eS-7Gb_WXwAITfHeni78sIWLZc",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Ubytovanie STU",
+                  "url": "https://www.facebook.com/univerzita/posts/10159769834519743",
+                  "icon": "bed"
+              }
+          ]
+      },
+      {
+          "sectionTitle": "Slovenský jazyk",
+          "icon": "coffee",
+          "links": [
+              {
+                  "title": "Kurz slovenčiny volis",
+                  "url": "https://www.volis.sk/kurzy/slovencina/",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Kurz slovenčiny ihbratislava",
+                  "url": "https://www.ihbratislava.sk/sk/ostatne-jazyky/slovencina-pre-cudzincov",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Kurz slovenčiny mic.iom",
+                  "url": "https://www.mic.iom.sk/sk/sk-bubles/318-kurzy-a-vzdelavanie.html ",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Kurz slovenčiny bcskola",
+                  "url": "https://www.bcskola.sk/Slovak-courses/ ",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Online kurz slovenčiny mic.iom",
+                  "url": "https://www.mic.iom.sk/ru/s-ci-lin/br-z-v-ni/499-2017-09-20-11-57-29.html ",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Online kurz slovenčiny slovake",
+                  "url": "https://slovake.eu/sk",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Online kurz slovenčiny Learn Slovak with Stories",
+                  "url": "https://www.youtube.com/channel/UCUPgmAhUy6NkMxzRTmks55w",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Online kurz slovenčiny Learn Slovak",
+                  "url": "https://www.youtube.com/watch?v=cFj8mqH07-Y",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Ukrajinské rozprávky",
+                  "url": "https://drive.google.com/file/d/1_VMlASM9GciRe3bV-AcgfE6pwSvsP1dx/view?fbclid=IwAR20JOUkPo7x7ShRaD8E8md6iOs3I67aBDzrI-2sS_bMi-y9y_f1KYNx3Yo",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Slovník",
+                  "url": "https://slovniky.lingea.sk/ukrajinsko-slovensky?fbclid=IwAR3l8UHAYroInZyy1bRNBTDX4c_IcaH0wm6qXquN_JVAGlgPXUh9-ILZXSQ",
+                  "icon": "bed"
+              }
+          ]
+      },
+      {
+          "sectionTitle": "Offices, forms, official and general information",
+          "icon": "coffee",
+          "links": [
+              {
+                  "title": "Ministerstvo vnútra - ako a kde požiadať o dočasné útočisko",
+                  "url": "https://www.facebook.com/ministerstvovnutraSR/posts/329426835880722",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Kontakty a otázky",
+                  "url": "https://ua.gov.sk",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Ministerstvo vnútra - callcentrum",
+                  "url": "https://www.minv.sk/?tlacove-spravy-6&sprava=ministerstvo-vnutra-zriadilo-infolinky-pre-ukrajinsky-hovoriace-osoby&fbclid=IwAR30ZVrFA5vs8o8sXuLkFsNIxfch4Ow2phQt4vAA0BUzjlY_zBawjJmiXpE",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Slovenská advokátska komora - právna pomoc",
+                  "url": "https://www.linkedin.com/posts/sak-sk_vytvorili-sme-nov%C3%A9-odborn%C3%A9-zameranie-pre-activity-6904148973288771584-Fclk/",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Dočasné útočisko a zdravotná starostlivosť pre Ukrajincov",
+                  "url": "https://www.akmv.sk/docasne-utocisko-a-zdravotna-starostlivost-pre-ukrajincov/?fbclid=IwAR2caUBqMI5pspbB63Y_dmNEwWVXPuP3X0S1CfK5xJsD06CzO7vDVM8Oa8s",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Zákaz cestovať do zahraničia: ktorý z mužov nepodlieha obmedzeniam",
+                  "url": "https://pmg.ua/life/105343-zaborona-na-vyizd-za-kordon-kogo-z-cholovikiv-ne-stosuyutsya-obmezhennya?fbclid=IwAR0JzyHcGYT6ZSSt6InMUsaNV33IZsO9dxXRSbVL4Yh19UHZfNSzh8osVNk",
+                  "icon": "bed"
+              },
+              {
+                  "title": "SITUÁCIA NA UKRAJINE - INFORMÁCIE A POMOC",
+                  "url": "https://www.minv.sk/?ukraine-information-assistance&fbclid=IwAR2djt7EojgdTsXrO-qKWoSk8yAt75lAWYIDt7tNp3h_32oh8yJO0dKuedM",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Možnosti premiestnenia pre Ukrajincov",
+                  "url": "https://docs.google.com/document/d/1ebXPKnF_krrfkpjF4dHKhJ3YYzYVpg8w-JAG91yLxdc/edit?fbclid=IwAR1BBDr-bOOtxzidYFSfGujCfTsxEV79xjCst27gd_wCUmciUTkBFtofvDw#",
+                  "icon": "bed"
+              }
+          ]
+      },
+      {
+          "sectionTitle": "Transport",
+          "icon": "coffee",
+          "links": [
+              {
+                  "title": "Slovensko - vlaky, autobusy, MHD",
+                  "url": "https://cp.hnonline.sk/en/vlakbusmhd/spojenie/ ",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Železnice SR",
+                  "url": "https://www.zssk.sk/en/ ",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Cestovanie na Ukrajine z do (pre utečencov)",
+                  "url": "https://www.ukrainenow.org/refuge?fbclid=IwAR09Me5cLkZe07JoWIQ1-VaAaQZbOXIpOtwuAQCdIGsBu6s3-a-d3ciIj4A",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Z Ukrajiny do Európy",
+                  "url": "https://docs.google.com/document/u/0/d/1kIlr8pHM-fNUAfAE0ll38GZdz11Wibt-FKmFi6gMFE4/mobilebasic?fbclid=IwAR3KyfcbFTY0FmIHQpXbOgJgIqX_CwM0_1EZb8igPY6s6Kc5IjD7xZTHTB8",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Jazdiť za utečencami",
+                  "url": "https://sites.google.com/view/drive-for-refugees/domovsk%C3%A1-str%C3%A1nka?fbclid=IwAR1O1sH88FC5PJA7PzMb6O71kWBgEigXDZOVvWDd5Py86nPaSme8_NwuCaY",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Letecká preprava",
+                  "url": "https://www.businessinsider.com/wizz-air-offering-100000-free-seats-fleeing-ukrainian-refugees-russia-2022-3?utm_medium=social&utm_campaign=sf-bi-main&utm_source=facebook.com&fbclid=IwAR0p7_u4ecpY0sTO8ec3KyWIHfLuGhVIC6qWJRh8w5y6egTEn0pjdaUFzmA",
+                  "icon": "bed"
+              },
+              {
+                  "title": "MHD Bratislava",
+                  "url": "https://imhd.sk/ba/cestovne-poriadky",
+                  "icon": "bed"
+              },
+              {
+                  "title": "MHD Košice",
+                  "url": "https://imhd.sk/ke/cestovne-poriadky",
+                  "icon": "bed"
+              },
+              {
+                  "title": "MHD Prešov",
+                  "url": "https://imhd.sk/po/mhd",
+                  "icon": "bed"
+              },
+              {
+                  "title": "MHD Žilina",
+                  "url": "https://www.dpmz.sk/",
+                  "icon": "bed"
+              },
+              {
+                  "title": "MHD  Banská Bystrica",
+                  "url": "https://imhd.sk/bb/cestovne-poriadky ",
+                  "icon": "bed"
+              }
+          ]
+      },
+      {
+          "sectionTitle": "Škola",
+          "icon": "coffee",
+          "links": [
+              {
+                  "title": "Organizácia - Kto pomôže Ukrajine",
+                  "url": "https://ktopomozeukrajine.sk/ ",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Organizácia - Skauti",
+                  "url": "https://sluzba.skauting.sk/ ",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Organizácia - Psychológovia",
+                  "url": "https://ipcko.sk ",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Organizácia - Slovenská akadémia vied",
+                  "url": "https://www.sav.sk/?lang=sk&doc=services-news&source_no=20&news_no=10197&fbclid=IwAR37ucykGAVsnyYFebOnVkwXlCWHhMuX1prbuqOkwu97W54nL2J--rRmPfA ",
+                  "icon": "bed"
+              },
+              {
+                  "title": "O školstve na Slovensku",
+                  "url": "https://slovenske-skolstvo.estranky.sk/clanky/rozdelenie-skol-na-slovensku.html ",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Štúdium na Slovensku. Povolenie na pobyt študenta. Univerzity, školy na Slovensku",
+                  "url": "https://www.facebook.com/groups/593554104318745",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Cvičenie Slovenčiny",
+                  "url": "https://www.instagram.com/bodka_sk/",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Kurzy slovenčiny zadarmo",
+                  "url": "https://www.instagram.com/p/CakF5JSgCQ8/",
+                  "icon": "bed"
+              }
+          ]
+      },
+      {
+          "sectionTitle": "Psychológovia a lekári",
+          "icon": "coffee",
+          "links": [
+              {
+                  "title": "Zubní lekári na Slovensku",
+                  "url": "https://stomatolog.help/?fbclid=IwAR0eBQiPKVS_WICBGbBBacacU7RJvnmwcy3a1aQwLZAnikocVmeiqyRB9p8",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Psychológovia",
+                  "url": "http://volunteer.terapiya.space/?fbclid=IwAR1zTr5sqIlsMk1wGr3vpwSPLOJwvgChMvUDT61_cDEzRzX2qSju6ob15Xo",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Otvorené humanitárne centrá",
+                  "url": "https://www.instagram.com/p/CawNOOSAPbA/?utm_medium=copy_link&fbclid=IwAR25S2PM6fr2V3n6_paZuNc3pWJ1wfIvyTFWRj-pJxHYCHK6G-i06ZgUgCg",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Slovenský červený kríž",
+                  "url": "https://redcross.sk/ukrajina/",
+                  "icon": "bed"
+              }
+          ]
+      },
+      {
+          "sectionTitle": "O vojne",
+          "icon": "coffee",
+          "links": [
+              {
+                  "title": "INTERAKTÍVNA MAPA RUSKEJ INVÁZIE NA UKRAJINE",
+                  "url": "https://newsmap.pl/2022-russian-invasion-of-ukraine-interactive-map/",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Aplikácia - varovanie pred hrozbou",
+                  "url": "https://apps.apple.com/ua/app/%D1%94%D1%82%D1%80%D0%B8%D0%B2%D0%BE%D0%B3%D0%B0/id1611921749?l=ru",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Menný zoznam ruských vojakov",
+                  "url": "https://invaders-rf.com/",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Kde ľudia videli ruskú armádu, videá a fotografie",
+                  "url": "https://t.me/stop_russian_war_bot?fbclid=IwAR0_-vuOS3Xl4kKMEXVded_Ffiz2U_HVFx7yJ5NZh0FfSeQJohC9igeWvpI",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Všeobecné informácie medzi obyvateľmi Ukrajiny",
+                  "url": "https://t.me/nashiludisk?fbclid=IwAR0E2StVhSCfQWJl2l9e-Jxi1S65u4ZQLvApHh6FtdO5iEm8RSLSx1NHXWo",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Stratení ľudia",
+                  "url": "https://t.me/poshuk_znyklyh?fbclid=IwAR2HY5iF2apUwVe42EkIPUMZDl-_bCw3G8qqVY1blLvu6YDx88Yzr780PfU",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Evakuácia",
+                  "url": "https://helppeople.taplink.ws/",
+                  "icon": "bed"
+              }
+          ]
+      },
+      {
+          "sectionTitle": "Medziľudská komunikácia v EÚ",
+          "icon": "coffee",
+          "links": [
+              {
+                  "title": "Ako sa správať v EÚ, ľudské práva",
+                  "url": "https://www.facebook.com/watch/?v=732566261058805",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Varovanie pred podvodníkmi",
+                  "url": "https://www.facebook.com/ministerstvovnutraSR/posts/328132822676790",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Zásady správania sa",
+                  "url": "https://docs.google.com/document/d/1fDWrJw2P9GWVKK0dD5W9cvcQD7Fd7gmlft5oHukFpY0/edit",
+                  "icon": "bed"
+              }
+          ]
+      },
+      {
+          "sectionTitle": "Donáška jedla - bolt, wolt, bistro",
+          "icon": "coffee",
+          "links": [
+              {
+                  "title": "Bistro.sk",
+                  "url": "https://www.bistro.sk/?gclid=CjwKCAiApfeQBhAUEiwA7K_UH8DopfgJy2hVOMzZVBDPmIvNkJgIBbWRfNUMAeEKD_VtS6f6LsDstxoCEPIQAvD_BwE ",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Wolt",
+                  "url": "https://wolt.com/sk/svk/bratislava?utm_source=google&utm_medium=cpc&utm_term=wolt&utm_campaign=SVK_Web_FTU_Search_Brand_Bratislava_SK&gclid=CjwKCAiApfeQBhAUEiwA7K_UH9gJ6OmObwcTmrRW8znH601Q2yrfleGcNYugflzLO0mxGyAiMyI63hoCVAUQAvD_BwE ",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Food Panda",
+                  "url": "https://www.foodpanda.sk/?gclid=CjwKCAiApfeQBhAUEiwA7K_UH5vboZcSJldEs7QrHodCkjrsRVdOou-EJwDrYiiRvGsT6Gx_cZoW0hoC7ukQAvD_BwE ",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Bolt Food",
+                  "url": "https://food.bolt.eu/sk-sk ",
+                  "icon": "bed"
+              }
+          ]
+      },
+      {
+          "sectionTitle": "Dobrovoľníctvo",
+          "icon": "coffee",
+          "links": [
+              {
+                  "title": "Dobrovoľníctvo pre Slovákov",
+                  "url": "https://growni.sk/dobrovolnictvo/dobrovolnicke-projekty/0Ej4wlZXQrZfYnuBJ6tm?fbclid=IwAR1LZnCUvF0Ku5_zPqkY5dXcvRSZJXdw6qIowdcB_VwM-CI559spBgfCggIhttps://www.facebook.com/groups/2900734023550379/permalink/2904739483149833/",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Dobrovoľníctvo pre Ukrajincov na Ukrajine",
+                  "url": "https://t.me/VolunteerTalks?fbclid=IwAR0KxZvwAaXZ3qvS8C9Bs3HtoKfCE5g4SHM1CvCbUDFDdz2a3VG2806aB20",
+                  "icon": "bed"
+              },
+              {
+                  "title": "POMOC PRE UKRAJINSKÉ RODINY S DEŤMI A ICH ZVIERATKAMI",
+                  "url": "https://www.facebook.com/groups/2900734023550379/",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Slovensko pre všetkých",
+                  "url": "https://www.facebook.com/groups/735592026478288/?hoisted_section_header_type=recently_seen&multi_permalinks=5114722771898503",
+                  "icon": "bed"
+              }
+          ]
+      },
+      {
+          "sectionTitle": "Call centrá",
+          "icon": "coffee",
+          "links": [
+              {
+                  "title": "Poľsko",
+                  "url": "https://dopomoga-in.pl/pl/",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Medzinárodné",
+                  "url": "https://www.facebook.com/groups/511575240308436/",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Česko",
+                  "url": "https://www.nasiukrajinci.cz/?fbclid=IwAR02BM8jJeCQk4ku-__wia-Yo1Mu6WgC_jP0UCALfFUqxmgR100FYXf4EaQ",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Medzinárodné - pomoc pre utečencov z Ukrajiny",
+                  "url": "https://www.facebook.com/groups/485314373128655/?hoisted_section_header_type=recently_seen&multi_permalinks=491449605848465",
+                  "icon": "bed"
+              }
+          ]
+      },
+      {
+          "sectionTitle": "Ako pomôcť?",
+          "icon": "coffee",
+          "links": [
+              {
+                  "title": "ČESMAD Slovensko",
+                  "url": "https://www.mindop.sk/schema-pomoci/schema-statnej-pomoci-pre-autosektor/otazky-a-odpovede/skvza ",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Pobočka humanitárnej pomoci",
+                  "url": "https://novaposhta.ua/",
+                  "icon": "bed"
+              },
+              {
+                  "title": "Osobitný účet NBÚ na získanie finančných prostriedkov",
+                  "url": "https://www.epravda.com.ua/rus/news/2022/02/25/682769/",
+                  "icon": "bed"
+              }
+          ]
+      }
     ]
 }
