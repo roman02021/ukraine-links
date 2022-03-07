@@ -14,8 +14,9 @@ const StyledAccordionItem = styled.li`
 `
 
 const StyledAccordionButton = styled.button`
-  border: 1px solid #ddd;
   background: ${props => props.theme.secondary};
+  outline: none;
+  border: none;
   color: ${props => props.theme.textSecondary};
   width: 100%;
   border-radius: ${variables.radius.normal};

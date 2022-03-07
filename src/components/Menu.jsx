@@ -119,7 +119,9 @@ const themeOptions = [
     { value: 'saturated', label: 'Saturated' },
     { value: 'inverted', label: 'Inverted' },
     { value: 'light', label: 'Light' },
-    { value: 'dark', label: 'Dark' }
+    { value: 'lightInverted', label: 'Light (inverted)' },
+    { value: 'dark', label: 'Dark' },
+    { value: 'darkInverted', label: 'Dark (inverted)' }
 ]
 
 const selectOptions = [

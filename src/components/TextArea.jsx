@@ -5,8 +5,8 @@ import {variables} from '../theme';
 
 const StyledTextArea = styled.textarea`
     border-radius: ${variables.radius.normal};
+    border: 1px solid ${props => props.theme.secondary};
     outline: none;
-    border: none;
     height: 36px;
     font-size: 1rem;
     padding: 0.5rem;
