@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useContext} from 'react'
 import styled, {useTheme} from 'styled-components'
-
+import Row from './Row';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark, faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { useMediaQuery } from 'react-responsive'
@@ -247,10 +247,11 @@ const Menu = ({setSearchTerm, setTheme}) => {
                     </StyledDropdownOptions>
                 </StyledDropdown>}
                 </Group>
-                <SearchBar setSearchTerm={setSearchTerm} />
-                
-                <Select options={selectOptions} onChange={handleLanguageChange} defaultValue={i18n.language} isSearchable={false} placeholder={selectOptions.filter(option => option.value === i18n.language)[0].label} value={i18n.language}   />
-                <Select options={themeOptions} onChange={handleThemeChange} defaultValue={i18n.language} placeholder="Theme" isSearchable={false}/>
+                <Row>
+                    <SearchBar setSearchTerm={setSearchTerm} />
+                    <Select options={selectOptions} onChange={handleLanguageChange} defaultValue={i18n.language} isSearchable={false} placeholder={selectOptions.filter(option => option.value === i18n.language)[0].label} value={i18n.language}   />
+                    <Select options={themeOptions} onChange={handleThemeChange} defaultValue={i18n.language} placeholder="Theme" isSearchable={false}/>
+                </Row>
             </StyledMenu>
             
         </StyledMenuBackground>

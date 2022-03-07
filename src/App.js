@@ -13,6 +13,7 @@ import Group from './components/Group';
 import Accordion from './components/Accordion';
 import MetaPost  from './components/MetaPost';
 import {colorTheme} from './theme/index';
+import Footer from './components/Footer';
 
 
 
@@ -82,6 +83,11 @@ function App() {
           <Heading text="Form"/>
           <Form/>
         </Container>
+        <Footer>
+          <Container align='center'>
+            Say no to war
+          </Container>
+        </Footer>
     </ThemeProvider>
   );
 }

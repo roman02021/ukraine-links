@@ -9,6 +9,7 @@ const StyledHeading = styled.h2`
     font-weight: bold;
     padding-top: 86px;
     margin-top: -70px;
+    pointer-events: none;
 `
 const StyledIcon = styled(FontAwesomeIcon)`
   margin-right: 1rem;

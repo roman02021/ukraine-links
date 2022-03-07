@@ -19,7 +19,7 @@ const Form = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_8t5eqev', 'template_z0kus7a', form.current, '7ALpP9Ao0xf8bSVkG')
+    emailjs.sendForm('service_mlig7wc', 'template_z0kus7a', form.current, '7ALpP9Ao0xf8bSVkG')
             .then((result) => {
               console.log(result.text);
             }).catch(e => {
