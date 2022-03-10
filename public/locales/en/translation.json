@@ -3,38 +3,38 @@
     "sections": [
         {
             "sectionTitle": "Jobs",
-            "icon": "coffee",
+            "icon": "briefcase",
             "links": [
                 {
                     "title": "Rabotaveu -  facebook",
                     "url": "https://www.facebook.com/groups/rabotaveu",
-                    "icon": "bed"
+                    "icon": "briefcase"
                 },
                 {
                     "title": "ISTP",
                     "url": "https://www.istp.sk/volne-pracovne-miesta",
-                    "icon": "bed"
+                    "icon": "briefcase"
                 },
                 {
                     "title": "Profesia",
                     "url": "https://www.profesia.sk/",
-                    "icon": "bed"
+                    "icon": "briefcase"
                 },
                 {
                     "title": "Growni",
                     "url": "https://growni.sk/jobs",
-                    "icon": "bed"
+                    "icon": "briefcase"
                 },
                 {
                     "title": "Ponukampracu",
                     "url": "https://www.ponukampracu.sk/",
-                    "icon": "bed"
+                    "icon": "briefcase"
                 }
             ]
         },
         {
             "sectionTitle": "Lodging",
-            "icon": "coffee",
+            "icon": "bed",
             "links": [
                 {
                     "title": "Looking for accommodation",
@@ -90,57 +90,57 @@
         },
         {
             "sectionTitle": "Slovak language",
-            "icon": "coffee",
+            "icon": "language",
             "links": [
                 {
                     "title": "Slovak course volis",
                     "url": "https://www.volis.sk/kurzy/slovencina/",
-                    "icon": "bed"
+                    "icon": "language"
                 },
                 {
                     "title": "Slovak course ihbratislava",
                     "url": "https://www.ihbratislava.sk/sk/ostatne-jazyky/slovencina-pre-cudzincov",
-                    "icon": "bed"
+                    "icon": "language"
                 },
                 {
                     "title": "Slovak course mic.iom",
                     "url": "https://www.mic.iom.sk/sk/sk-bubles/318-kurzy-a-vzdelavanie.html ",
-                    "icon": "bed"
+                    "icon": "language"
                 },
                 {
                     "title": "Slovak course bcskola",
                     "url": "https://www.bcskola.sk/Slovak-courses/ ",
-                    "icon": "bed"
+                    "icon": "language"
                 },
                 {
                     "title": "Online Slovak course mic.iom",
                     "url": "https://www.mic.iom.sk/ru/s-ci-lin/br-z-v-ni/499-2017-09-20-11-57-29.html ",
-                    "icon": "bed"
+                    "icon": "language"
                 },
                 {
                     "title": "Online Slovak course slovake",
                     "url": "https://slovake.eu/sk",
-                    "icon": "bed"
+                    "icon": "language"
                 },
                 {
                     "title": "Online Slovak course Learn Slovak with Stories",
                     "url": "https://www.youtube.com/channel/UCUPgmAhUy6NkMxzRTmks55w",
-                    "icon": "bed"
+                    "icon": "language"
                 },
                 {
                     "title": "Online Slovak course Learn Slovak",
                     "url": "https://www.youtube.com/watch?v=cFj8mqH07-Y",
-                    "icon": "bed"
+                    "icon": "language"
                 },
                 {
                     "title": "Ukrainian fairy tales",
                     "url": "https://drive.google.com/file/d/1_VMlASM9GciRe3bV-AcgfE6pwSvsP1dx/view?fbclid=IwAR20JOUkPo7x7ShRaD8E8md6iOs3I67aBDzrI-2sS_bMi-y9y_f1KYNx3Yo",
-                    "icon": "bed"
+                    "icon": "language"
                 },
                 {
                     "title": "Dictionary",
                     "url": "https://slovniky.lingea.sk/ukrajinsko-slovensky?fbclid=IwAR3l8UHAYroInZyy1bRNBTDX4c_IcaH0wm6qXquN_JVAGlgPXUh9-ILZXSQ",
-                    "icon": "bed"
+                    "icon": "language"
                 }
             ]
         },
