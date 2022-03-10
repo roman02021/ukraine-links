@@ -15,9 +15,12 @@ const StyledButton = styled.button`
     outline: none;
     z-index: 0;
     font-family: ${variables.fontFamily};
+    transition: all .3s;
     &:hover {
       background-color: ${props => props.theme.primary};
       border: 2px solid ${props => props.theme.secondary};
+      color: ${props => props.theme.secondary};
+      transform: scale(1.05);
     }
 `
 const Button = ({text}) => {

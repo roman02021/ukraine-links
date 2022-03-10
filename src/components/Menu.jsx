@@ -35,7 +35,7 @@ const StyledMenuItem = styled.a`
     /* color: ${props => props.theme.secondary}; */
     transition: text-shadow .2s ease-in; 
     margin: auto 0;
-    color: ${props => props.theme.textSecondary};
+    color: ${props => props.theme.secondary};
     &:not(:first-child){
         padding: 0 1rem;
     }
@@ -43,7 +43,7 @@ const StyledMenuItem = styled.a`
         margin-right: 1rem;
     }
     &:hover {
-        text-shadow: 2px 2px 10px #00000040;
+        color: ${props => props.theme.text};
     }
     @media ${variables.breakpoints.tablet} {
         padding: 1rem 0;
@@ -108,9 +108,10 @@ const StyledDropdownOptions = styled.div`
     align-items: flex-start;
     left: 0;
     top: 100%;
-    border-radius: ${variables.radius.normal};
+    border-radius: 0 0 ${variables.radius.normal} ${variables.radius.normal};
     background-color: ${props => props.theme.secondary};
     position: absolute;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     /* z-index: 10;
     -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px); */
@@ -133,7 +134,14 @@ const StyledDropdown = styled.div`
         ${StyledMenuItem}{
             margin: 0;
             padding: .75rem;
+            color: ${props => props.theme.textSecondary};
             width: 100%;
+            &:not(:last-child){
+                border-bottom: 1px solid ${props => props.theme.textSecondary};
+            }
+            &:hover {
+                color: ${props => props.theme.primary};
+            }
             
         }
     }
@@ -155,12 +163,16 @@ const StyledLogo = styled(Logo)`
     height: 60px;
 `
 const StyledMobileMenu = styled.div`
-    display: none;
     background-color: ${props => props.theme.primary}75;
     width: 100%;
     box-sizing: border-box;
     position: sticky;
     padding: 1rem 1.5rem;
+    ${StyledMenuItem}{
+        &:not(:last-child){
+            border-bottom: 1px solid ${props => props.theme.secondary};
+        }
+    }
 `
 const themeOptions = [
     { value: 'saturated', label: 'Saturated' },
@@ -192,7 +204,7 @@ const Menu = ({setSearchTerm, setTheme}) => {
     const handleLanguageChange = (e) =>{
         i18n.changeLanguage(e.value);
     }
-    console.log(sections);
+    console.log(isMenuOpen);
     const handleThemeChange = (e) =>{
         setTheme(e.value);
     }
@@ -229,11 +241,12 @@ const Menu = ({setSearchTerm, setTheme}) => {
             </StyledMobileMenuContainer>
             {isMenuOpen && 
             <StyledMobileMenu >
+                <SearchBar setSearchTerm={setSearchTerm} fullWidth/>
                 <Group>
                 {sections && sections.map((section, index) => <StyledMenuItem href={`#${section.sectionTitle.toLowerCase()}`} onClick={()=>setIsMenuOpen(false)} key={index}>{section.sectionTitle}</StyledMenuItem>)}
                 </Group>
                 <Select options={selectOptions} onChange={handleLanguageChange} defaultValue={i18n.language} isSearchable={false} placeholder={selectOptions.filter(option => option.value === i18n.language)[0].label} value={i18n.language}   />
-                <SearchBar setSearchTerm={setSearchTerm} fullWidth/>
+                
             </StyledMobileMenu>}
             
             <StyledMenu>
@@ -247,10 +260,10 @@ const Menu = ({setSearchTerm, setTheme}) => {
                     </StyledDropdownOptions>
                 </StyledDropdown>}
                 </Group>
+                <SearchBar setSearchTerm={setSearchTerm} />
                 <Row>
-                    <SearchBar setSearchTerm={setSearchTerm} />
                     <Select options={selectOptions} onChange={handleLanguageChange} defaultValue={i18n.language} isSearchable={false} placeholder={selectOptions.filter(option => option.value === i18n.language)[0].label} value={i18n.language}   />
-                    <Select options={themeOptions} onChange={handleThemeChange} defaultValue={i18n.language} placeholder="Theme" isSearchable={false}/>
+                    {/* <Select options={themeOptions} onChange={handleThemeChange} defaultValue={i18n.language} placeholder="Theme" isSearchable={false}/> */}
                 </Row>
             </StyledMenu>
             

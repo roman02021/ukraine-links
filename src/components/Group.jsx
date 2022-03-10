@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
 
 const StyledGroup = styled.div`
     height: ${props => props.fullHeight ? "100%" : "auto"};
@@ -8,11 +8,16 @@ const StyledGroup = styled.div`
     align-items: ${((props) => props.align === 'center' ? 'center' : props.align === 'start' ? 'start' : props.align === 'end' ? 'end' : 'space-between')};
     display: flex;
     width: ${(props) => props.fullWidth ? '100%' : 'auto'};
+    ${props => props.gapOrientation === "left" && css`
+      *:not(:last-child) {
+        margin-left: 1rem;
+      }
+    ` }
 `
 
-const Group = ({fullHeight, children, justify, align, horizontal, fullWidth}) => {
+const Group = ({fullHeight, children, justify, align, horizontal, fullWidth, gapOrientation, gapSize}) => {
   return (
-    <StyledGroup fullHeight={fullHeight} fullWidth={fullWidth} justify={justify} align={align} horizontal={horizontal}>{children}</StyledGroup>
+    <StyledGroup fullHeight={fullHeight} fullWidth={fullWidth} justify={justify} align={align} horizontal={horizontal} gapOrientation={gapOrientation} gapSize={gapSize}>{children}</StyledGroup>
   )
 }
 

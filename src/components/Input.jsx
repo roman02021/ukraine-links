@@ -12,6 +12,9 @@ const StyledInput = styled.input`
     padding: 0 0.5rem;
     width: 100%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     /* margin: 0.5rem; */
     font-family: ${variables.fontFamily};
     &:focus {

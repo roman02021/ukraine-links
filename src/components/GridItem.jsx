@@ -8,13 +8,14 @@ const StyledGridItem = styled.div`
     justify-content: ${props => handleJustify(props.justify)};
     align-items: ${props => handleAlign(props.align)};
     box-sizing: border-box;
+    flex-direction: ${props => props.vertical ? "column" : "row"};
     padding: ${variables.gridGap.md};
 `
 
 
-export const GridItem = ({width, justify, align, children}) => {
+export const GridItem = ({width, justify, align, children, vertical}) => {
   return (
-    <StyledGridItem width={width} justify={justify} align={align}>{children}</StyledGridItem>
+    <StyledGridItem width={width} justify={justify} align={align} vertical={vertical}>{children}</StyledGridItem>
   )
 }
 
