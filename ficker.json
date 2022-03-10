@@ -1,0 +1,139 @@
+{
+    "searchPlaceholder": "Search...",
+    "countries": [
+        {
+            "country": "Czechia",
+            "sections": [
+                {
+                    "sectionTitle": "Jobs",
+                    "icon": "coffee",
+                    "links": [
+                        {
+                            "title": "Rabotaveu - facebook",
+                            "url": "https://www.facebook.com/groups/rabotaveu",
+                            "icon": "bed"
+                        },
+                        {
+                            "title": "ISTP",
+                            "url": "https://www.istp.sk/volne-pracovne-miesta",
+                            "icon": "bed"
+                        },
+                        {
+                            "title": "Profesia",
+                            "url": "https://www.profesia.sk/",
+                            "icon": "bed"
+                        },
+                        {
+                            "title": "Growni",
+                            "url": "https://growni.sk/jobs",
+                            "icon": "bed"
+                        },
+                        {
+                            "title": "Ponukampracu",
+                            "url": "https://www.ponukampracu.sk/",
+                            "icon": "bed"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Jobs",
+                    "icon": "coffee",
+                    "links": [
+                        {
+                            "title": "Rabotaveu - facebook",
+                            "url": "https://www.facebook.com/groups/rabotaveu",
+                            "icon": "bed"
+                        },
+                        {
+                            "title": "ISTP",
+                            "url": "https://www.istp.sk/volne-pracovne-miesta",
+                            "icon": "bed"
+                        },
+                        {
+                            "title": "Profesia",
+                            "url": "https://www.profesia.sk/",
+                            "icon": "bed"
+                        },
+                        {
+                            "title": "Growni",
+                            "url": "https://growni.sk/jobs",
+                            "icon": "bed"
+                        },
+                        {
+                            "title": "Ponukampracu",
+                            "url": "https://www.ponukampracu.sk/",
+                            "icon": "bed"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "country": "Slovakia",
+            "sections": [
+                {
+                    "sectionTitle": "Pracicky",
+                    "icon": "coffee",
+                    "links": [
+                        {
+                            "title": "Rabotaveu - facebook",
+                            "url": "https://www.facebook.com/groups/rabotaveu",
+                            "icon": "bed"
+                        },
+                        {
+                            "title": "ISTP",
+                            "url": "https://www.istp.sk/volne-pracovne-miesta",
+                            "icon": "bed"
+                        },
+                        {
+                            "title": "Profesia",
+                            "url": "https://www.profesia.sk/",
+                            "icon": "bed"
+                        },
+                        {
+                            "title": "Growni",
+                            "url": "https://growni.sk/jobs",
+                            "icon": "bed"
+                        },
+                        {
+                            "title": "Ponukampracu",
+                            "url": "https://www.ponukampracu.sk/",
+                            "icon": "bed"
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Jobs",
+                    "icon": "coffee",
+                    "links": [
+                        {
+                            "title": "Rabotaveu - facebook",
+                            "url": "https://www.facebook.com/groups/rabotaveu",
+                            "icon": "bed"
+                        },
+                        {
+                            "title": "ISTP",
+                            "url": "https://www.istp.sk/volne-pracovne-miesta",
+                            "icon": "bed"
+                        },
+                        {
+                            "title": "Profesia",
+                            "url": "https://www.profesia.sk/",
+                            "icon": "bed"
+                        },
+                        {
+                            "title": "Growni",
+                            "url": "https://growni.sk/jobs",
+                            "icon": "bed"
+                        },
+                        {
+                            "title": "Ponukampracu",
+                            "url": "https://www.ponukampracu.sk/",
+                            "icon": "bed"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,5 +1,6 @@
 import React, { Suspense, useState, useEffect} from 'react';
 import LinkBtn from './components/LinkBtn.jsx';
+import ClipLoader from "react-spinners/ClipLoader";
 
 import GlobalStyle from './theme/globalStyle';
 import styled, {ThemeProvider} from 'styled-components';
@@ -16,12 +17,11 @@ import {colorTheme} from './theme/index';
 import Footer from './components/Footer';
 
 
-
+const StyledLoader = styled(ClipLoader)`
+  
+`
 const Loader = () => (
-  <div className="App">
-    
-    <div>loading...</div>
-  </div>
+<StyledLoader color="#FED600" size={150} />
 );
 
 function App() {
@@ -73,7 +73,7 @@ function App() {
         </Container>
         <Container>
           <Heading text="FAQ"/>
-            <Accordion items={[{title: "title 1", content: "content 1"}, {title: "title 2", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eleifend rhoncus odio in lobortis. Duis laoreet posuere dolor sed mattis. Aenean lectus elit, scelerisque a pulvinar in, tincidunt ac tortor. Nunc nec pellentesque nisi. Mauris at metus ac risus porta vulputate. Aliquam eu purus nec diam egestas finibus quis commodo felis. Morbi auctor rhoncus lorem, a consectetur magna viverra ut. Vivamus rutrum nulla sed augue interdum sodales. Ut magna magna, hendrerit at egestas vel, dignissim vel ex. Nunc nibh urna, sagittis ac aliquet non, feugiat non dolor. Aliquam cursus eros ullamcorper risus accumsan venenatis. Duis a dolor et nulla tempor fermentum. Vivamus aliquet nisi viverra mauris vehicula bibendum."}]}/>
+            <Accordion items={[{section: "section1", title: "title 1", content: "content 1"}, {title: "title 2", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eleifend rhoncus odio in lobortis. Duis laoreet posuere dolor sed mattis. Aenean lectus elit, scelerisque a pulvinar in, tincidunt ac tortor. Nunc nec pellentesque nisi. Mauris at metus ac risus porta vulputate. Aliquam eu purus nec diam egestas finibus quis commodo felis. Morbi auctor rhoncus lorem, a consectetur magna viverra ut. Vivamus rutrum nulla sed augue interdum sodales. Ut magna magna, hendrerit at egestas vel, dignissim vel ex. Nunc nibh urna, sagittis ac aliquet non, feugiat non dolor. Aliquam cursus eros ullamcorper risus accumsan venenatis. Duis a dolor et nulla tempor fermentum. Vivamus aliquet nisi viverra mauris vehicula bibendum."}]}/>
         </Container>
         <Container align='center'>
           <Heading text="Posts"/>

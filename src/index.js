@@ -4,10 +4,23 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './iconLibrary';
 import './i18next';
+import ClipLoader from "react-spinners/ClipLoader";
+import styled from 'styled-components';
+
+
+const StyledLoaderContainer = styled(ClipLoader)`
+
+`
+
+const Loader = () => (
+  <StyledLoaderContainer>
+    <ClipLoader color="#FED600" size={150} />
+</StyledLoaderContainer>
+);
 
 ReactDOM.render(
   <React.StrictMode>
-    <Suspense fallback={<div>LOADING</div>}>
+    <Suspense fallback={<Loader/>}>
       <App />
     </Suspense>
   </React.StrictMode>,

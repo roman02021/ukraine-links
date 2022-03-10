@@ -56,6 +56,9 @@ const Form = () => {
          if(!values.message){
           errors.message = 'Required';
          }
+         if(captchaVerified){
+           errors.recaptcha = 'Required'
+         }
          return errors;
        }}
        onSubmit={()=>console.log('hello')}
@@ -74,7 +77,7 @@ const Form = () => {
         <Grid>      
           <GridItem width={6} vertical align="top">
             <Input label="Name" name="from_name"/>
-          <ErrorMessage></ErrorMessage>
+            <ErrorMessage></ErrorMessage>
           </GridItem>
           <GridItem width={6} vertical align="top">
             <Input label="Email" type="email" name="email" onChange={handleChange}
@@ -88,12 +91,12 @@ const Form = () => {
              value={values.message}/>
              <ErrorMessage>{errors.message && touched.message && errors.message}</ErrorMessage>
           </GridItem>
-          <GridItem width={6} justify="left"><Reaptcha sitekey="6LeGksweAAAAALjr6hBAQrcvJFuI1Ub-6yBI2rCm" onVerify={onVerify} /></GridItem>
+          <GridItem width={6} vertical align="top"><Reaptcha sitekey="6LeGksweAAAAALjr6hBAQrcvJFuI1Ub-6yBI2rCm" onVerify={onVerify} />             <ErrorMessage>{errors.recaptcha && touched.recaptcha && errors.recaptcha}</ErrorMessage></GridItem>
           <GridItem width={6} justify="right"><Button type="submit"  text="Send" disabled={isSubmitting}/></GridItem>
         </Grid>
       </StyledForm>
-       )}
-       </Formik>
+      )}
+      </Formik>
     </Container>
   )
 }
