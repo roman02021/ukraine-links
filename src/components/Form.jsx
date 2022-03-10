@@ -42,9 +42,10 @@ const Form = () => {
   return (
     <Container size="md">
       <Formik
+      enableReinitialize
        initialValues={{ email: '', message: '' }}
        validate={values => {
-         const errors = {};
+        const errors = {};
          if (!values.email) {
            errors.email = 'Required';
          } else if (
@@ -52,18 +53,12 @@ const Form = () => {
          ) {
            errors.email = 'Invalid email address';
          }
-         if(!values.message) {
-           errors.message = 'Required';
+         if(!values.message){
+          errors.message = 'Required';
          }
          return errors;
        }}
-       onSubmit={(values, { setSubmitting }) => {
-         console.log('aa');
-          setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
-            setSubmitting(false);
-          }, 400);
-       }}
+       onSubmit={()=>console.log('hello')}
      >
        {({
          values,
@@ -77,21 +72,24 @@ const Form = () => {
        }) => (
       <StyledForm onSubmit={handleSubmit} ref={form}>
         <Grid>      
-          <GridItem width={6} vertical align="top"><Input label="Name" name="from_name"/>
+          <GridItem width={6} vertical align="top">
+            <Input label="Name" name="from_name"/>
           <ErrorMessage></ErrorMessage>
           </GridItem>
-          <GridItem width={6} vertical align="top"><Input label="Email" type="email" name="email" onChange={handleChange}
+          <GridItem width={6} vertical align="top">
+            <Input label="Email" type="email" name="email" onChange={handleChange}
              onBlur={handleBlur}
              value={values.email}/>
              <ErrorMessage>{errors.email && touched.email && errors.email}</ErrorMessage>
           </GridItem>
-          <GridItem width={12} vertical align="top"><TextArea label="Message" name="message" onChange={handleChange}
+          <GridItem width={12} vertical align="top">
+            <TextArea label="Message" name="message" onChange={handleChange}
              onBlur={handleBlur}
              value={values.message}/>
              <ErrorMessage>{errors.message && touched.message && errors.message}</ErrorMessage>
           </GridItem>
           <GridItem width={6} justify="left"><Reaptcha sitekey="6LeGksweAAAAALjr6hBAQrcvJFuI1Ub-6yBI2rCm" onVerify={onVerify} /></GridItem>
-          <GridItem width={6} justify="right"><Button  text="Send" disabled={isSubmitting}/></GridItem>
+          <GridItem width={6} justify="right"><Button type="submit"  text="Send" disabled={isSubmitting}/></GridItem>
         </Grid>
       </StyledForm>
        )}

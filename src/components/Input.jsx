@@ -26,15 +26,13 @@ const StyledLabel = styled.label`
   color: ${props => props.theme.secondary};
 `
 
-const Input = ({label, name}) => {
+const Input = ({label, name, onBlur, onChange, value}) => {
   return (
     <Row vertical align='start' fullWidth>
       <StyledLabel for={label}>
         {label}
       </StyledLabel>
-      <StyledInput id={label} name={name}>
-        
-
+      <StyledInput id={label} name={name} onBlur={onBlur} onChange=   {onChange} value={value}>
       </StyledInput>
     </Row>
   )

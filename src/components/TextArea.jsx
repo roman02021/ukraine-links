@@ -21,15 +21,14 @@ const StyledLabel = styled.label`
   color: ${props => props.theme.secondary};
 `
 
-const TextArea = ({label, name}) => {
+const TextArea = ({label, name, onBlur, onChange, value}) => {
   return (
     <Row vertical align='start' fullWidth>
       <StyledLabel for={label}>
         {label}
       </StyledLabel>
-      <StyledTextArea rows={5} id={label} name={name}></StyledTextArea>
+      <StyledTextArea rows={5} id={label} name={name} onBlur={onBlur} onChange={onChange} value={value}></StyledTextArea>
     </Row>
-   
   )
 }
 
