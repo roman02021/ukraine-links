@@ -31,7 +31,8 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('');
   
   const [theme, setTheme] = useState(Object.keys(colorTheme)[0]);
-
+  const date = new Date();
+  const year = date.getFullYear();
 
 
   useEffect(()=>{
@@ -85,7 +86,7 @@ function App() {
         </Container>
         <Footer>
           <Container align='center'>
-            Say no to war
+            <div>Say no to war</div> {year}
           </Container>
         </Footer>
     </ThemeProvider>

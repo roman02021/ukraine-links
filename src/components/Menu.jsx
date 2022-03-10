@@ -7,9 +7,13 @@ import { useMediaQuery } from 'react-responsive'
 import Group from './Group';
 import SearchBar from '../components/SearchBar';
 import { useTranslation } from 'react-i18next';
-import Select from 'react-select'
+import Select, {components} from 'react-select'
 import {variables} from '../theme/index';
-import {ReactComponent as Logo} from '../logo.svg';
+import logo from '../logo.png';
+import Flags from 'country-flag-icons/react/3x2'
+
+
+
 
 import {ThemeContext} from '../contexts/themeStore';
 
@@ -18,7 +22,7 @@ const StyledMenu = styled.nav`
     justify-content: space-between;
     max-width: 800px;
     margin: 0 auto;
-    
+
     align-items: center;
     top: 0;
     padding: 0 1.5rem;
@@ -56,14 +60,15 @@ const StyledMenuItem = styled.a`
     }
 `
 const StyledMenuBackground = styled.div`
-background-color: ${props => props.theme.secondary};
-    
+
     position: sticky;
     background-color: ${props => props.theme.primary}75;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(16px);
+
     position: sticky;
     top: 0;
+    padding: .5rem 0;
     z-index: 10;
 `
 
@@ -81,7 +86,7 @@ const StyledMobileMenuContainer = styled.div`
     justify-content: right;
     max-width: 800px;
     margin: 0 auto;
-    background-color: ${props => props.theme.primary}75;
+    /* background-color: ${props => props.theme.primary}75; */
     align-items: center;
     top: 0;
     position: sticky;
@@ -159,7 +164,7 @@ const Box = styled.div`
     display: flex;
     justify-content: flex-end;
 `
-const StyledLogo = styled(Logo)`
+const StyledLogo = styled.img`
     height: 60px;
 `
 const StyledMobileMenu = styled.div`
@@ -174,6 +179,22 @@ const StyledMobileMenu = styled.div`
         }
     }
 `
+const StyledOption = styled.div`
+    display: flex;
+`
+const StyledFlagUA = styled(Flags.UA)`
+    width: 20px;
+    margin-right: .5rem;
+`
+const StyledFlagSK = styled(Flags.SK)`
+    width: 20px;
+    margin-right: .5rem;
+`
+const StyledFlagGB = styled(Flags.GB)`
+    width: 20px;
+    margin-right: .5rem;
+`
+
 const themeOptions = [
     { value: 'saturated', label: 'Saturated' },
     { value: 'inverted', label: 'Inverted' },
@@ -184,9 +205,9 @@ const themeOptions = [
 ]
 
 const selectOptions = [
-    { value: 'ua', label: 'український' },
-    { value: 'sk', label: 'Slovenčina' },
-    { value: 'en', label: 'English' }
+    { value: 'ua', label: (<StyledOption><StyledFlagUA title="United States" className="..."/>український</StyledOption>) },
+    { value: 'sk', label: (<StyledOption><StyledFlagSK title="United States" className="..."/>Slovenčina</StyledOption>) },
+    { value: 'en', label: (<StyledOption><StyledFlagGB title="United States" className="..."/>English</StyledOption>) }
 ]
 
 const Menu = ({setSearchTerm, setTheme}) => {
@@ -231,7 +252,7 @@ const Menu = ({setSearchTerm, setTheme}) => {
 
             <StyledMobileMenuContainer>
                 <Group align="center" fullWidth fullHeight horizontal>
-                    <div>logo</div>
+                    <StyledLogo src={logo} alt="logo"/>
                     <Box>
                         {isMenuOpen ? 
                         <MenuIcon icon={faXmark} size="lg" isMenuOpen={isMenuOpen} onClick={()=>setIsMenuOpen(false)}></MenuIcon> 

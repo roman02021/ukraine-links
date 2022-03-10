@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, {useRef, useState} from 'react'
 import styled from 'styled-components'
 import Button from './Button';
 import Input from './Input';
@@ -19,6 +19,8 @@ const StyledForm = styled.form`
 const Form = () => {
 
   const form = useRef();
+  const [captchaVerified, setCaptchaVerified] = useState(false);
+
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -29,13 +31,10 @@ const Form = () => {
             }).catch(e => {
               console.log(e.text)
             });
-
-
-    
   };
 
   const onVerify = () => {
-    console.log('verified');
+    setCaptchaVerified(true);
   }
 
   console.log('aaa', process.env.REACT_APP_RECAPTCHA_SITE_KEY);
@@ -59,10 +58,11 @@ const Form = () => {
          return errors;
        }}
        onSubmit={(values, { setSubmitting }) => {
-         setTimeout(() => {
-           alert(JSON.stringify(values, null, 2));
-           setSubmitting(false);
-         }, 400);
+         console.log('aa');
+          setTimeout(() => {
+            alert(JSON.stringify(values, null, 2));
+            setSubmitting(false);
+          }, 400);
        }}
      >
        {({
@@ -91,7 +91,7 @@ const Form = () => {
              <ErrorMessage>{errors.message && touched.message && errors.message}</ErrorMessage>
           </GridItem>
           <GridItem width={6} justify="left"><Reaptcha sitekey="6LeGksweAAAAALjr6hBAQrcvJFuI1Ub-6yBI2rCm" onVerify={onVerify} /></GridItem>
-          <GridItem width={6} justify="right"><Button type="submit" text="Send" disabled={isSubmitting}/></GridItem>
+          <GridItem width={6} justify="right"><Button  text="Send" disabled={isSubmitting}/></GridItem>
         </Grid>
       </StyledForm>
        )}

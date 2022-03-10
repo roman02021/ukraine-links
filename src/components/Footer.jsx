@@ -4,8 +4,12 @@ import {variables} from '../theme/index'
 
 const StyledFooter = styled.footer`
     background-color: ${props => props.theme.secondary};
-    color: ${props => props.theme.text};
+    color: ${props => props.theme.textSecondary};
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
     padding: ${variables.spacing.lg};
+    margin-top: 2rem;
 `
 
 
@@ -13,13 +17,12 @@ const StyledFooter = styled.footer`
 const Footer = ({children}) => {
 
 
-    const date = new Date();
-    const time = date.getTime();
+
 
   return (
     <StyledFooter>
         {children}
-
+        
     </StyledFooter>
   )
 }
