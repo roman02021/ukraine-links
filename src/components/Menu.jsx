@@ -170,7 +170,8 @@ const Box = styled.div`
     justify-content: flex-end;
 `
 const StyledLogo = styled.img`
-    height: 60px;
+    height: 40px;
+    margin-right: 1.75rem;
 `
 const StyledMobileMenu = styled.div`
     /* background-color: ${props => props.theme.primary}75; */
@@ -200,6 +201,9 @@ const StyledFlagSK = styled(Flags.SK)`
 const StyledFlagGB = styled(Flags.GB)`
     width: 20px;
     margin-right: .5rem;
+`
+const StyledSelect = styled(Select)`
+    margin: .75rem 0;
 `
 
 const themeOptions = [
@@ -261,6 +265,7 @@ const Menu = ({setSearchTerm, setTheme}) => {
             <StyledMobileMenuContainer>
                 <Group align="center" fullWidth fullHeight horizontal>
                     <StyledLogo src={logo} alt="logo"/>
+                    <SearchBar setSearchTerm={setSearchTerm} fullWidth/>
                     <Box>
                         {isMenuOpen ? 
                         <MenuIcon icon={faXmark} size="lg" isMenuOpen={isMenuOpen} onClick={()=>setIsMenuOpen(false)}></MenuIcon> 
@@ -270,11 +275,11 @@ const Menu = ({setSearchTerm, setTheme}) => {
             </StyledMobileMenuContainer>
             {isMenuOpen && 
             <StyledMobileMenu >
-                <SearchBar setSearchTerm={setSearchTerm} fullWidth/>
+                <StyledSelect options={selectOptions}  onChange={handleLanguageChange} defaultValue={i18n.language} isSearchable={false} placeholder={selectOptions.filter(option => option.value === i18n.language)[0].label} value={i18n.language}   />
                 <Group>
                 {sections && sections.map((section, index) => <StyledMenuItem href={`#${section.sectionTitle.toLowerCase()}`} onClick={()=>setIsMenuOpen(false)} key={index}>{section.sectionTitle}</StyledMenuItem>)}
                 </Group>
-                <Select options={selectOptions} onChange={handleLanguageChange} defaultValue={i18n.language} isSearchable={false} placeholder={selectOptions.filter(option => option.value === i18n.language)[0].label} value={i18n.language}   />
+
                 
             </StyledMobileMenu>}
             

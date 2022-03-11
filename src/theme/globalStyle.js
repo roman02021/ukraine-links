@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     background: ${props => props.theme.primary};
     font-family: Inter, Helvetica, Sans-Serif;
-    
+    overflow-x: hidden;
     box-sizing: border-box;
   }
 `;
