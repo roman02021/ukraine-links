@@ -25,7 +25,7 @@ const StyledMenu = styled.nav`
 
     align-items: center;
     top: 0;
-    padding: 0 1.5rem;
+    padding: .5rem 1.5rem;
     z-index: 10;
     height: 60px;
     @media ${variables.breakpoints.tablet} {
@@ -61,14 +61,13 @@ const StyledMenuItem = styled.a`
 `
 const StyledMenuBackground = styled.div`
 
-    position: sticky;
+    position: fixed;
+    width: 100%;
     background-color: ${props => props.theme.primary}75;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(16px);
-
-    position: sticky;
     top: 0;
-    padding: .5rem 0;
+    /* padding: .5rem 0; */
     z-index: 10;
 `
 
@@ -89,10 +88,11 @@ const StyledMobileMenuContainer = styled.div`
     /* background-color: ${props => props.theme.primary}75; */
     align-items: center;
     top: 0;
-    position: sticky;
-    padding: 0 1.5rem;
+    /* position: sticky; */
+    padding: .5rem 1.5rem;
     z-index: 10;
     height: 60px;
+
     flex-direction: column;
     @media ${variables.breakpoints.tablet} {
         display: flex;
@@ -168,11 +168,13 @@ const StyledLogo = styled.img`
     height: 60px;
 `
 const StyledMobileMenu = styled.div`
-    background-color: ${props => props.theme.primary}75;
+    /* background-color: ${props => props.theme.primary}75; */
     width: 100%;
     box-sizing: border-box;
-    position: sticky;
-    padding: 1rem 1.5rem;
+    overflow-y: auto;
+    max-height: calc(100vh - 60px + 1rem);
+    /* position: sticky; */
+    padding: 1.5rem 1.5rem;
     ${StyledMenuItem}{
         &:not(:last-child){
             border-bottom: 1px solid ${props => props.theme.secondary};
