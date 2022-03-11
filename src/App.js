@@ -15,7 +15,7 @@ import Accordion from './components/Accordion';
 import MetaPost  from './components/MetaPost';
 import {colorTheme} from './theme/index';
 import Footer from './components/Footer';
-
+import Row from './components/Row';
 
 const StyledLoader = styled(ClipLoader)`
   
@@ -77,7 +77,7 @@ function App() {
         </Container>
         <Container align='center'>
           <Heading text="Posts"/>
-          <MetaPost url="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Femefka.sk%2Fposts%2F1995912470620050&show_text=true&width=500"/>
+          <MetaPost url="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Femefka.sk%2Fposts%2F1995912470620050&show_text=true&width=auto"/>
           
         </Container>
         <Container align='center'>

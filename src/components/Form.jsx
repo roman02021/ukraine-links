@@ -43,7 +43,7 @@ const Form = () => {
     <Container size="md">
       <Formik
       enableReinitialize
-       initialValues={{ email: '', message: '' }}
+       initialValues={{ email: '', message: '', recaptcha: '' }}
        validate={values => {
         const errors = {};
          if (!values.email) {
@@ -56,7 +56,8 @@ const Form = () => {
          if(!values.message){
           errors.message = 'Required';
          }
-         if(captchaVerified){
+         console.log(captchaVerified)
+         if(!values.recaptcha){
            errors.recaptcha = 'Required'
          }
          return errors;
@@ -71,6 +72,7 @@ const Form = () => {
          handleBlur,
          handleSubmit,
          isSubmitting,
+         setFieldValue
          /* and other goodies */
        }) => (
       <StyledForm onSubmit={handleSubmit} ref={form}>
@@ -91,7 +93,13 @@ const Form = () => {
              value={values.message}/>
              <ErrorMessage>{errors.message && touched.message && errors.message}</ErrorMessage>
           </GridItem>
-          <GridItem width={6} vertical align="top"><Reaptcha sitekey="6LeGksweAAAAALjr6hBAQrcvJFuI1Ub-6yBI2rCm" onVerify={onVerify} />             <ErrorMessage>{errors.recaptcha && touched.recaptcha && errors.recaptcha}</ErrorMessage></GridItem>
+          {console.log(errors)}
+          <GridItem width={6} vertical align="top"><Reaptcha id="recaptcha" name="recaptcha" value={captchaVerified} sitekey="6LeGksweAAAAALjr6hBAQrcvJFuI1Ub-6yBI2rCm" onVerify={recaptchaResponse => {
+            console.log(recaptchaResponse);
+            setFieldValue("recaptcha", recaptchaResponse);
+          }} onExpire={recaptchaResponse => {
+            setFieldValue("recaptcha", '');
+          }} />             <ErrorMessage>{errors.recaptcha}</ErrorMessage></GridItem>
           <GridItem width={6} justify="right"><Button type="submit"  text="Send" disabled={isSubmitting}/></GridItem>
         </Grid>
       </StyledForm>
