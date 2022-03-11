@@ -2,7 +2,7 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 
 // import your icons
-import { faCode, faCoffee, faBed, faBus, faHospital, faLanguage, faEnvelope, faBullhorn, faBriefcase, faGlobe} from '@fortawesome/free-solid-svg-icons';
+import { faCode, faCoffee, faBed, faBus, faHospital, faLanguage, faEnvelope, faBullhorn, faBriefcase, faGlobe, faCity, faMap, faHandshake, faCaspules, faLocation, faHashtag, faShare} from '@fortawesome/free-solid-svg-icons';
 
 library.add(
   faCode,
@@ -14,6 +14,13 @@ library.add(
   faEnvelope,
   faBullhorn,
   faBriefcase,
-  faGlobe
+  faGlobe,
+  faCity,
+  faMap,
+  faHandshake,
+  faCaspules,
+  faLocation,
+  faHashtag,
+  faShare
   // more icons go here
 );
