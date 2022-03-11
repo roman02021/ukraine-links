@@ -17,6 +17,11 @@ import Flags from 'country-flag-icons/react/3x2'
 
 import {ThemeContext} from '../contexts/themeStore';
 
+const StyledFix = styled.div`
+    height: 60px;
+    padding: .5rem 0;
+`
+
 const StyledMenu = styled.nav`
     display:flex;
     justify-content: space-between;
@@ -249,9 +254,10 @@ const Menu = ({setSearchTerm, setTheme}) => {
     }, [])
 
     return (
-        
+        <>
+        <StyledFix/>
         <StyledMenuBackground>
-
+            
             <StyledMobileMenuContainer>
                 <Group align="center" fullWidth fullHeight horizontal>
                     <StyledLogo src={logo} alt="logo"/>
@@ -291,6 +297,7 @@ const Menu = ({setSearchTerm, setTheme}) => {
             </StyledMenu>
             
         </StyledMenuBackground>
+        </>
     )
 }
 
