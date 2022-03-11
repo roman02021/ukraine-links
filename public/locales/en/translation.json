@@ -146,114 +146,114 @@
         },
         {
             "sectionTitle": "Offices, forms, official and general information",
-            "icon": "coffee",
+            "icon": "file",
             "links": [
                 {
                     "title": "Ministry of the Interior - how and where to apply for temporary refuge",
                     "url": "https://www.facebook.com/ministerstvovnutraSR/posts/329426835880722",
-                    "icon": "bed"
+                    "icon": "file"
                 },
                 {
                     "title": "Contacts and questions",
                     "url": "https://ua.gov.sk",
-                    "icon": "bed"
+                    "icon": "file"
                 },
                 {
                     "title": "Ministry of the Interior - callcenter",
                     "url": "https://www.minv.sk/?tlacove-spravy-6&sprava=ministerstvo-vnutra-zriadilo-infolinky-pre-ukrajinsky-hovoriace-osoby&fbclid=IwAR30ZVrFA5vs8o8sXuLkFsNIxfch4Ow2phQt4vAA0BUzjlY_zBawjJmiXpE",
-                    "icon": "bed"
+                    "icon": "file"
                 },
                 {
                     "title": "Slovak Bar Association - Legal aid",
                     "url": "https://www.linkedin.com/posts/sak-sk_vytvorili-sme-nov%C3%A9-odborn%C3%A9-zameranie-pre-activity-6904148973288771584-Fclk/",
-                    "icon": "bed"
+                    "icon": "file"
                 },
                 {
                     "title": "Temporary refuge and health care for Ukrainians",
                     "url": "https://www.akmv.sk/docasne-utocisko-a-zdravotna-starostlivost-pre-ukrajincov/?fbclid=IwAR2caUBqMI5pspbB63Y_dmNEwWVXPuP3X0S1CfK5xJsD06CzO7vDVM8Oa8s",
-                    "icon": "bed"
+                    "icon": "file"
                 },
                 {
                     "title": "Prohibition to travel abroad: which of the men are not subject to restrictions",
                     "url": "https://pmg.ua/life/105343-zaborona-na-vyizd-za-kordon-kogo-z-cholovikiv-ne-stosuyutsya-obmezhennya?fbclid=IwAR0JzyHcGYT6ZSSt6InMUsaNV33IZsO9dxXRSbVL4Yh19UHZfNSzh8osVNk",
-                    "icon": "bed"
+                    "icon": "file"
                 },
                 {
                     "title": "SITUATION IN UKRAINE - INFORMATION AND ASSISTANCE",
                     "url": "https://www.minv.sk/?ukraine-information-assistance&fbclid=IwAR2djt7EojgdTsXrO-qKWoSk8yAt75lAWYIDt7tNp3h_32oh8yJO0dKuedM",
-                    "icon": "bed"
+                    "icon": "file"
                 },
                 {
                     "title": "Relocation Options for Ukrainians",
                     "url": "https://docs.google.com/document/d/1ebXPKnF_krrfkpjF4dHKhJ3YYzYVpg8w-JAG91yLxdc/edit?fbclid=IwAR1BBDr-bOOtxzidYFSfGujCfTsxEV79xjCst27gd_wCUmciUTkBFtofvDw#",
-                    "icon": "bed"
+                    "icon": "file"
                 }
             ]
         },
         {
             "sectionTitle": "Transport",
-            "icon": "coffee",
+            "icon": "bus",
             "links": [
                 {
                     "title": "Slovakia - trains, buses, public transport",
                     "url": "https://cp.hnonline.sk/en/vlakbusmhd/spojenie/ ",
-                    "icon": "bed"
+                    "icon": "bus"
                 },
                 {
                     "title": "Slovak Railways",
                     "url": "https://www.zssk.sk/en/ ",
-                    "icon": "bed"
+                    "icon": "bus"
                 },
                 {
                     "title": "Traveling in Ukraine from to (for refugees)",
                     "url": "https://www.ukrainenow.org/refuge?fbclid=IwAR09Me5cLkZe07JoWIQ1-VaAaQZbOXIpOtwuAQCdIGsBu6s3-a-d3ciIj4A",
-                    "icon": "bed"
+                    "icon": "bus"
                 },
                 {
                     "title": "From Ukraine to Europe",
                     "url": "https://docs.google.com/document/u/0/d/1kIlr8pHM-fNUAfAE0ll38GZdz11Wibt-FKmFi6gMFE4/mobilebasic?fbclid=IwAR3KyfcbFTY0FmIHQpXbOgJgIqX_CwM0_1EZb8igPY6s6Kc5IjD7xZTHTB8",
-                    "icon": "bed"
+                    "icon": "bus"
                 },
                 {
                     "title": "Drive for refugees",
                     "url": "https://sites.google.com/view/drive-for-refugees/domovsk%C3%A1-str%C3%A1nka?fbclid=IwAR1O1sH88FC5PJA7PzMb6O71kWBgEigXDZOVvWDd5Py86nPaSme8_NwuCaY",
-                    "icon": "bed"
+                    "icon": "bus"
                 },
                 {
                     "title": "Air transport",
                     "url": "https://www.businessinsider.com/wizz-air-offering-100000-free-seats-fleeing-ukrainian-refugees-russia-2022-3?utm_medium=social&utm_campaign=sf-bi-main&utm_source=facebook.com&fbclid=IwAR0p7_u4ecpY0sTO8ec3KyWIHfLuGhVIC6qWJRh8w5y6egTEn0pjdaUFzmA",
-                    "icon": "bed"
+                    "icon": "bus"
                 },
                 {
                     "title": "Public transport Bratislava",
                     "url": "https://imhd.sk/ba/cestovne-poriadky",
-                    "icon": "bed"
+                    "icon": "bus"
                 },
                 {
                     "title": "Public transport Kosice",
                     "url": "https://imhd.sk/ke/cestovne-poriadky",
-                    "icon": "bed"
+                    "icon": "bus"
                 },
                 {
                     "title": "Public transport Presov",
                     "url": "https://imhd.sk/po/mhd",
-                    "icon": "bed"
+                    "icon": "bus"
                 },
                 {
                     "title": "Public transport Zilina",
                     "url": "https://www.dpmz.sk/",
-                    "icon": "bed"
+                    "icon": "bus"
                 },
                 {
                     "title": "Public transport  Banska Bystrica",
                     "url": "https://imhd.sk/bb/cestovne-poriadky ",
-                    "icon": "bed"
+                    "icon": "bus"
                 }
             ]
         },
         {
             "sectionTitle": "School",
-            "icon": "coffee",
+            "icon": "graduationcap",
             "links": [
                 {
                     "title": "Organization - Who will help Ukraine",
