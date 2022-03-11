@@ -208,7 +208,7 @@ const StyledFlagGB = styled(Flags.GB)`
     margin-right: .5rem;
 `
 const StyledSelect = styled(Select)`
-    margin: .75rem 0;
+    margin-bottom: .75rem;
 `
 
 const themeOptions = [

@@ -15,6 +15,7 @@ import Accordion from './components/Accordion';
 import MetaPost  from './components/MetaPost';
 import {colorTheme} from './theme/index';
 import Footer from './components/Footer';
+import AccordionWithLinks from './components/AccordionWithLinks/AccordionWithLinks.jsx';
 import Row from './components/Row';
 
 const StyledLoader = styled(ClipLoader)`
@@ -63,11 +64,19 @@ function App() {
  
         <Menu setSearchTerm={setSearchTerm} setTheme={setTheme}/>
         <Container justify={filteredSections.length > 0? 'left' : 'center'}>
+{/*           
             {filteredSections.length > 0 ? filteredSections.map((section, index) => {
               return (
               <LinkSection>
                 <Heading text={section.sectionTitle} id={section.sectionTitle.toLowerCase()} icon={section.icon} key={section.sectionTitle}/>
                 {section.links.map((link, index) => <LinkBtn text={link.title} link={link.url} icon={link.icon} key={link.title}></LinkBtn>)}
+              </LinkSection>)
+            }) : <Heading text='No links found'></Heading>} */}
+
+{filteredSections.length > 0 ? filteredSections.map((section, index) => {
+              return (
+              <LinkSection>
+               <AccordionWithLinks section={section}></AccordionWithLinks>
               </LinkSection>)
             }) : <Heading text='No links found'></Heading>}
         </Container>

@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
-import AccordionItem from './AccordionItem';
-
+import AccordionLinkItem from './AccordionLinkItem';
+import LinkBtn from '../LinkBtn';
+import Heading from '../Heading';
 
 
 const StyledAccordion = styled.ul`
@@ -10,11 +11,11 @@ const StyledAccordion = styled.ul`
 `
 
 
-const Accordion = ({items}) => {
+const Accordion = ({section}) => {
 
     return (
         <StyledAccordion>
-            {items.map(item => <AccordionItem title={item.title} content={item.content} open={false}/> )}
+            {section && section.links.map((link, index) =><AccordionLinkItem title="haha" content={<LinkBtn text={link.title} link={link.url} icon={link.icon} key={link.title}></LinkBtn>}></AccordionLinkItem> )} 
         </StyledAccordion>
     )
 }
