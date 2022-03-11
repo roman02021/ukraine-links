@@ -45,11 +45,16 @@ const StyledMenuItem = styled.a`
     transition: text-shadow .2s ease-in; 
     margin: auto 0;
     color: ${props => props.theme.secondary};
-    &:not(:first-child){
+    /* &:not(:first-child){
         padding: 0 1rem;
+    } */
+
+    margin: 0 1rem;
+    &:first-of-type {
+        margin-left: 1.5rem;
     }
     &:not(:last-child){
-        margin-right: 1rem;
+        /* margin-right: 1rem; */
     }
     &:hover {
         color: ${props => props.theme.text};
@@ -293,6 +298,8 @@ const Menu = ({setSearchTerm, setTheme}) => {
                         {sections.map((section, index) => <StyledMenuItem href={`#${section.sectionTitle.toLowerCase()}`} onClick={()=>setIsMenuOpen(false)} key={index}>{section.sectionTitle}</StyledMenuItem>)}
                     </StyledDropdownOptions>
                 </StyledDropdown>}
+                <StyledMenuItem href={`#post`} onClick={()=>setIsMenuOpen(false)}>Posts</StyledMenuItem>
+                <StyledMenuItem href={`#form`} onClick={()=>setIsMenuOpen(false)} >Form</StyledMenuItem>
                 </Group>
                 <SearchBar setSearchTerm={setSearchTerm} />
                 <Row>

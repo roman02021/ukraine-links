@@ -75,13 +75,13 @@ function App() {
           <Heading text="FAQ"/>
             <Accordion items={[{section: "section1", title: "title 1", content: "content 1"}, {title: "title 2", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eleifend rhoncus odio in lobortis. Duis laoreet posuere dolor sed mattis. Aenean lectus elit, scelerisque a pulvinar in, tincidunt ac tortor. Nunc nec pellentesque nisi. Mauris at metus ac risus porta vulputate. Aliquam eu purus nec diam egestas finibus quis commodo felis. Morbi auctor rhoncus lorem, a consectetur magna viverra ut. Vivamus rutrum nulla sed augue interdum sodales. Ut magna magna, hendrerit at egestas vel, dignissim vel ex. Nunc nibh urna, sagittis ac aliquet non, feugiat non dolor. Aliquam cursus eros ullamcorper risus accumsan venenatis. Duis a dolor et nulla tempor fermentum. Vivamus aliquet nisi viverra mauris vehicula bibendum."}]}/>
         </Container>
-        <Container align='center'>
-          <Heading text="Posts"/>
+        <Container align='center' >
+          <Heading text="Posts" id="post"/>
           <MetaPost url="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Femefka.sk%2Fposts%2F1995912470620050&show_text=true&width=auto"/>
           
         </Container>
         <Container align='center'>
-          <Heading text="Form"/>
+          <Heading text="Form" id="form"/>
           <Form/>
         </Container>
         <Footer>
