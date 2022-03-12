@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import AccordionLinkItem from './AccordionLinkItem';
 import LinkBtn from '../LinkBtn';
 import Heading from '../Heading';
-
+import LinkSection from '../LinkSection';
 
 const StyledAccordion = styled.ul`
     margin: 0;
@@ -11,11 +11,11 @@ const StyledAccordion = styled.ul`
 `
 
 
-const Accordion = ({section}) => {
-
+const Accordion = ({sections}) => {
+    console.log('halo', sections);
     return (
         <StyledAccordion>
-            {section && section.links.map((link, index) =><AccordionLinkItem title="haha" content={<LinkBtn text={link.title} link={link.url} icon={link.icon} key={link.title}></LinkBtn>}></AccordionLinkItem> )} 
+            {sections && sections.map((section, index) => <AccordionLinkItem title={section.sectionTitle} icon={section.icon} content={section.links}/>)}
         </StyledAccordion>
     )
 }

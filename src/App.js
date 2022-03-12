@@ -73,12 +73,7 @@ function App() {
               </LinkSection>)
             }) : <Heading text='No links found'></Heading>} */}
 
-{filteredSections.length > 0 ? filteredSections.map((section, index) => {
-              return (
-              <LinkSection>
-               <AccordionWithLinks section={section}></AccordionWithLinks>
-              </LinkSection>)
-            }) : <Heading text='No links found'></Heading>}
+{filteredSections.length > 0 ? <AccordionWithLinks sections={filteredSections}></AccordionWithLinks> : <Heading text='No links found'></Heading>}
         </Container>
         <Container>
           <Heading text="FAQ"/>

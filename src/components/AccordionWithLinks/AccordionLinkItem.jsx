@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import {variables} from '../../theme';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import LinkBtn from '../LinkBtn';
+import { useTranslation } from 'react-i18next';
 import { t } from 'i18next';
 
 
@@ -12,6 +14,9 @@ const StyledAccordionItem = styled.li`
     list-style: none;
 
 `
+const StyledIcon = styled(FontAwesomeIcon)`
+  margin-right: 1rem;
+`;
 
 const StyledAccordionButton = styled.button`
   background: ${props => props.theme.secondary};
@@ -42,11 +47,11 @@ const StyledAccordionContent = styled.div`
   color: ${props => props.theme.text};
 `
 
-const AccordionItem = ({title, content}) => {
+const AccordionItem = ({title, content, icon}) => {
 
     const contentRef = useRef(null);
     const [loaded, setLoaded] = useState(false);
-
+    const {t, i18n } = useTranslation();
     
     const [height, setHeight] = useState(0);
     const [isOpen, setIsOpen] = useState(false);
@@ -54,20 +59,28 @@ const AccordionItem = ({title, content}) => {
 
     console.log(height);
     useEffect(()=>{
-      
+
+      setLoaded(false);
+    
+    },[i18n.language])
+
+
+    useEffect(() => {
       setHeight(contentRef.current.clientHeight);
       setLoaded(true);
-    
-    },[])
+    }, [loaded])
+
+    console.log(title);
 
   return (
     <StyledAccordionItem>
         <StyledAccordionButton onClick={(e) => setIsOpen(!isOpen)}>
+        <StyledIcon icon={['fas', icon]} />
           {title}
             <FontAwesomeIcon icon={!isOpen ? faChevronDown : faChevronUp}/>
         </StyledAccordionButton>
         <StyledAccordionContent ref={contentRef} isOpen={isOpen} loaded={loaded} contentHeight={height}>
-            {content}
+            {content.map((link, index) => <LinkBtn text={link.title} link={link.url} icon={link.icon} key={link.title}></LinkBtn>)}
         </StyledAccordionContent>
     </StyledAccordionItem>
   )
