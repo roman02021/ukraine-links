@@ -410,6 +410,157 @@
                           "icon": "bed"
                       }
                   ]
+              },
+              {
+                  "sectionTitle": "Zdravie - psychológovia a lekari",
+                  "icon": "coffee",
+                  "links": [
+                      {
+                          "title": "Psychológovia",
+                          "url": "https://ipcko.sk",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Zubní lekári na Slovensku",
+                          "url": "https://stomatolog.help/?fbclid=IwAR0eBQiPKVS_WICBGbBBacacU7RJvnmwcy3a1aQwLZAnikocVmeiqyRB9p8",
+                          "icon": "bed"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Organizácie, ktoré pomáhajú ľuďom utečencom",
+                  "icon": "coffee",
+                  "links": [
+                      {
+                          "title": "Kto pomôže Ukrajine",
+                          "url": "https://ipcko.sk",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Skauti",
+                          "url": "https://sluzba.skauting.sk/",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Slovenský červený kríž",
+                          "url": "https://redcross.sk/ukrajina/",
+                          "icon": "bed"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Stránky ukrajinských komunít v krajine",
+                  "icon": "coffee",
+                  "links": [
+                      {
+                          "title": "Všeobecné informácie - telegram chat ",
+                          "url": "https://t.me/nashiludisk?fbclid=IwAR0E2StVhSCfQWJl2l9e-Jxi1S65u4ZQLvApHh6FtdO5iEm8RSLSx1NHXWo",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Slovensko pre všetkých - facebook skupina ",
+                          "url": "https://www.facebook.com/groups/735592026478288/?hoisted_section_header_type=recently_seen&multi_permalinks=5114722771898503",
+                          "icon": "bed"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Medziľudská komunikácia v EÚ",
+                  "icon": "coffee",
+                  "links": [
+                      {
+                          "title": "Varovanie pred podvodníkmi",
+                          "url": "https://www.minv.sk/?tlacove-spravy&sprava=upozornujeme-ze-tazku-situaciu-vojnovych-utecencov-z-ukrajiny-mozu-zneuzit-obchodnici-s-ludmi&subor_spravy=436728",
+                          "icon": "bed"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Jazyk - preklady, kurzy, videá, knihy",
+                  "icon": "coffee",
+                  "links": [
+                      {
+                          "title": "Kurz slovenského jazyka - Migračné informačné centrum IOM",
+                          "url": "https://www.mic.iom.sk/sk/sk-bubles/318-kurzy-a-vzdelavanie.html",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Kurz slovenského jazyka - volis.sk",
+                          "url": "https://www.volis.sk/kurzy/slovencina/",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Kurz slovenského jazyka - ihbratislava.sk",
+                          "url": "https://www.ihbratislava.sk/sk/ostatne-jazyky/slovencina-pre-cudzincov",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Kurz slovenského jazyka - bcskola.sk",
+                          "url": "https://www.bcskola.sk/Slovak-courses/",
+                          "icon": "bed"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Jazyk - preklady, kurzy, videá, knihy",
+                  "icon": "coffee",
+                  "links": [
+                      {
+                          "title": "Kurz slovenského jazyka - Migračné informačné centrum IOM",
+                          "url": "https://www.mic.iom.sk/sk/sk-bubles/318-kurzy-a-vzdelavanie.html",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Kurz slovenského jazyka - volis.sk",
+                          "url": "https://www.volis.sk/kurzy/slovencina/",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Kurz slovenského jazyka - ihbratislava.sk",
+                          "url": "https://www.ihbratislava.sk/sk/ostatne-jazyky/slovencina-pre-cudzincov",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Kurz slovenského jazyka - bcskola.sk",
+                          "url": "https://www.bcskola.sk/Slovak-courses/",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Online kurz slovenského jazyka - slovake.eu",
+                          "url": "https://slovake.eu/sk",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Online kurz slovenského jazyka - Learn Slovak with Stories",
+                          "url": "https://www.youtube.com/channel/UCUPgmAhUy6NkMxzRTmks55w",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Online kurz slovenského jazyka - Learn Slovak",
+                          "url": "https://www.youtube.com/watch?v=cFj8mqH07-Y",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Materiály pre samoštúdium slovenského jazyka - Migračné informačné centrum IOM",
+                          "url": "https://www.mic.iom.sk/ru/s-ci-lin/br-z-v-ni/499-2017-09-20-11-57-29.html",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Dobrovoľnícky online kurz slovenského jazyka",
+                          "url": "https://mssg.me/dana_slovak",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Online kurz slovenského jazyka",
+                          "url": "http://bodkaschool.sk",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Slovensko-ukrajinský slovník ",
+                          "url": "https://slovniky.lingea.sk/ukrajinsko-slovensky?fbclid=IwAR3l8UHAYroInZyy1bRNBTDX4c_IcaH0wm6qXquN_JVAGlgPXUh9-ILZXSQ",
+                          "icon": "bed"
+                      }
+                  ]
               }
           ]
       }
