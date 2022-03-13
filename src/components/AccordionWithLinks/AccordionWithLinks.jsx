@@ -12,7 +12,6 @@ const StyledAccordion = styled.ul`
 
 
 const Accordion = ({sections}) => {
-    console.log('halo', sections);
     return (
         <StyledAccordion>
             {sections && sections.map((section, index) => <AccordionLinkItem title={section.sectionTitle} icon={section.icon} content={section.links}/>)}

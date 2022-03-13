@@ -57,20 +57,22 @@ const AccordionItem = ({title, content, icon}) => {
     const [isOpen, setIsOpen] = useState(false);
     const [open, setOpen] = useState(false);
 
-    console.log(height);
-    useEffect(()=>{
 
+    useEffect(()=>{
       setLoaded(false);
-    
     },[i18n.language])
 
-
     useEffect(() => {
-      setHeight(contentRef.current.clientHeight);
+      console.log('LOADED ? ', loaded, contentRef.current.clientHeight);
+      if(contentRef.current.clientHeight){
+        setHeight(contentRef.current.clientHeight);
+      }
       setLoaded(true);
     }, [loaded])
 
-    console.log(title);
+
+
+
 
   return (
     <StyledAccordionItem>
@@ -84,9 +86,6 @@ const AccordionItem = ({title, content, icon}) => {
         </StyledAccordionContent>
     </StyledAccordionItem>
   )
-}
-const getContentHeight = (content) => {
-    console.log(content.clientHeight);
 }
 
 export default AccordionItem

@@ -9,26 +9,6 @@
                     "title": "Rabotaveu -  facebook",
                     "url": "https://www.facebook.com/groups/rabotaveu",
                     "icon": "briefcase"
-                },
-                {
-                    "title": "ISTP",
-                    "url": "https://www.istp.sk/volne-pracovne-miesta",
-                    "icon": "briefcase"
-                },
-                {
-                    "title": "Profesia",
-                    "url": "https://www.profesia.sk/",
-                    "icon": "briefcase"
-                },
-                {
-                    "title": "Growni",
-                    "url": "https://growni.sk/jobs",
-                    "icon": "briefcase"
-                },
-                {
-                    "title": "Ponukampracu",
-                    "url": "https://www.ponukampracu.sk/",
-                    "icon": "briefcase"
                 }
             ]
         },
@@ -57,7 +37,7 @@
                     "icon": "bed"
                 },
                 {
-                    "title": "Accommodation for refugees from Ukraine",
+                    "title": "Accommodation for refugees from Ukraine 3 ",
                     "url": "https://pomocpreukrajinu.sk",
                     "icon": "bed"
                 },

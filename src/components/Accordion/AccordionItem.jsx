@@ -52,7 +52,6 @@ const AccordionItem = ({title, content}) => {
     const [isOpen, setIsOpen] = useState(false);
     const [open, setOpen] = useState(false);
 
-    console.log(height);
     useEffect(()=>{
       
       setHeight(contentRef.current.clientHeight);
