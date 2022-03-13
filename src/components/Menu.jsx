@@ -74,6 +74,9 @@ const StyledMenuBackground = styled.div`
     position: fixed;
     width: 100%;
     background-color: ${props => props.theme.primary}75;
+    element.style {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(16px);
     top: 0;
@@ -228,7 +231,7 @@ const selectOptions = [
 
 const Menu = ({setSearchTerm, setTheme}) => {
     const { t, i18n } = useTranslation();
-    const [sections, setSections] = useState([]);
+    const [countries, setCountries] = useState([]);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isHovering, setIsHovering] = useState(false)
     const [mobileMenuHeight, setMoibleMenuHeight] = useState(false);
@@ -253,14 +256,12 @@ const Menu = ({setSearchTerm, setTheme}) => {
     }, [isMobile])
     useEffect(()=>{
         if(i18n){
-            setSections(i18n.t('sections', {returnObjects: true}))
+            setCountries(i18n.t('countries', {returnObjects: true}))
         }
         
     }, [i18n.language])
 
-    useEffect(()=>{
-
-    }, [])
+    console.log(countries);
 
     return (
         <>
@@ -280,22 +281,22 @@ const Menu = ({setSearchTerm, setTheme}) => {
             </StyledMobileMenuContainer>
             {isMenuOpen && 
             <StyledMobileMenu >
-                <StyledSelect options={selectOptions}  onChange={handleLanguageChange} defaultValue={i18n.language} isSearchable={false} placeholder={selectOptions.filter(option => option.value === i18n.language)[0].label} value={i18n.language}   />
+                {/* <StyledSelect options={selectOptions}  onChange={handleLanguageChange} defaultValue={i18n.language} isSearchable={false} placeholder={selectOptions.filter(option => option.value === i18n.language)[0].label} value={i18n.language}   />
                 <Group>
                 {sections && sections.map((section, index) => <StyledMenuItem href={`#${section.sectionTitle.toLowerCase()}`} onClick={()=>setIsMenuOpen(false)} key={index}>{section.sectionTitle}</StyledMenuItem>)}
-                </Group>
+                </Group> */}
 
                 
             </StyledMobileMenu>}
             
             <StyledMenu>
-                {/* <StyledLogo/> */}
+                <StyledLogo/>
                 <Group fullHeight align="center" horizontal>
-                {sections && sections.length < 4 ? sections.map((section, index) => <StyledMenuItem href={`#${section.sectionTitle.toLowerCase()}`} onClick={()=>setIsMenuOpen(false)} key={index}>{section.sectionTitle}</StyledMenuItem>) : <StyledDropdown>
+                {countries.sections && countries.sections.length < 4 ? countries.map(country => country.sections.map((section, index) => <StyledMenuItem href={`#${section.sectionTitle.toLowerCase()}`} onClick={()=>setIsMenuOpen(false)} key={index}>{section.sectionTitle}</StyledMenuItem>)) : <StyledDropdown>
                     <StyledDropdownAnchor>Section<StyledDropdownIcon icon={faChevronDown}></StyledDropdownIcon>
                     </StyledDropdownAnchor>
                     <StyledDropdownOptions>
-                        {sections.map((section, index) => <StyledMenuItem href={`#${section.sectionTitle.toLowerCase()}`} onClick={()=>setIsMenuOpen(false)} key={index}>{section.sectionTitle}</StyledMenuItem>)}
+                        {countries.map(country => country.sections.map((section, index) => <StyledMenuItem href={`#${section.sectionTitle.toLowerCase()}`} onClick={()=>setIsMenuOpen(false)} key={index}>{section.sectionTitle}</StyledMenuItem>))}
                     </StyledDropdownOptions>
                 </StyledDropdown>}
                 <StyledMenuItem href={`#post`} onClick={()=>setIsMenuOpen(false)}>Posts</StyledMenuItem>
@@ -304,7 +305,7 @@ const Menu = ({setSearchTerm, setTheme}) => {
                 <SearchBar setSearchTerm={setSearchTerm} />
                 <Row>
                     <Select options={selectOptions} onChange={handleLanguageChange} defaultValue={i18n.language} isSearchable={false} placeholder={selectOptions.filter(option => option.value === i18n.language)[0].label} value={i18n.language}   />
-                    {/* <Select options={themeOptions} onChange={handleThemeChange} defaultValue={i18n.language} placeholder="Theme" isSearchable={false}/> */}
+                     <Select options={themeOptions} onChange={handleThemeChange} defaultValue={i18n.language} placeholder="Theme" isSearchable={false}/> 
                 </Row>
             </StyledMenu>
             

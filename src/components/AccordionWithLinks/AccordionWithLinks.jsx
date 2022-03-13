@@ -11,10 +11,15 @@ const StyledAccordion = styled.ul`
 `
 
 
-const Accordion = ({sections}) => {
+const Accordion = ({content, depth}) => {
+    console.log('in accordion', depth, content);
     return (
         <StyledAccordion>
-            {sections && sections.map((section, index) => <AccordionLinkItem title={section.sectionTitle} icon={section.icon} content={section.links}/>)}
+            {content && depth > 0 ? 
+            <AccordionLinkItem title={content.title} depth={1} icon={content.icon} content={content}/> : <AccordionLinkItem title={content.country} icon="bed"  content={content.sections} depth={0}/>}
+            
+            {/* <AccordionLinkItem title={content.country} icon="bed"  content={content.sections} depth={0}/> */}
+            {/* {country && country.map((section, index) => <AccordionLinkItem title={section.sectionTitle} icon={section.icon} content={section.links}/>)} */}
         </StyledAccordion>
     )
 }

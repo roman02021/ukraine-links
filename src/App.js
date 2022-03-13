@@ -27,8 +27,8 @@ const Loader = () => (
 
 function App() {
   const {t, i18n } = useTranslation();
-  const [sections, setSections] = useState([]);
-  const [filteredSections, setFilteredSections] = useState([]);
+  const [countries, setCountries] = useState([]);
+  const [filteredCountries, setFilteredCountries] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   
   const [theme, setTheme] = useState(Object.keys(colorTheme)[0]);
@@ -37,33 +37,44 @@ function App() {
 
 
   useEffect(()=>{
-    setSections(i18n.t('sections', {returnObjects: true}))
+    setCountries(i18n.t('countries', {returnObjects: true}))
   }, [i18n.language])
 
   useEffect(()=>{
-    setSections(i18n.t('sections', {returnObjects: true}))
+    setCountries(i18n.t('countries', {returnObjects: true}))
     // setFilteredSections(sections);
   }, [])
 
   useEffect(() => {
-    setFilteredSections(sections);
-  }, [sections])
+    setFilteredCountries(countries);
+  }, [countries])
 
-  useEffect(()=>{
-    if(searchTerm !== null || searchTerm !== ''){
-      setFilteredSections(sections.map(section => {
-        const filteredLinks = section.links.filter(link => link.title.toLowerCase().includes(searchTerm.toLowerCase()));
-        return {sectionTitle: section.sectionTitle, icon: section.icon, links: filteredLinks};
-      }).filter(section => section.links.length > 0));
-    }
-  }, [searchTerm, sections])
+  // useEffect(()=>{
+  //   if(searchTerm !== null || searchTerm !== ''){
+  //     setFilteredSections(sections.map(section => {
+  //       const filteredLinks = section.links.filter(link => link.title.toLowerCase().includes(searchTerm.toLowerCase()));
+  //       return {sectionTitle: section.sectionTitle, icon: section.icon, links: filteredLinks};
+  //     }).filter(section => section.links.length > 0));
+  //   }
+  // }, [searchTerm, sections])
+  console.log('hey', countries);
+    useEffect(()=>{
+    // if(searchTerm !== null || searchTerm !== ''){
+    //   setFilteredSections(sections.countries.map(section => {
+    //     const filteredLinks = section.links.filter(link => link.title.toLowerCase().includes(searchTerm.toLowerCase()));
+    //     return {sectionTitle: section.sectionTitle, icon: section.icon, links: filteredLinks};
+    //   }).filter(section => section.links.length > 0));
+    // }
+  }, [searchTerm, countries])
+
+  console.log('countresss', countries);
 
   return (
     <ThemeProvider theme={colorTheme[theme]}>
         <GlobalStyle/>
  
         <Menu setSearchTerm={setSearchTerm} setTheme={setTheme}/>
-        <Container justify={filteredSections.length > 0? 'left' : 'center'}>
+        <Container justify={filteredCountries.sections && filteredCountries.sections.length > 0? 'left' : 'center'}>
 {/*           
             {filteredSections.length > 0 ? filteredSections.map((section, index) => {
               return (
@@ -73,7 +84,7 @@ function App() {
               </LinkSection>)
             }) : <Heading text='No links found'></Heading>} */}
 
-{filteredSections.length > 0 ? <AccordionWithLinks sections={filteredSections}></AccordionWithLinks> : <Heading text='No links found'></Heading>}
+{filteredCountries.length > 0 ? filteredCountries.map(country => <AccordionWithLinks content={country} depth={0}></AccordionWithLinks>) : <Heading text='No links found'></Heading>}
         </Container>
         <Container>
           <Heading text="FAQ"/>

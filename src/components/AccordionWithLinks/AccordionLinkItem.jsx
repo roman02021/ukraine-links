@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import {variables} from '../../theme';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import AccordionWithLinks from './AccordionWithLinks'
 import LinkBtn from '../LinkBtn';
 import { useTranslation } from 'react-i18next';
 import { t } from 'i18next';
@@ -47,7 +48,7 @@ const StyledAccordionContent = styled.div`
   color: ${props => props.theme.text};
 `
 
-const AccordionItem = ({title, content, icon}) => {
+const AccordionItem = ({title, content, icon, depth}) => {
 
     const contentRef = useRef(null);
     const [loaded, setLoaded] = useState(false);
@@ -73,16 +74,20 @@ const AccordionItem = ({title, content, icon}) => {
 
 
 
-
+    console.log("CONTONT", depth ,content);
   return (
     <StyledAccordionItem>
         <StyledAccordionButton onClick={(e) => setIsOpen(!isOpen)}>
         <StyledIcon icon={['fas', icon]} />
-          {title}
+          {content.sectionTitle ? content.sectionTitle : title}
             <FontAwesomeIcon icon={!isOpen ? faChevronDown : faChevronUp}/>
         </StyledAccordionButton>
         <StyledAccordionContent ref={contentRef} isOpen={isOpen} loaded={loaded} contentHeight={height}>
-            {content.map((link, index) => <LinkBtn text={link.title} link={link.url} icon={link.icon} key={link.title}></LinkBtn>)}
+            {/* {content.map((link, index) => <LinkBtn text={link.title} link={link.url} icon={link.icon} key={link.title}></LinkBtn>)} */}
+            {depth > 0 ? content.links.map(link => <LinkBtn text={link.title} link={link.url} icon={link.icon} key={link.title}></LinkBtn>) : content.map((content, index) => <AccordionWithLinks content={content} depth={1}></AccordionWithLinks>)}
+
+
+             {/* {content && content.map((content, index) => <AccordionWithLinks content={content} depth={1}></AccordionWithLinks>)}  */}
         </StyledAccordionContent>
     </StyledAccordionItem>
   )
