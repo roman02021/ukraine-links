@@ -74,13 +74,12 @@ const StyledMenuBackground = styled.div`
     position: fixed;
     width: 100%;
     background-color: ${props => props.theme.primary}75;
-    element.style {
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-}
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(16px);
     top: 0;
-    /* padding: .5rem 0; */
     z-index: 10;
 `
 
@@ -290,7 +289,7 @@ const Menu = ({setSearchTerm, setTheme}) => {
             </StyledMobileMenu>}
             
             <StyledMenu>
-                <StyledLogo/>
+                <StyledLogo src={logo}/>
                 <Group fullHeight align="center" horizontal>
                 {countries.sections && countries.sections.length < 4 ? countries.map(country => country.sections.map((section, index) => <StyledMenuItem href={`#${section.sectionTitle.toLowerCase()}`} onClick={()=>setIsMenuOpen(false)} key={index}>{section.sectionTitle}</StyledMenuItem>)) : <StyledDropdown>
                     <StyledDropdownAnchor>Section<StyledDropdownIcon icon={faChevronDown}></StyledDropdownIcon>
@@ -305,7 +304,7 @@ const Menu = ({setSearchTerm, setTheme}) => {
                 <SearchBar setSearchTerm={setSearchTerm} />
                 <Row>
                     <Select options={selectOptions} onChange={handleLanguageChange} defaultValue={i18n.language} isSearchable={false} placeholder={selectOptions.filter(option => option.value === i18n.language)[0].label} value={i18n.language}   />
-                     <Select options={themeOptions} onChange={handleThemeChange} defaultValue={i18n.language} placeholder="Theme" isSearchable={false}/> 
+                     {/* <Select options={themeOptions} onChange={handleThemeChange} defaultValue={i18n.language} placeholder="Theme" isSearchable={false}/>  */}
                 </Row>
             </StyledMenu>
             

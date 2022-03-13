@@ -59,15 +59,18 @@ function App() {
   // }, [searchTerm, sections])
   console.log('hey', countries);
     useEffect(()=>{
-    // if(searchTerm !== null || searchTerm !== ''){
-    //   setFilteredSections(sections.countries.map(section => {
-    //     const filteredLinks = section.links.filter(link => link.title.toLowerCase().includes(searchTerm.toLowerCase()));
-    //     return {sectionTitle: section.sectionTitle, icon: section.icon, links: filteredLinks};
-    //   }).filter(section => section.links.length > 0));
-    // }
+
+    if(searchTerm !== null || searchTerm !== ''){
+      setFilteredCountries(countries.map(country =>{
+        const filteredSections = country.sections.map(section => {
+          const filteredLinks = section.links.filter(link => link.title.toLowerCase().includes(searchTerm.toLowerCase()));
+          return {sectionTitle: section.sectionTitle, icon: section.icon, links: filteredLinks};
+        })
+        return {country: country.country, sections: filteredSections};
+      }));
+    }
   }, [searchTerm, countries])
 
-  console.log('countresss', countries);
 
   return (
     <ThemeProvider theme={colorTheme[theme]}>
@@ -83,8 +86,10 @@ function App() {
                 {section.links.map((link, index) => <LinkBtn text={link.title} link={link.url} icon={link.icon} key={link.title}></LinkBtn>)}
               </LinkSection>)
             }) : <Heading text='No links found'></Heading>} */}
-
+<Heading text='Countries'></Heading>
+<LinkSection>
 {filteredCountries.length > 0 ? filteredCountries.map(country => <AccordionWithLinks content={country} depth={0}></AccordionWithLinks>) : <Heading text='No links found'></Heading>}
+</LinkSection>
         </Container>
         <Container>
           <Heading text="FAQ"/>

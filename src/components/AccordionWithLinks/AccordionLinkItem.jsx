@@ -65,7 +65,7 @@ const AccordionItem = ({title, content, icon, depth}) => {
 
     useEffect(() => {
       console.log('LOADED ? ', loaded, contentRef.current.clientHeight);
-      if(contentRef.current.clientHeight){
+      if(!loaded){
         setHeight(contentRef.current.clientHeight);
       }
       setLoaded(true);
