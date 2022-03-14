@@ -77,18 +77,8 @@
                   "icon": "bus",
                   "links": [
                       {
-                          "title": "Evakuácia",
-                          "url": "https://helppeople.taplink.ws/",
-                          "icon": "bus"
-                      },
-                      {
-                          "title": "Cestovanie po Ukrajine pre utečencov (BlaBlaCar)",
-                          "url": "https://www.ukrainenow.org/refuge?fbclid=IwAR09Me5cLkZe07JoWIQ1-VaAaQZbOXIpOtwuAQCdIGsBu6s3-a-d3ciIj4A#need-transfer",
-                          "icon": "bus"
-                      },
-                      {
-                          "title": "Letecká preprava",
-                          "url": "https://www.businessinsider.com/wizz-air-offering-100000-free-seats-fleeing-ukrainian-refugees-russia-2022-3?utm_medium=social&utm_campaign=sf-bi-main&utm_source=facebook.com&fbclid=IwAR0p7_u4ecpY0sTO8ec3KyWIHfLuGhVIC6qWJRh8w5y6egTEn0pjdaUFzmA",
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
                           "icon": "bus"
                       }
                   ]
@@ -98,18 +88,8 @@
                   "icon": "bus",
                   "links": [
                       {
-                          "title": "Evakuácia",
-                          "url": "https://helppeople.taplink.ws/",
-                          "icon": "bus"
-                      },
-                      {
-                          "title": "Cestovanie po Ukrajine pre utečencov (BlaBlaCar)",
-                          "url": "https://www.ukrainenow.org/refuge?fbclid=IwAR09Me5cLkZe07JoWIQ1-VaAaQZbOXIpOtwuAQCdIGsBu6s3-a-d3ciIj4A#need-transfer",
-                          "icon": "bus"
-                      },
-                      {
-                          "title": "Letecká preprava",
-                          "url": "https://www.businessinsider.com/wizz-air-offering-100000-free-seats-fleeing-ukrainian-refugees-russia-2022-3?utm_medium=social&utm_campaign=sf-bi-main&utm_source=facebook.com&fbclid=IwAR0p7_u4ecpY0sTO8ec3KyWIHfLuGhVIC6qWJRh8w5y6egTEn0pjdaUFzmA",
+                          "title": "Zatial nic",
+                          "url": "https://www.google.sk/",
                           "icon": "bus"
                       }
                   ]
@@ -141,8 +121,8 @@
                   "icon": "bus",
                   "links": [
                       {
-                          "title": "Humanitárne centrá - Nova pošta ",
-                          "url": "https://novaposhta.ua/humanitarian_post/",
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
                           "icon": "bus"
                       }
                   ]
@@ -152,8 +132,8 @@
                   "icon": "bus",
                   "links": [
                       {
-                          "title": "Humanitárne centrá - Nova pošta ",
-                          "url": "https://novaposhta.ua/humanitarian_post/",
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
                           "icon": "bus"
                       }
                   ]
@@ -174,8 +154,8 @@
                   "icon": "bus",
                   "links": [
                       {
-                          "title": "Ukrajinské rozprávky",
-                          "url": "https://drive.google.com/file/d/1_VMlASM9GciRe3bV-AcgfE6pwSvsP1dx/view?fbclid=IwAR20JOUkPo7x7ShRaD8E8md6iOs3I67aBDzrI-2sS_bMi-y9y_f1KYNx3Yo",
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
                           "icon": "bus"
                       }
                   ]
@@ -185,8 +165,8 @@
                   "icon": "bus",
                   "links": [
                       {
-                          "title": "Ukrajinské rozprávky",
-                          "url": "https://drive.google.com/file/d/1_VMlASM9GciRe3bV-AcgfE6pwSvsP1dx/view?fbclid=IwAR20JOUkPo7x7ShRaD8E8md6iOs3I67aBDzrI-2sS_bMi-y9y_f1KYNx3Yo",
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
                           "icon": "bus"
                       }
                   ]
@@ -196,8 +176,8 @@
                   "icon": "bus",
                   "links": [
                       {
-                          "title": "Ukrajinské rozprávky",
-                          "url": "https://drive.google.com/file/d/1_VMlASM9GciRe3bV-AcgfE6pwSvsP1dx/view?fbclid=IwAR20JOUkPo7x7ShRaD8E8md6iOs3I67aBDzrI-2sS_bMi-y9y_f1KYNx3Yo",
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
                           "icon": "bus"
                       }
                   ]
@@ -498,32 +478,6 @@
                           "title": "Kurz slovenského jazyka - bcskola.sk",
                           "url": "https://www.bcskola.sk/Slovak-courses/",
                           "icon": "bed"
-                      }
-                  ]
-              },
-              {
-                  "sectionTitle": "Jazyk - preklady, kurzy, videá, knihy",
-                  "icon": "coffee",
-                  "links": [
-                      {
-                          "title": "Kurz slovenského jazyka - Migračné informačné centrum IOM",
-                          "url": "https://www.mic.iom.sk/sk/sk-bubles/318-kurzy-a-vzdelavanie.html",
-                          "icon": "bed"
-                      },
-                      {
-                          "title": "Kurz slovenského jazyka - volis.sk",
-                          "url": "https://www.volis.sk/kurzy/slovencina/",
-                          "icon": "bed"
-                      },
-                      {
-                          "title": "Kurz slovenského jazyka - ihbratislava.sk",
-                          "url": "https://www.ihbratislava.sk/sk/ostatne-jazyky/slovencina-pre-cudzincov",
-                          "icon": "bed"
-                      },
-                      {
-                          "title": "Kurz slovenského jazyka - bcskola.sk",
-                          "url": "https://www.bcskola.sk/Slovak-courses/",
-                          "icon": "bed"
                       },
                       {
                           "title": "Online kurz slovenského jazyka - slovake.eu",
@@ -559,6 +513,425 @@
                           "title": "Slovensko-ukrajinský slovník ",
                           "url": "https://slovniky.lingea.sk/ukrajinsko-slovensky?fbclid=IwAR3l8UHAYroInZyy1bRNBTDX4c_IcaH0wm6qXquN_JVAGlgPXUh9-ILZXSQ",
                           "icon": "bed"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Pracovné ponuky a možnosti",
+                  "icon": "coffee",
+                  "links": [
+                      {
+                          "title": "Profesia.sk",
+                          "url": "https://www.profesia.sk/",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "ISTP",
+                          "url": "https://www.istp.sk/volne-pracovne-miesta",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Ponukampracu.sk",
+                          "url": "https://www.ponukampracu.sk/",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Growni",
+                          "url": "https://growni.sk/jobs",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Práca na Slovensku - facebook skupina",
+                          "url": "https://www.facebook.com/groups/rabotaveu",
+                          "icon": "bed"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Škola",
+                  "icon": "coffee",
+                  "links": [
+                      {
+                          "title": "Zoznam škôl",
+                          "url": "http://www.zoznamskol.eu/typ/stredna-skola/?fbclid=IwAR1QGT2YvYjTV7VJyEUFDvakeZ4MtXEsCz0K41BkKO5LRJRbSN-uVSYwIfw",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "O školstve na Slovensku ",
+                          "url": "https://slovenske-skolstvo.estranky.sk/clanky/rozdelenie-skol-na-slovensku.html",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Slovenská akadémia vied",
+                          "url": "https://www.sav.sk/?lang=sk&doc=services-news&source_no=20&news_no=10197&fbclid=IwAR37ucykGAVsnyYFebOnVkwXlCWHhMuX1prbuqOkwu97W54nL2J--rRmPfA",
+                          "icon": "bed"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Zaujímavosti o krajine",
+                  "icon": "coffee",
+                  "links": [
+                      {
+                          "title": "O Slovensku",
+                          "url": "https://slovakia.travel/o-slovensku",
+                          "icon": "bed"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Dobrovoľníctvo",
+                  "icon": "coffee",
+                  "links": [
+                      {
+                          "title": "Kto pomôže Ukrajine",
+                          "url": "https://growni.sk/dobrovolnictvo/dobrovolnicke-projekty/0Ej4wlZXQrZfYnuBJ6tm?fbclid=IwAR1LZnCUvF0Ku5_zPqkY5dXcvRSZJXdw6qIowdcB_VwM-CI559spBgfCggI",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Pomoc pre ukrajinské rodiny a ich zvieratkami - facebook skupina",
+                          "url": "https://www.facebook.com/groups/2900734023550379/",
+                          "icon": "bed"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "country": "Česko",
+          "sections": [
+              {
+                  "sectionTitle": "Informácie o vojne",
+                  "icon": "bomb",
+                  "links": [
+                      {
+                          "title": "Interaktívna mapa ruskej invázie na Ukrajine",
+                          "url": "https://newsmap.pl/2022-russian-invasion-of-ukraine-interactive-map/",
+                          "icon": "bomb"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Úradné a všeobecné info v krajine pre utečencov",
+                  "icon": "file",
+                  "links": [
+                      {
+                          "title": "nasiukrajinci.cz",
+                          "url": "https://www.nasiukrajinci.cz/?fbclid=IwAR02BM8jJeCQk4ku-__wia-Yo1Mu6WgC_jP0UCALfFUqxmgR100FYXf4EaQ",
+                          "icon": "file"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Doprava - mestská, prímestská, medzimestská, linky",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "Dobrovoľníci, ktorí jazdia za utečencami ",
+                          "url": "https://doprava.plnu.cz",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Ubytovanie - informácie o mestách, regiónoch, náklady na život v jednotlivých mestách",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Strava - obchody, donáškové služby",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Zdravie - psychológovia a lekari",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Organizácie, ktoré pomáhajú utečencom",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "tednaspotrebuji.cz",
+                          "url": "https://www.tednaspotrebuji.cz/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Stránky ukrajinských komunít v krajine",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Medziľudská komunikácia v EÚ - ako sa správať na území EÚ",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Jazyk - preklady, kurzy, videá, knihy",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Pracovné ponuky a možnosti - doklady, pracovné portály, skupiny na FB",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Škola - univerzity, študentský život, študentské organizácie, internáty",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Zaujímavosti o krajine - história, čo vidieť, miesta na voľný čas",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Dobrovoľníctvo",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Oficiálne zbierky",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "country": "Poľsko",
+          "sections": [
+              {
+                  "sectionTitle": "Informácie o vojne",
+                  "icon": "bomb",
+                  "links": [
+                      {
+                          "title": "Interaktívna mapa ruskej invázie na Ukrajine",
+                          "url": "https://newsmap.pl/2022-russian-invasion-of-ukraine-interactive-map/",
+                          "icon": "bomb"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Úradné a všeobecné info v krajine pre utečencov",
+                  "icon": "file",
+                  "links": [
+                      {
+                          "title": "dopomoga-in.pl",
+                          "url": "https://dopomoga-in.pl/pl/",
+                          "icon": "file"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Doprava - mestská, prímestská, medzimestská, linky",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Ubytovanie - informácie o mestách, regiónoch, náklady na život v jednotlivých mestách",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Strava - obchody, donáškové služby",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Zdravie - psychológovia a lekari",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Organizácie, ktoré pomáhajú utečencom",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "tednaspotrebuji.cz",
+                          "url": "https://www.tednaspotrebuji.cz/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Stránky ukrajinských komunít v krajine",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Medziľudská komunikácia v EÚ - ako sa správať na území EÚ",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "Ste vizitkou všetkých Ukrajincov",
+                          "url": "https://www.facebook.com/watch/?v=732566261058805",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Jazyk - preklady, kurzy, videá, knihy",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Pracovné ponuky a možnosti - doklady, pracovné portály, skupiny na FB",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Škola - univerzity, študentský život, študentské organizácie, internáty",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Zaujímavosti o krajine - história, čo vidieť, miesta na voľný čas",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Dobrovoľníctvo",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Oficiálne zbierky",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
                       }
                   ]
               }
