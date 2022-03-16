@@ -2,134 +2,941 @@
   "searchPlaceholder": "Search...",
   "countries": [
       {
-          "country": "Ukraine",
+          "country": "Україна",
           "sections": [
               {
-                  "sectionTitle": "Jobs",
-                  "icon": "coffee",
+                  "sectionTitle": "Інформація про війну",
+                  "icon": "bomb",
                   "links": [
                       {
-                          "title": "Rabotaveu - facebook",
-                          "url": "https://www.facebook.com/groups/rabotaveu",
-                          "icon": "bed"
+                          "title": "Актуальна інформація про доступні послуги (автозаправні станції, банкомати, лікарні)",
+                          "url": "https://misto.lun.ua/help#6.86/50.355/30.473",
+                          "icon": "bomb"
                       },
                       {
-                          "title": "ISTP",
-                          "url": "https://www.istp.sk/volne-pracovne-miesta",
-                          "icon": "bed"
+                          "title": "Інтерактивна карта російського вторгнення в Україну",
+                          "url": "https://newsmap.pl/2022-russian-invasion-of-ukraine-interactive-map/",
+                          "icon": "bomb"
                       },
                       {
-                          "title": "Profesia",
-                          "url": "https://www.profesia.sk/",
-                          "icon": "bed"
+                          "title": "Попередження про бомбову атаку - Мобільний додаток",
+                          "url": "https://apps.apple.com/ua/app/%D1%94%D1%82%D1%80%D0%B8%D0%B2%D0%BE%D0%B3%D0%B0/id1611921749?l=ru",
+                          "icon": "bomb"
                       },
                       {
-                          "title": "Growni",
-                          "url": "https://growni.sk/jobs",
-                          "icon": "bed"
+                          "title": "Загублені люди - телеграм-чат",
+                          "url": "https://t.me/poshuk_znyklyh?fbclid=IwAR2HY5iF2apUwVe42EkIPUMZDl-_bCw3G8qqVY1blLvu6YDx88Yzr780PfU",
+                          "icon": "bomb"
                       },
                       {
-                          "title": "Ponukampracu",
-                          "url": "https://www.ponukampracu.sk/",
+                          "title": "Фото- та відеозаписи про помітення російської армії - телеграм-чат ",
+                          "url": "https://t.me/stop_russian_war_bot?fbclid=IwAR0_-vuOS3Xl4kKMEXVded_Ffiz2U_HVFx7yJ5NZh0FfSeQJohC9igeWvpI",
+                          "icon": "bomb"
+                      },
+                      {
+                          "title": "Іменний список російських солдатів",
+                          "url": "https://invaders-rf.com/",
+                          "icon": "bomb"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Офіційна та загальна інформація в країні для біженців",
+                  "icon": "file",
+                  "links": [
+                      {
+                          "title": "Заборона виїзду за кордон: на кого з чоловіків не діють обмеження",
+                          "url": "https://pmg.ua/life/105343-zaborona-na-vyizd-za-kordon-kogo-z-cholovikiv-ne-stosuyutsya-obmezhennya?fbclid=IwAR0JzyHcGYT6ZSSt6InMUsaNV33IZsO9dxXRSbVL4Yh19UHZfNSzh8osVNk",
+                          "icon": "file"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Транспорт - міський, приміський, міжміський",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "Евакуація",
+                          "url": "https://helppeople.taplink.ws/",
+                          "icon": "bus"
+                      },
+                      {
+                          "title": "Подорожування в Україні для біженців (BlaBlaCar)",
+                          "url": "https://www.ukrainenow.org/refuge?fbclid=IwAR09Me5cLkZe07JoWIQ1-VaAaQZbOXIpOtwuAQCdIGsBu6s3-a-d3ciIj4A#need-transfer",
+                          "icon": "bus"
+                      },
+                      {
+                          "title": "Авіатранспорт",
+                          "url": "https://www.businessinsider.com/wizz-air-offering-100000-free-seats-fleeing-ukrainian-refugees-russia-2022-3?utm_medium=social&utm_campaign=sf-bi-main&utm_source=facebook.com&fbclid=IwAR0p7_u4ecpY0sTO8ec3KyWIHfLuGhVIC6qWJRh8w5y6egTEn0pjdaUFzmA",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Проживання - інформація про міста, регіони, вартість проживання в окремих містах",
+                  "icon": "bed",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
                           "icon": "bed"
                       }
                   ]
               },
               {
-                  "sectionTitle": "Jobs",
-                  "icon": "coffee",
+                  "sectionTitle": "Харчування - магазини, служби доставки",
+                  "icon": "burger",
                   "links": [
                       {
-                          "title": "Rabotaveu - facebook",
-                          "url": "https://www.facebook.com/groups/rabotaveu",
-                          "icon": "bed"
-                      },
+                          "title": "Zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "burger"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Здоров'я - психологи та лікарі",
+                  "icon": "hand-holding-medical",
+                  "links": [
                       {
-                          "title": "ISTP",
-                          "url": "https://www.istp.sk/volne-pracovne-miesta",
-                          "icon": "bed"
-                      },
+                          "title": "Психологи",
+                          "url": "http://volunteer.terapiya.space/?fbclid=IwAR1zTr5sqIlsMk1wGr3vpwSPLOJwvgChMvUDT61_cDEzRzX2qSju6ob15Xo",
+                          "icon": "hand-holding-medical"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Організації, які допомагають людям біженцям",
+                  "icon": "handshake",
+                  "links": [
                       {
-                          "title": "Profesia",
-                          "url": "https://www.profesia.sk/",
-                          "icon": "bed"
-                      },
+                          "title": "Гуманітарні центри - Нова пошта",
+                          "url": "https://novaposhta.ua/humanitarian_post/",
+                          "icon": "handshake"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Сайти українських громад в країні",
+                  "icon": "users",
+                  "links": [
                       {
-                          "title": "Growni",
-                          "url": "https://growni.sk/jobs",
-                          "icon": "bed"
-                      },
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "users"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Міжособистісне спілкування в ЄС – як поводитися в ЄС",
+                  "icon": "comments",
+                  "links": [
                       {
-                          "title": "Ponukampracu",
-                          "url": "https://www.ponukampracu.sk/",
-                          "icon": "bed"
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "comments"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Мова - переклади, курси, відео, книги",
+                  "icon": "language",
+                  "links": [
+                      {
+                          "title": "Українські казки",
+                          "url": "https://drive.google.com/file/d/1_VMlASM9GciRe3bV-AcgfE6pwSvsP1dx/view?fbclid=IwAR20JOUkPo7x7ShRaD8E8md6iOs3I67aBDzrI-2sS_bMi-y9y_f1KYNx3Yo",
+                          "icon": "language"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Пропозиції та можливості роботи - документи, портали вакансій, групи у Facebook",
+                  "icon": "briefcase",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "briefcase"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Освіта - університети, студентське життя, студентські організації, школи-інтернати",
+                  "icon": "graduation-cap",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "graduation-cap"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Про країну - історія, що подивитися, місця для відпочинку, відпустки, ціни",
+                  "icon": "globe",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "globe"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Волонтерство",
+                  "icon": "hand",
+                  "links": [
+                      {
+                          "title": "Взаємодопомога для України - телеграм-чат",
+                          "url": "https://t.me/VolunteerTalks?fbclid=IwAR0KxZvwAaXZ3qvS8C9Bs3HtoKfCE5g4SHM1CvCbUDFDdz2a3VG2806aB20",
+                          "icon": "hand"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Офіційні збори коштів",
+                  "icon": "circle-dollar-to-slot",
+                  "links": [
+                      {
+                          "title": "Національний банк України",
+                          "url": "https://bank.gov.ua/ua/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi",
+                          "icon": "circle-dollar-to-slot"
                       }
                   ]
               }
           ]
       },
       {
-          "country": "Slovakia",
+          "country": "Словаччина",
           "sections": [
               {
-                  "sectionTitle": "Pracicky",
-                  "icon": "coffee",
+                  "sectionTitle": "Інформація про війну - перша допомога, аптечка, поради та рекомендації, додатки в телефон",
+                  "icon": "bomb",
                   "links": [
                       {
-                          "title": "Rabotaveu - facebook",
-                          "url": "https://www.facebook.com/groups/rabotaveu",
+                          "title": "Інтерактивна карта російського вторгнення в Україну",
+                          "url": "https://newsmap.pl/2022-russian-invasion-of-ukraine-interactive-map/",
+                          "icon": "bomb"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Офіційна та загальна інформація в країні для біженців",
+                  "icon": "file",
+                  "links": [
+                      {
+                        "title": "З України до Словаччини - ukraineslovakia.sk",
+                        "url": "https://www.ukraineslovakia.sk",
+                        "icon": "file"
+                      },
+                      {
+                          "title": "Контакти та відповіді на запитання",
+                          "url": "https://ua.gov.sk",
+                          "icon": "file"
+                      },
+                      {
+                          "title": "Ситуація в Україні - інформація та допомога",
+                          "url": "https://www.minv.sk/?ukraine-information-assistance&fbclid=IwAR2djt7EojgdTsXrO-qKWoSk8yAt75lAWYIDt7tNp3h_32oh8yJO0dKuedM",
+                          "icon": "file"
+                      },
+                      {
+                          "title": "Міністерство внутрішніх справ - Запит про тимчасовий притулок",
+                          "url": "https://www.minv.sk/?tlacove-spravy&sprava=pri-ziadosti-o-docasne-utocisko-mozno-vyuzit-elektronicky-registracny-formular",
+                          "icon": "file"
+                      },
+                      {
+                          "title": "Тимчасовий притулок та охорона здоров’я для українців ",
+                          "url": "https://www.akmv.sk/docasne-utocisko-a-zdravotna-starostlivost-pre-ukrajincov/?fbclid=IwAR2caUBqMI5pspbB63Y_dmNEwWVXPuP3X0S1CfK5xJsD06CzO7vDVM8Oa8s",
+                          "icon": "file"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Центр дзвінків",
+                  "icon": "headset",
+                  "links": [
+                      {
+                          "title": "Міністерство внутрішніх справ",
+                          "url": "https://www.minv.sk/?tlacove-spravy-6&sprava=ministerstvo-vnutra-zriadilo-infolinky-pre-ukrajinsky-hovoriace-osoby&fbclid=IwAR30ZVrFA5vs8o8sXuLkFsNIxfch4Ow2phQt4vAA0BUzjlY_zBawjJmiXpE",
+                          "icon": "headset"
+                      },
+                      {
+                          "title": "Ліга за права людини",
+                          "url": "https://www.hrl.sk/sk/o-nas/aktuality/informacie-pre-ludi-z-ukrajiny?fbclid=IwAR2sLi5ZMDOEsBtzJeBE9hiWjeTyEa1Jua2RACKB7EIcPhdVPxxK-eWSfqU",
+                          "icon": "headset"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Юридична допомога",
+                  "icon": "paragraph",
+                  "links": [
+                      {
+                          "title": "Словацька асоціація адвокатів",
+                          "url": "https://www.linkedin.com/posts/sak-sk_vytvorili-sme-nov%C3%A9-odborn%C3%A9-zameranie-pre-activity-6904148973288771584-Fclk/",
+                          "icon": "paragraph"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Транспорт - міський, приміський, міжміський",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "Словаччина - потяги, автобуси, громадський транспорт",
+                          "url": "https://cp.hnonline.sk/en/vlakbusmhd/spojenie/",
+                          "icon": "bus"
+                      },
+                      {
+                          "title": "Словацька залізниця",
+                          "url": "https://www.zssk.sk/en/",
+                          "icon": "bus"
+                      },
+                      {
+                          "title": "Аеропорт Кошице",
+                          "url": "https://www.airportkosice.sk",
+                          "icon": "bus"
+                      },
+                      {
+                          "title": "Громадський транспорт - Братислава",
+                          "url": "https://imhd.sk/ba/cestovne-poriadky",
+                          "icon": "bus"
+                      },
+                      {
+                          "title": "Громадський транспорт - Кошице",
+                          "url": "https://imhd.sk/ke/cestovne-poriadky",
+                          "icon": "bus"
+                      },
+                      {
+                          "title": "Громадський транспорт - Пряшів",
+                          "url": "https://imhd.sk/po/mhd",
+                          "icon": "bus"
+                      },
+                      {
+                          "title": "Громадський транспорт - Жиліна",
+                          "url": "https://www.dpmz.sk/",
+                          "icon": "bus"
+                      },
+                      {
+                          "title": "Громадський транспорт - Банська Бистриця",
+                          "url": "https://imhd.sk/bb/cestovne-poriadky",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Проживання - інформація про міста, регіони, вартість проживання в окремих містах",
+                  "icon": "bed",
+                  "links": [
+                      {
+                          "title": "ktopomozeukrajine.sk",
+                          "url": "https://ktopomozeukrajine.sk/?fbclid=IwAR2cTTHFiyqKL6kVpnUbjKriq7HwBbdoXWlLtQGqao9zIRYPYOEqdqER7XA",
                           "icon": "bed"
                       },
                       {
-                          "title": "ISTP",
-                          "url": "https://www.istp.sk/volne-pracovne-miesta",
+                          "title": "pomocpreukrajinu.sk",
+                          "url": "https://pomocpreukrajinu.sk",
                           "icon": "bed"
                       },
                       {
-                          "title": "Profesia",
-                          "url": "https://www.profesia.sk/",
+                          "title": "Проживання для біженців з України - facebook група",
+                          "url": "https://www.facebook.com/groups/273172384894123/?multi_permalinks=275388361339192&notif_id=1645898976042375&notif_t=group_highlights&ref=notif",
                           "icon": "bed"
                       },
                       {
-                          "title": "Growni",
-                          "url": "https://growni.sk/jobs",
+                          "title": "Проживання - Camp Žilina",
+                          "url": "https://www.facebook.com/groups/campzilina",
                           "icon": "bed"
                       },
                       {
-                          "title": "Ponukampracu",
-                          "url": "https://www.ponukampracu.sk/",
+                          "title": "Проживання - Hybský dom",
+                          "url": "https://hybskydom.sk/?fbclid=IwAR20Vhm-IRPbfeLkOXnSwLA5k3a7I_VRw30q2ddIqN0E7_Lbd24NI7un7Ys",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Проживання - Nemocnica Hlohovec",
+                          "url": "https://www.facebook.com/NemocnicaHlohovec/posts/486270003036931",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Проживання - Piešťany",
+                          "url": "https://www.pnky.sk/aktuality/rehabilitacne-stredisko-v-piestanoch-poskytne-ubytovanie-ukrajinskym-rodinam-s-detmi-s-postihnutim/?fbclid=IwAR13QENazbhH0thseMnDORCHaj3bspXS3eS-7Gb_WXwAITfHeni78sIWLZc",
+                          "icon": "bed"
+                      },
+                      {
+                          "title": "Проживання - STU",
+                          "url": "https://www.stuba.sk/sk/ucelove-zariadenia/ucelove-zariadenie-gabcikovo.html?page_id=673",
                           "icon": "bed"
                       }
                   ]
               },
               {
-                  "sectionTitle": "Jobs",
-                  "icon": "coffee",
+                  "sectionTitle": "Харчування - магазини, служби доставки",
+                  "icon": "burger",
                   "links": [
                       {
-                          "title": "Rabotaveu - facebook",
-                          "url": "https://www.facebook.com/groups/rabotaveu",
-                          "icon": "bed"
+                          "title": "Служба доставки - Bistro.sk",
+                          "url": "https://www.bistro.sk/?gclid=CjwKCAiApfeQBhAUEiwA7K_UH8DopfgJy2hVOMzZVBDPmIvNkJgIBbWRfNUMAeEKD_VtS6f6LsDstxoCEPIQAvD_BwE",
+                          "icon": "burger"
+                      },
+                      {
+                          "title": "Служба доставки - Wolt",
+                          "url": "https://wolt.com/sk/svk/bratislava?utm_source=google&utm_medium=cpc&utm_term=wolt&utm_campaign=SVK_Web_FTU_Search_Brand_Bratislava_SK&gclid=CjwKCAiApfeQBhAUEiwA7K_UH9gJ6OmObwcTmrRW8znH601Q2yrfleGcNYugflzLO0mxGyAiMyI63hoCVAUQAvD_BwE",
+                          "icon": "burger"
+                      },
+                      {
+                          "title": "Служба доставки - Bolt Food",
+                          "url": "https://food.bolt.eu/sk-sk",
+                          "icon": "burger"
+                      },
+                      {
+                          "title": "Служба доставки - Food Panda",
+                          "url": "https://www.foodpanda.sk/?gclid=CjwKCAiApfeQBhAUEiwA7K_UH5vboZcSJldEs7QrHodCkjrsRVdOou-EJwDrYiiRvGsT6Gx_cZoW0hoC7ukQAvD_BwE",
+                          "icon": "burger"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Здоров'я - психологи та лікарі",
+                  "icon": "hand-holding-medical",
+                  "links": [
+                      {
+                          "title": "Психологічна допомога - ipcko.sk",
+                          "url": "https://ipcko.sk",
+                          "icon": "hand-holding-medical"
+                      },
+                      {
+                          "title": "Стоматологи в Словаччині",
+                          "url": "https://stomatolog.help/?fbclid=IwAR0eBQiPKVS_WICBGbBBacacU7RJvnmwcy3a1aQwLZAnikocVmeiqyRB9p8",
+                          "icon": "hand-holding-medical"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Організації, які допомагають людям біженцям",
+                  "icon": "handshake",
+                  "links": [
+                      {
+                          "title": "ktopomozeukrajine.sk",
+                          "url": "https://ktopomozeukrajine.sk/",
+                          "icon": "handshake"
+                      },
+                      {
+                          "title": "skauting.sk",
+                          "url": "https://sluzba.skauting.sk/",
+                          "icon": "handshake"
+                      },
+                      {
+                          "title": "Словацький Червоний Хрест",
+                          "url": "https://redcross.sk/ukrajina/",
+                          "icon": "handshake"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Сайти українських громад в країні",
+                  "icon": "users",
+                  "links": [
+                      {
+                          "title": "Загальна інформація - телеграм-чат",
+                          "url": "https://t.me/nashiludisk?fbclid=IwAR0E2StVhSCfQWJl2l9e-Jxi1S65u4ZQLvApHh6FtdO5iEm8RSLSx1NHXWo",
+                          "icon": "users"
+                      },
+                      {
+                          "title": "Словаччина для всіх - facebook група",
+                          "url": "https://www.facebook.com/groups/735592026478288/?hoisted_section_header_type=recently_seen&multi_permalinks=5114722771898503",
+                          "icon": "users"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Міжособистісне спілкування в ЄС – як поводитися в ЄС",
+                  "icon": "comments",
+                  "links": [
+                      {
+                          "title": "Попередження про шахраїв",
+                          "url": "https://www.minv.sk/?tlacove-spravy&sprava=upozornujeme-ze-tazku-situaciu-vojnovych-utecencov-z-ukrajiny-mozu-zneuzit-obchodnici-s-ludmi&subor_spravy=436728",
+                          "icon": "comments"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Мова - переклади, курси, відео, книги",
+                  "icon": "language",
+                  "links": [
+                      {
+                          "title": "Курс словацької мови - Міграційний інформаційний центр МОМ",
+                          "url": "https://www.mic.iom.sk/sk/sk-bubles/318-kurzy-a-vzdelavanie.html",
+                          "icon": "language"
+                      },
+                      {
+                          "title": "Курс словацької мови - volis.sk",
+                          "url": "https://www.volis.sk/kurzy/slovencina/",
+                          "icon": "language"
+                      },
+                      {
+                          "title": "Курс словацької мови - ihbratislava.sk",
+                          "url": "https://www.ihbratislava.sk/sk/ostatne-jazyky/slovencina-pre-cudzincov",
+                          "icon": "language"
+                      },
+                      {
+                          "title": "Курс словацької мови - bcskola.sk",
+                          "url": "https://www.bcskola.sk/Slovak-courses/",
+                          "icon": "language"
+                      },
+                      {
+                          "title": "Онлайн курс словацької мови - slovake.eu",
+                          "url": "https://slovake.eu/sk",
+                          "icon": "language"
+                      },
+                      {
+                          "title": "Онлайн курс словацької мови - Learn Slovak with Stories",
+                          "url": "https://www.youtube.com/channel/UCUPgmAhUy6NkMxzRTmks55w",
+                          "icon": "language"
+                      },
+                      {
+                          "title": "Онлайн курс словацької мови - Learn Slovak",
+                          "url": "https://www.youtube.com/watch?v=cFj8mqH07-Y",
+                          "icon": "language"
+                      },
+                      {
+                          "title": "Матеріали для самостійного вивчення словацької мови - Міграційно-інформаційний центр МОМ",
+                          "url": "https://www.mic.iom.sk/ru/s-ci-lin/br-z-v-ni/499-2017-09-20-11-57-29.html",
+                          "icon": "language"
+                      },
+                      {
+                          "title": "Онлайн курс словацької мови",
+                          "url": "https://mssg.me/dana_slovak",
+                          "icon": "language"
+                      },
+                      {
+                          "title": "Онлайн курс словацької мови",
+                          "url": "http://bodkaschool.sk",
+                          "icon": "language"
+                      },
+                      {
+                          "title": "Словацько-український словник",
+                          "url": "https://slovniky.lingea.sk/ukrajinsko-slovensky?fbclid=IwAR3l8UHAYroInZyy1bRNBTDX4c_IcaH0wm6qXquN_JVAGlgPXUh9-ILZXSQ",
+                          "icon": "language"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Пропозиції та можливості роботи",
+                  "icon": "briefcase",
+                  "links": [
+                      {
+                          "title": "Profesia.sk",
+                          "url": "https://www.profesia.sk/",
+                          "icon": "briefcase"
                       },
                       {
                           "title": "ISTP",
                           "url": "https://www.istp.sk/volne-pracovne-miesta",
-                          "icon": "bed"
+                          "icon": "briefcase"
                       },
                       {
-                          "title": "Profesia",
-                          "url": "https://www.profesia.sk/",
-                          "icon": "bed"
+                          "title": "Ponukampracu.sk",
+                          "url": "https://www.ponukampracu.sk/",
+                          "icon": "briefcase"
                       },
                       {
                           "title": "Growni",
                           "url": "https://growni.sk/jobs",
-                          "icon": "bed"
+                          "icon": "briefcase"
                       },
                       {
-                          "title": "Ponukampracu",
-                          "url": "https://www.ponukampracu.sk/",
+                          "title": "Робота в Словаччині - група facebook",
+                          "url": "https://www.facebook.com/groups/rabotaveu",
+                          "icon": "briefcase"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Освіта - університети, студентське життя, студентські організації, школи-інтернати",
+                  "icon": "graduation-cap",
+                  "links": [
+                      {
+                          "title": "Список шкіл",
+                          "url": "http://www.zoznamskol.eu/typ/stredna-skola/?fbclid=IwAR1QGT2YvYjTV7VJyEUFDvakeZ4MtXEsCz0K41BkKO5LRJRbSN-uVSYwIfw",
+                          "icon": "graduation-cap"
+                      },
+                      {
+                          "title": "Про освіту в Словаччині",
+                          "url": "https://slovenske-skolstvo.estranky.sk/clanky/rozdelenie-skol-na-slovensku.html",
+                          "icon": "graduation-cap"
+                      },
+                      {
+                          "title": "Словацька академія наук",
+                          "url": "https://www.sav.sk/?lang=sk&doc=services-news&source_no=20&news_no=10197&fbclid=IwAR37ucykGAVsnyYFebOnVkwXlCWHhMuX1prbuqOkwu97W54nL2J--rRmPfA",
+                          "icon": "graduation-cap"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Про країну - історія, що подивитися, місця для відпочинку, відпустки, ціни",
+                  "icon": "globe",
+                  "links": [
+                      {
+                          "title": "Про Словаччину",
+                          "url": "https://slovakia.travel/o-slovensku",
+                          "icon": "globe"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Волонтерство",
+                  "icon": "hand",
+                  "links": [
+                      {
+                          "title": "ktopomozeukrajine.sk",
+                          "url": "https://growni.sk/dobrovolnictvo/dobrovolnicke-projekty/0Ej4wlZXQrZfYnuBJ6tm?fbclid=IwAR1LZnCUvF0Ku5_zPqkY5dXcvRSZJXdw6qIowdcB_VwM-CI559spBgfCggI",
+                          "icon": "hand"
+                      },
+                      {
+                          "title": "Допомога українським сім'ям та їхнім домашнім тваринам - facebook група",
+                          "url": "https://www.facebook.com/groups/2900734023550379/",
+                          "icon": "hand"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "country": "Чехія",
+          "sections": [
+              {
+                  "sectionTitle": "Інформація про війну",
+                  "icon": "bomb",
+                  "links": [
+                      {
+                          "title": "Інтерактивна карта російського вторгнення в Україну",
+                          "url": "https://newsmap.pl/2022-russian-invasion-of-ukraine-interactive-map/",
+                          "icon": "bomb"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Офіційна та загальна інформація в країні для біженців",
+                  "icon": "file",
+                  "links": [
+                      {
+                          "title": "nasiukrajinci.cz",
+                          "url": "https://www.nasiukrajinci.cz/?fbclid=IwAR02BM8jJeCQk4ku-__wia-Yo1Mu6WgC_jP0UCALfFUqxmgR100FYXf4EaQ",
+                          "icon": "file"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Транспорт - міський, приміський, міжміський",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "Волонтери, які їдуть за біженцями",
+                          "url": "https://doprava.plnu.cz",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Проживання - інформація про міста, регіони, вартість проживання в окремих містах",
+                  "icon": "bed",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
                           "icon": "bed"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Харчування - магазини, служби доставки",
+                  "icon": "burger",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "burger"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Здоров'я - психологи та лікар",
+                  "icon": "hand-holding-medical",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "hand-holding-medical"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Організації, які допомагають людям біженцям",
+                  "icon": "handshake",
+                  "links": [
+                      {
+                          "title": "tednaspotrebuji.cz",
+                          "url": "https://www.tednaspotrebuji.cz/",
+                          "icon": "handshake"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Сайти українських громад в країні",
+                  "icon": "users",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "users"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Міжособистісне спілкування в ЄС – як поводитися в ЄС",
+                  "icon": "comments",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "comments"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Мова - переклади, курси, відео, книги",
+                  "icon": "language",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "language"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Пропозиції та можливості роботи - документи, портали вакансій, групи у Facebook",
+                  "icon": "briefcase",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "briefcase"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Освіта - університети, студентське життя, студентські організації, школи-інтернати",
+                  "icon": "graduationCap",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "graduationCap"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Про країну - історія, що подивитися, місця для відпочинку, відпустки, ціни",
+                  "icon": "globe",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "globe"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Волонтерство",
+                  "icon": "hand",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "hand"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Офіційні збори коштів",
+                  "icon": "circle-dollar-to-slot",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "circle-dollar-to-slot"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "country": "Польща",
+          "sections": [
+              {
+                  "sectionTitle": "Інформація про війну",
+                  "icon": "bomb",
+                  "links": [
+                      {
+                          "title": "Інтерактивна карта російського вторгнення в Україну",
+                          "url": "https://newsmap.pl/2022-russian-invasion-of-ukraine-interactive-map/",
+                          "icon": "bomb"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Офіційна та загальна інформація в країні для біженців",
+                  "icon": "file",
+                  "links": [
+                      {
+                          "title": "dopomoga-in.pl",
+                          "url": "https://dopomoga-in.pl/pl/",
+                          "icon": "file"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Транспорт - міський, приміський, міжміський",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Проживання - інформація про міста, регіони, вартість проживання в окремих містах",
+                  "icon": "bed",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bed"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Харчування - магазини, служби доставки",
+                  "icon": "burger",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "burger"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Здоров'я - психологи та лікар",
+                  "icon": "hand-holding-medical",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "hand-holding-medical"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Організації, які допомагають людям біженцям",
+                  "icon": "handshake",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "handshake"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Сайти українських громад в країні",
+                  "icon": "users",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "users"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Міжособистісне спілкування в ЄС – як поводитися в ЄС",
+                  "icon": "comments",
+                  "links": [
+                      {
+                          "title": "Ви візитна картка всіх українців",
+                          "url": "https://www.facebook.com/watch/?v=732566261058805",
+                          "icon": "comments"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Мова - переклади, курси, відео, книги",
+                  "icon": "language",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "language"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Пропозиції та можливості роботи - документи, портали вакансій, групи у Facebook",
+                  "icon": "bus",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "bus"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Освіта - університети, студентське життя, студентські організації, школи-інтернати",
+                  "icon": "graduationcap",
+                  "links": [
+                      {
+                          "title": "zatial  nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "graduationcap"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Про країну - історія, що подивитися, місця для відпочинку, відпустки, ціни",
+                  "icon": "globe",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "globe"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Волонтерство",
+                  "icon": "hand",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "hand"
+                      }
+                  ]
+              },
+              {
+                  "sectionTitle": "Офіційні збори коштів",
+                  "icon": "circle-dollar-to-slot",
+                  "links": [
+                      {
+                          "title": "zatial nic",
+                          "url": "https://www.google.sk/",
+                          "icon": "circle-dollar-to-slot"
                       }
                   ]
               }

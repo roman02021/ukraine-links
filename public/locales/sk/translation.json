@@ -756,12 +756,12 @@
               },
               {
                   "sectionTitle": "Oficiálne zbierky",
-                  "icon": "circledollartoslot",
+                  "icon": "circle-dollar-to-slot",
                   "links": [
                       {
                           "title": "zatial nic",
                           "url": "https://www.google.sk/",
-                          "icon": "circledollartoslot"
+                          "icon": "circle-dollar-to-slot"
                       }
                   ]
               }
@@ -926,12 +926,12 @@
               },
               {
                   "sectionTitle": "Oficiálne zbierky",
-                  "icon": "circledollartoslot",
+                  "icon": "circle-dollar-to-slot",
                   "links": [
                       {
                           "title": "zatial nic",
                           "url": "https://www.google.sk/",
-                          "icon": "circledollartoslot"
+                          "icon": "circle-dollar-to-slot"
                       }
                   ]
               }
