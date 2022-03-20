@@ -34,7 +34,7 @@ const StyledAccordionButton = styled.button`
 
 const StyledAccordionContent = styled.div`
   border-top: none;
-  max-height: ${(props) => (!props.loaded ? "100%" : props.isOpen  ? `${props.contentHeight}px` : "0px")};
+  max-height: ${(props) => (props.isOpen ? `${props.contentHeight}px` : "0px")};
   opacity: ${(props) => (props.isOpen ? "1" : "0")};
   overflow: hidden;
   padding: ${(props) => (props.isOpen ? "15px" : "0 15px")};
@@ -52,12 +52,17 @@ const AccordionItem = ({title, content}) => {
     const [isOpen, setIsOpen] = useState(false);
     const [open, setOpen] = useState(false);
 
-    useEffect(()=>{
+    // useEffect(()=>{
       
-      setHeight(contentRef.current.clientHeight);
-      setLoaded(true);
+    //   setHeight(contentRef.current.clientHeight);
+    //   setLoaded(true);
     
-    },[])
+    // },[])
+    useEffect(() => {
+      const getHeight = contentRef.current.scrollHeight;
+      console.log(contentRef.current.scrollHeight, contentRef.current.clientHeight)
+      setHeight(getHeight);
+    }, [isOpen]);
 
   return (
     <StyledAccordionItem>

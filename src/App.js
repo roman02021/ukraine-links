@@ -17,6 +17,8 @@ import {colorTheme} from './theme/index';
 import Footer from './components/Footer';
 import AccordionWithLinks from './components/AccordionWithLinks/AccordionWithLinks.jsx';
 import Row from './components/Row';
+import Flags from 'country-flag-icons/react/3x2'
+import NestedAccordion from './components/AccordionWithLinks/NestedAccordion.jsx';
 
 const StyledLoader = styled(ClipLoader)`
   
@@ -75,8 +77,10 @@ function App() {
   return (
     <ThemeProvider theme={colorTheme[theme]}>
         <GlobalStyle/>
+        
  
         <Menu setSearchTerm={setSearchTerm} setTheme={setTheme}/>
+        
         <Container justify={filteredCountries.sections && filteredCountries.sections.length > 0? 'left' : 'center'}>
 {/*           
             {filteredSections.length > 0 ? filteredSections.map((section, index) => {
@@ -88,12 +92,13 @@ function App() {
             }) : <Heading text='No links found'></Heading>} */}
 <Heading text='Countries'></Heading>
 <LinkSection>
-{filteredCountries.length > 0 ? filteredCountries.map(country => <AccordionWithLinks content={country} depth={0}></AccordionWithLinks>) : <Heading text='No links found'></Heading>}
+{filteredCountries.length > 0 && filteredCountries.map(country => <NestedAccordion content={country} root={true}></NestedAccordion>)}
+{/* {filteredCountries.length > 0 ? filteredCountries.map(country => <AccordionWithLinks content={country} depth={0}></AccordionWithLinks>) : <Heading text='No links found'></Heading>} */}
 </LinkSection>
         </Container>
         <Container>
-          <Heading text="FAQ"/>
-            <Accordion items={[{section: "section1", title: "title 1", content: "content 1"}, {title: "title 2", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eleifend rhoncus odio in lobortis. Duis laoreet posuere dolor sed mattis. Aenean lectus elit, scelerisque a pulvinar in, tincidunt ac tortor. Nunc nec pellentesque nisi. Mauris at metus ac risus porta vulputate. Aliquam eu purus nec diam egestas finibus quis commodo felis. Morbi auctor rhoncus lorem, a consectetur magna viverra ut. Vivamus rutrum nulla sed augue interdum sodales. Ut magna magna, hendrerit at egestas vel, dignissim vel ex. Nunc nibh urna, sagittis ac aliquet non, feugiat non dolor. Aliquam cursus eros ullamcorper risus accumsan venenatis. Duis a dolor et nulla tempor fermentum. Vivamus aliquet nisi viverra mauris vehicula bibendum."}]}/>
+          {/* <Heading text="FAQ"/>
+            <Accordion items={[{section: "section1", title: "title 1", content: "content 1"}, {title: "title 2", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eleifend rhoncus odio in lobortis. Duis laoreet posuere dolor sed mattis. Aenean lectus elit, scelerisque a pulvinar in, tincidunt ac tortor. Nunc nec pellentesque nisi. Mauris at metus ac risus porta vulputate. Aliquam eu purus nec diam egestas finibus quis commodo felis. Morbi auctor rhoncus lorem, a consectetur magna viverra ut. Vivamus rutrum nulla sed augue interdum sodales. Ut magna magna, hendrerit at egestas vel, dignissim vel ex. Nunc nibh urna, sagittis ac aliquet non, feugiat non dolor. Aliquam cursus eros ullamcorper risus accumsan venenatis. Duis a dolor et nulla tempor fermentum. Vivamus aliquet nisi viverra mauris vehicula bibendum."}]}/> */}
         </Container>
         <Container align='center' >
           <Heading text="Posts" id="post"/>

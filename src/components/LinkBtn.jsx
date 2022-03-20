@@ -14,6 +14,7 @@ const StyledBtnLink = styled.a`
     margin: 1rem 0;
     transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     z-index: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     &:hover {
       transform: scale(1.02);
     }

@@ -11,7 +11,7 @@ import Select, {components} from 'react-select'
 import {variables} from '../theme/index';
 import logo from '../logo.png';
 import Flags from 'country-flag-icons/react/3x2'
-
+import ReactFlagsSelect from 'react-flags-select';
 
 
 
@@ -235,6 +235,8 @@ const Menu = ({setSearchTerm, setTheme}) => {
     const [isHovering, setIsHovering] = useState(false)
     const [mobileMenuHeight, setMoibleMenuHeight] = useState(false);
 
+    const [selected, setSelected] = useState('');
+
 
     const isMobile = useMediaQuery({
         query: variables.breakpoints.tablet
@@ -243,7 +245,7 @@ const Menu = ({setSearchTerm, setTheme}) => {
     const handleLanguageChange = (e) =>{
         i18n.changeLanguage(e.value);
     }
-    console.log(isMenuOpen);
+    
     const handleThemeChange = (e) =>{
         setTheme(e.value);
     }
@@ -260,7 +262,6 @@ const Menu = ({setSearchTerm, setTheme}) => {
         
     }, [i18n.language])
 
-    console.log(countries);
 
     return (
         <>
@@ -303,6 +304,11 @@ const Menu = ({setSearchTerm, setTheme}) => {
                 </Group>
                 <SearchBar setSearchTerm={setSearchTerm} />
                 <Row>
+                <ReactFlagsSelect
+                 countries={["GB", "UA", "SK"]}
+        selected={selected}
+        onSelect={code => setSelected(code)}
+      />
                     <Select options={selectOptions} onChange={handleLanguageChange} defaultValue={i18n.language} isSearchable={false} placeholder={selectOptions.filter(option => option.value === i18n.language)[0].label} value={i18n.language}   />
                      {/* <Select options={themeOptions} onChange={handleThemeChange} defaultValue={i18n.language} placeholder="Theme" isSearchable={false}/>  */}
                 </Row>
