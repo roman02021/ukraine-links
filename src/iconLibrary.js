@@ -2,7 +2,7 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 
 // import your icons
-import { faCode, faCoffee, faBed, faBus, faHospital, faLanguage, faEnvelope, faBullhorn, faBriefcase, faGlobe, faCity, faMap, faHandshake, faCapsules, faLocation, faHashtag, faShare, faFile, faGraduationCap, faHandHoldingMedical, faGun, faCommentDots, faBurger, faBomb, faHeadset, faCircleQuestion, faUsers, faComments, faCircleDollarToSlot, faHand, faParagraph} from '@fortawesome/free-solid-svg-icons';
+import { faCode, faCoffee, faBed, faBus, faHospital, faLanguage, faEnvelope, faBullhorn, faBriefcase, faGlobe, faCity, faMap, faHandshake, faCapsules, faLocation, faHashtag, faShare, faFile, faGraduationCap, faHandHoldingMedical, faGun, faCommentDots, faBurger, faBomb, faHeadset, faCircleQuestion, faUsers, faComments, faCircleDollarToSlot, faHand, faParagraph, faSearch, faCircleCheck} from '@fortawesome/free-solid-svg-icons';
 
 library.add(
   faCode,
@@ -35,6 +35,8 @@ library.add(
   faComments,
   faCircleDollarToSlot,
   faHand,
-  faParagraph
+  faParagraph,
+  faSearch,
+  faCircleCheck
   // more icons go here
 );

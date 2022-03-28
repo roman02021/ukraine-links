@@ -8,20 +8,28 @@ import ClipLoader from "react-spinners/ClipLoader";
 import styled from 'styled-components';
 
 
-const StyledLoaderContainer = styled(ClipLoader)`
-
+const StyledLoaderContainer = styled.div`
+  height: 100vh;
+  width: 100vw;
+  background-color: #015CBF; 
+  span {
+    position: fixed;
+    top: 42%;
+    left: 42%;
+  }
 `
 
 const Loader = () => (
   <StyledLoaderContainer>
-    <ClipLoader color="#FED600" size={150} />
-</StyledLoaderContainer>
+    <ClipLoader style={{backgroundColor: 'red'}} color="#FED600" size={100} />
+  </StyledLoaderContainer>
 );
 
 ReactDOM.render(
   <React.StrictMode>
     <Suspense fallback={<Loader/>}>
       <App />
+      {/* <Loader/> */}
     </Suspense>
   </React.StrictMode>,
   document.getElementById('root')

@@ -2,16 +2,20 @@ import { createGlobalStyle } from 'styled-components';
 
 
 const GlobalStyle = createGlobalStyle`
+background-color: red;
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
   html {
     scroll-behavior: smooth;
   }
   body {
     margin: 0;
     padding: 0;
-    background: ${props => props.theme.primary};
-    background-image: url("./blob-scene-haikei.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    
+    background-color: ${props => props.theme.primary};
     font-family: Inter, Helvetica, Sans-Serif;
     overflow-x: hidden;
     box-sizing: border-box;

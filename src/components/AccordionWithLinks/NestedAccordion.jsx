@@ -20,7 +20,7 @@ const NestedAccordion = ({contentArray, content, isNested, root}) => {
     return (
         <StyledAccordion ref={contentRef}>
             {root ?
-            <NestedAccordionItem hasNestedAccordion={true} title={content.country} parentHeight={parentHeight} setParentHeight={setParentHeight} content={content.sections}/> 
+            <NestedAccordionItem root hasNestedAccordion={true} title={content.country} parentHeight={parentHeight} setParentHeight={setParentHeight} content={content.sections}/> 
             : contentArray.map(content => <NestedAccordionItem hasNestedAccordion={false} title={content.sectionTitle} icon={content.icon} contentArray={content.links} parentHeight={parentHeight}  setParentHeight={setParentHeight}/>) }
         </StyledAccordion>
     )

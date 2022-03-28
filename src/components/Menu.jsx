@@ -1,21 +1,17 @@
-import React, {useState, useEffect, useContext} from 'react'
+import React, {useState, useEffect, useContext, useRef} from 'react'
 import styled, {useTheme} from 'styled-components'
 import Row from './Row';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faXmark, faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faXmark, faChevronDown, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { useMediaQuery } from 'react-responsive'
 import Group from './Group';
 import SearchBar from '../components/SearchBar';
 import { useTranslation } from 'react-i18next';
 import Select, {components} from 'react-select'
-import {variables} from '../theme/index';
+import {colorTheme, variables} from '../theme/index';
 import logo from '../logo.png';
 import Flags from 'country-flag-icons/react/3x2'
 import ReactFlagsSelect from 'react-flags-select';
-
-
-
-import {ThemeContext} from '../contexts/themeStore';
 
 const StyledFix = styled.div`
     height: 60px;
@@ -89,8 +85,8 @@ const MenuIcon = styled(FontAwesomeIcon)`
     font-size: ${(props) => props.isMenuOpen ? '1.5rem' : '1.25rem'};
 
     padding: 1rem;
-    margin-right: -1rem;
-    width: fit-content;
+    width: 32px;
+    display: block;
 `
 const StyledMobileMenuContainer = styled.div`
     display: none;
@@ -172,8 +168,9 @@ const StyledDropdownIcon = styled(FontAwesomeIcon)`
     }
 `
 const Box = styled.div`
-    width: 50px;
+    width: fit-content;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
 `
 const StyledLogo = styled.img`
@@ -184,10 +181,11 @@ const StyledMobileMenu = styled.div`
     /* background-color: ${props => props.theme.primary}75; */
     width: 100%;
     box-sizing: border-box;
-    overflow-y: auto;
+    overflow-y: visible;
     max-height: calc(100vh - 60px + 1rem);
     /* position: sticky; */
-    padding: 1.5rem 1.5rem;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    
     ${StyledMenuItem}{
         &:not(:last-child){
             border-bottom: 1px solid ${props => props.theme.secondary};
@@ -209,6 +207,20 @@ const StyledFlagGB = styled(Flags.GB)`
     width: 20px;
     margin-right: .5rem;
 `
+const StyledReactFlagsSelect = styled(ReactFlagsSelect)`
+    z-index: 100000;
+    &.menu-flags {
+        z-index: 100000;
+    }
+    .menu-flags-button{
+        border: 1px solid ${props => props.theme.secondary};
+        z-index: 100000;
+        color: ${props => props.theme.secondary};
+        &::after {
+            border-top:5px solid ${props => props.theme.secondary};
+        }
+    }
+`
 const StyledSelect = styled(Select)`
     margin-bottom: .75rem;
 `
@@ -223,9 +235,9 @@ const themeOptions = [
 ]
 
 const selectOptions = [
-    { value: 'ua', label: (<StyledOption><StyledFlagUA title="United States" className="..."/>український</StyledOption>) },
-    { value: 'sk', label: (<StyledOption><StyledFlagSK title="United States" className="..."/>Slovenčina</StyledOption>) },
-    { value: 'en', label: (<StyledOption><StyledFlagGB title="United States" className="..."/>English</StyledOption>) }
+    { value: 'ua', label: (<StyledOption><StyledFlagUA title="United States" className="..."/>UA</StyledOption>) },
+    { value: 'sk', label: (<StyledOption><StyledFlagSK title="United States" className="..."/>SK</StyledOption>) },
+    { value: 'en', label: (<StyledOption><StyledFlagGB title="United States" className="..."/>EN</StyledOption>) }
 ]
 
 const Menu = ({setSearchTerm, setTheme}) => {
@@ -236,14 +248,18 @@ const Menu = ({setSearchTerm, setTheme}) => {
     const [mobileMenuHeight, setMoibleMenuHeight] = useState(false);
 
     const [selected, setSelected] = useState('');
+    const searchRef = useRef(null);
 
-
+    console.log(i18n.language);
     const isMobile = useMediaQuery({
         query: variables.breakpoints.tablet
     })
 
     const handleLanguageChange = (e) =>{
-        i18n.changeLanguage(e.value);
+        if(e === "GB"){
+            e = "en";
+        }
+        i18n.changeLanguage(e.toLowerCase());
     }
     
     const handleThemeChange = (e) =>{
@@ -265,33 +281,54 @@ const Menu = ({setSearchTerm, setTheme}) => {
 
     return (
         <>
+
         <StyledFix/>
         <StyledMenuBackground>
             
             <StyledMobileMenuContainer>
                 <Group align="center" fullWidth fullHeight horizontal>
                     <StyledLogo src={logo} alt="logo"/>
-                    <SearchBar setSearchTerm={setSearchTerm} fullWidth/>
+                    
                     <Box>
                         {isMenuOpen ? 
                         <MenuIcon icon={faXmark} size="lg" isMenuOpen={isMenuOpen} onClick={()=>setIsMenuOpen(false)}></MenuIcon> 
-                        : <MenuIcon isMenuOpen={isMenuOpen} icon={faBars} size="lg" onClick={()=>setIsMenuOpen(true)}></MenuIcon>}
+                        : <MenuIcon isMenuOpen={isMenuOpen} icon={faSearch} size="lg" onClick={()=>setIsMenuOpen(true)}></MenuIcon>}
+                        <StyledReactFlagsSelect
+                 countries={["GB", "UA", "SK"]}
+                 customLabels={{"GB": "EN","SK": "SK","UA": "UA"}}
+        selected={i18n.language === "en" ? "GB" : i18n.language.toUpperCase()}
+        className="menu-flags"
+        selectButtonClassName="menu-flags-button"
+        onSelect={code => handleLanguageChange(code)}
+      />
+                        {/* <Select styles={{option: (provided, state) => ({
+                        ...provided,
+                    }), 
+                    control: (provided, state) => ({
+                        ...provided,
+                        minWidth: '100%',
+                        
+                    })}} options={selectOptions} onChange={handleLanguageChange} defaultValue={i18n.language} isSearchable={false} placeholder={selectOptions.filter(option => option.value === i18n.language)[0].label} value={i18n.language}   /> */}
                     </Box>
+                    
                 </Group>
             </StyledMobileMenuContainer>
             {isMenuOpen && 
-            <StyledMobileMenu >
+            <StyledMobileMenu>
+                <SearchBar isMenuOpen setSearchTerm={setSearchTerm} fullWidth/>
                 {/* <StyledSelect options={selectOptions}  onChange={handleLanguageChange} defaultValue={i18n.language} isSearchable={false} placeholder={selectOptions.filter(option => option.value === i18n.language)[0].label} value={i18n.language}   />
                 <Group>
                 {sections && sections.map((section, index) => <StyledMenuItem href={`#${section.sectionTitle.toLowerCase()}`} onClick={()=>setIsMenuOpen(false)} key={index}>{section.sectionTitle}</StyledMenuItem>)}
                 </Group> */}
+               
 
                 
             </StyledMobileMenu>}
             
             <StyledMenu>
+                
                 <StyledLogo src={logo}/>
-                <Group fullHeight align="center" horizontal>
+                {/* <Group fullHeight align="center" horizontal>
                 {countries.sections && countries.sections.length < 4 ? countries.map(country => country.sections.map((section, index) => <StyledMenuItem href={`#${section.sectionTitle.toLowerCase()}`} onClick={()=>setIsMenuOpen(false)} key={index}>{section.sectionTitle}</StyledMenuItem>)) : <StyledDropdown>
                     <StyledDropdownAnchor>Section<StyledDropdownIcon icon={faChevronDown}></StyledDropdownIcon>
                     </StyledDropdownAnchor>
@@ -299,18 +336,30 @@ const Menu = ({setSearchTerm, setTheme}) => {
                         {countries.map(country => country.sections.map((section, index) => <StyledMenuItem href={`#${section.sectionTitle.toLowerCase()}`} onClick={()=>setIsMenuOpen(false)} key={index}>{section.sectionTitle}</StyledMenuItem>))}
                     </StyledDropdownOptions>
                 </StyledDropdown>}
-                <StyledMenuItem href={`#post`} onClick={()=>setIsMenuOpen(false)}>Posts</StyledMenuItem>
-                <StyledMenuItem href={`#form`} onClick={()=>setIsMenuOpen(false)} >Form</StyledMenuItem>
-                </Group>
-                <SearchBar setSearchTerm={setSearchTerm} />
+                <StyledMenuItem href={`#links`} onClick={()=>setIsMenuOpen(false)}>Links</StyledMenuItem>
+                <StyledMenuItem href={`#posts`} onClick={()=>setIsMenuOpen(false)}>Posts</StyledMenuItem>
+                <StyledMenuItem href={`#contact-us`} onClick={()=>setIsMenuOpen(false)} >Form</StyledMenuItem>
+                </Group> */}
+                <SearchBar  setSearchTerm={setSearchTerm} />
                 <Row>
-                <ReactFlagsSelect
+                <StyledReactFlagsSelect
                  countries={["GB", "UA", "SK"]}
-        selected={selected}
-        onSelect={code => setSelected(code)}
+                 customLabels={{"GB": "EN","SK": "SK","UA": "UA"}}
+        selected={i18n.language === "en" ? "GB" : i18n.language.toUpperCase()}
+        className="menu-flags"
+        selectButtonClassName="menu-flags-button"
+        onSelect={code => handleLanguageChange(code)}
       />
-                    <Select options={selectOptions} onChange={handleLanguageChange} defaultValue={i18n.language} isSearchable={false} placeholder={selectOptions.filter(option => option.value === i18n.language)[0].label} value={i18n.language}   />
-                     {/* <Select options={themeOptions} onChange={handleThemeChange} defaultValue={i18n.language} placeholder="Theme" isSearchable={false}/>  */}
+                    {/* <Select theme='#000' styles={{indicatorSeparator: (provided, state) => ({
+                        ...provided,
+                        minWidth: 'fit-content',
+
+                    }), 
+                    control: (provided, state) => ({
+                        ...provided,
+                        // backgroundColor: 'red',
+                    })}} options={selectOptions} onChange={handleLanguageChange} defaultValue={i18n.language} isSearchable={false} placeholder={selectOptions.filter(option => option.value === i18n.language)[0].label} value={i18n.language}   />
+                     <Select options={themeOptions} onChange={handleThemeChange} defaultValue={i18n.language} placeholder="Theme" isSearchable={false}/>  */}
                 </Row>
             </StyledMenu>
             

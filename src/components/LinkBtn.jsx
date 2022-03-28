@@ -25,7 +25,7 @@ const StyledIcon = styled(FontAwesomeIcon)`
 
 function LinkBtn({link, text, icon}) {
 
-
+  console.log(text, link);
   const theme = useTheme();
 
   return (

@@ -728,12 +728,12 @@
               },
               {
                   "sectionTitle": "Освіта - університети, студентське життя, студентські організації, школи-інтернати",
-                  "icon": "graduationCap",
+                  "icon": "graduation-cap",
                   "links": [
                       {
                           "title": "zatial nic",
                           "url": "https://www.google.sk/",
-                          "icon": "graduationCap"
+                          "icon": "graduation-cap"
                       }
                   ]
               },
@@ -898,12 +898,12 @@
               },
               {
                   "sectionTitle": "Освіта - університети, студентське життя, студентські організації, школи-інтернати",
-                  "icon": "graduationcap",
+                  "icon": "graduation-cap",
                   "links": [
                       {
                           "title": "zatial  nic",
                           "url": "https://www.google.sk/",
-                          "icon": "graduationcap"
+                          "icon": "graduation-cap"
                       }
                   ]
               },

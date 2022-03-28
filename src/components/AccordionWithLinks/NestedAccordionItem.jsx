@@ -11,17 +11,17 @@ import { t } from 'i18next';
 
 const duration = 300;
 
-const defaultStyle = {
-  transition: `opacity ${duration}ms ease-in-out`,
-  opacity: 0,
-}
+// const defaultStyle = {
+//   transition: `opacity ${duration}ms ease-in-out`,
+//   opacity: 0,
+// }
 
-const transitionStyles = {
-  entering: { opacity: 0 },
-  entered:  { opacity: 1 },
-  exiting:  { opacity: 0 },
-  exited:  { opacity: 0 },
-};
+// const transitionStyles = {
+//   entering: { opacity: 0 },
+//   entered:  { opacity: 1 },
+//   exiting:  { opacity: 0 },
+//   exited:  { opacity: 0 },
+// };
 
 
 const StyledAccordionItem = styled.li`
@@ -33,6 +33,11 @@ const StyledAccordionItem = styled.li`
 const StyledIcon = styled(FontAwesomeIcon)`
   margin-right: 1rem;
 `;
+
+const StyledChevron = styled(FontAwesomeIcon)`
+  transform: ${props => props.isOpen ? 'rotate(180deg)' : ''};
+  transition: all .3s linear;
+`
 
 const StyledAccordionButton = styled.button`
   background: ${props => props.theme.secondary};
@@ -58,15 +63,28 @@ const StyledAccordionButton = styled.button`
 
 const StyledAccordionContent = styled.div`
   border-top: none;
-  height: ${(props) => (props.isOpen ? "100%" : "0%")};
-  max-height: ${(props) => (props.isOpen ? `${props.parentHeight}px` : "0px")};
+  /* height: ${(props) => (props.isOpen ? "100%" : "0%")}; */
+   max-height: ${(props) => {
+     switch(props.transitionState){
+        case 'entering':
+         return `${props.contentHeight}px`;
+        case 'entered':
+          return '';
+        case 'exiting':
+          return `${props.contentHeight}px`;
+        case 'exited':
+          return '0px';
+        default:
+          return '0px'
+     }
+   }}; 
   overflow: hidden;
-  padding: ${(props) => (props.isOpen ? "15px" : "0 15px")};
-  transition: max-height .3s ease-out, padding .3s ease-out, height .3s ease-out;
+  padding: ${(props) => (props.isOpen ? "0 15px" : "0 15px")};
+  transition: all .3s ease-out; 
   color: ${props => props.theme.text};
 `
 
-const NestedAccordionItem = ({ content, icon, hasNestedAccordion, title, contentArray, parentHeight, setParentHeight}) => {
+const NestedAccordionItem = ({ content, icon, hasNestedAccordion, title, contentArray, parentHeight, setParentHeight, root}) => {
 
     const contentRef = useRef(null);
     const initialLoad = useRef(true);
@@ -76,7 +94,7 @@ const NestedAccordionItem = ({ content, icon, hasNestedAccordion, title, content
     const [height, setHeight] = useState(0);
     const [isOpening, setIsOpening] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
-    console.log('hello', parentHeight);
+
 
     // useEffect(()=>{
     //   setLoaded(false);
@@ -85,48 +103,34 @@ const NestedAccordionItem = ({ content, icon, hasNestedAccordion, title, content
 
     useEffect(() => {
       const getHeight = contentRef.current.scrollHeight;
-      setHeight(getHeight);
+      setHeight(contentRef.current.scrollHeight);
     }, [isOpen]);
 
     useEffect(() => {
-      console.log("HEIGHT", height);
       if(initialLoad.current && height !== 0){
-        console.log("HEEEE")
         setParentHeight(height + parentHeight);
         initialLoad.current = false;
       }
     }, [height])
 
-    if(accordRef.current && contentRef.current){
-        console.log("INSIDE NESTED")
-    }
 
-    
+
   return (
     <StyledAccordionItem>
         <StyledAccordionButton onClick={(e) => {
-          if(isOpen){
-            setIsOpening(false);
-            setTimeout(() => setIsOpen(false), 300);
-            
-          }
-          else {
-            setIsOpening(true);
-            setTimeout(() => setIsOpen(true), 300);
-          }
-          
-          
-          
+          setIsOpen(!isOpen);
           }} isOpen={isOpen}>
+        <div>
         {icon && <StyledIcon icon={['fas', icon]} /> }
         {title}
-        <FontAwesomeIcon icon={!isOpen ? faChevronDown : faChevronUp}/>
+        </div>
+        <StyledChevron isOpen={isOpen} icon={faChevronDown}/>
         </StyledAccordionButton>
         <Transition in={isOpen} timeout={duration}>
-          {state => <StyledAccordionContent style={{...defaultStyle, ...transitionStyles[state]}} parentHeight={parentHeight} ref={contentRef} isOpen={isOpen} contentHeight={height}>
+          {state => <StyledAccordionContent transitionState={state} root={root} parentHeight={parentHeight} ref={contentRef} isOpen={isOpen} contentHeight={height}>
               {hasNestedAccordion ?
               <NestedAccordion ref={accordRef} root={false} contentArray={content} isNested={true}></NestedAccordion>
-              : contentArray ? contentArray.map(content => <LinkBtn text={content.title} icon={content.icon}/>) : <div></div>}
+              : contentArray ? contentArray.map(content => <LinkBtn text={content.title} link={content.url} icon={content.icon}/>) : <div></div>}
           </StyledAccordionContent>}
           
         </Transition>

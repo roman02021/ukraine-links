@@ -1,5 +1,23 @@
 {
     "searchPlaceholder": "Search...",
+    "form": {
+        "labels": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message"
+        },
+        "errors": {
+            "name" : "Required",
+            "email" : "Required",
+            "message": "Required",
+            "recaptcha": "Required"
+        }
+    },
+    "sectionHeadings": {
+        "countries": "Countries",
+        "contactUs": "Contact us"
+    },
+
     "countries": [
         {
             "country": "Ukraine",

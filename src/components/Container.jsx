@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {deviceSizes} from '../theme';
 
 const StyledContainer = styled.section`
     max-width: ${props => handleSize(props.size)};
@@ -11,6 +12,9 @@ const StyledContainer = styled.section`
     justify-content: ${((props) => props.justify === 'center' ? 'center' : props.justify === 'left' ? 'left' : props.justify === 'right' ? 'right' : 'space-between')};
     flex-direction: ${(props) => props.horizontal ? 'row' : 'column'};
     align-items: ${((props) => props.align === 'center' ? 'center' : props.align === 'left' ? 'left' : props.align === 'right' ? 'right' : 'space-between')};
+    @media (max-width: ${deviceSizes.mobile}) {
+      padding: 0 0.75rem;
+    }
 `
 
 const Container = ({children, fullWidth, align, horizontal, justify, size}) => {

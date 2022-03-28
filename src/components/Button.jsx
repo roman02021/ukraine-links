@@ -5,7 +5,7 @@ import {variables} from '../theme';
 const StyledButton = styled.button`
     color: ${props => props.theme.textSecondary};
     background-color: ${props => props.theme.secondary};
-    padding: 1rem;
+    padding: ${props => props.wide ? '1rem 4rem' : '1rem'};
     border: 2px solid ${props => props.theme.primary};
     text-decoration: none;
     display: block;
@@ -23,9 +23,9 @@ const StyledButton = styled.button`
       transform: scale(1.05);
     }
 `
-const Button = ({text}) => {
+const Button = ({text, wide}) => {
   return (
-    <StyledButton>{text}</StyledButton>
+    <StyledButton wide={wide}>{text}</StyledButton>
   )
 }
 
